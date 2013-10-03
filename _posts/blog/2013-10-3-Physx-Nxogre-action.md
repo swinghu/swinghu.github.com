@@ -12,15 +12,15 @@ category: blog
 ####步奏：
 <ul>
 
-1. Click the Start button 
-2. Right Click on the “My Computer” text 
-3. Click on the Properties menu item (XP/Vista) or Advanced System Settings link (7) 
-4. Click on the top tab (XP) or link (Vista/7) named “Advanced”. 
-5. Click on the “Environmental Variables” button 
-6. Press New in the User Variables for Username 
-7. Enter PHYSX_DIR for the Name 
-8. Enter the full path (minus the appending slash) of your PhysX SDK folder, i.e. C:/Dev/PhysX 
-9. Press Okay, and press okay again on the previous window. 
+<li>1. Click the Start button </li>
+<li>2. Right Click on the “My Computer” text</li> 
+<li>3. Click on the Properties menu item (XP/Vista) or Advanced System Settings link (7) </li>
+<li>4. Click on the top tab (XP) or link (Vista/7) named “Advanced”. </li>
+<li>5. Click on the “Environmental Variables” button </li>
+<li>6. Press New in the User Variables for Username </li>
+<li>7. Enter PHYSX_DIR for the Name </li>
+<li>8. Enter the full path (minus the appending slash) of your PhysX SDK folder, i.e. C:/Dev/PhysX </li>
+<li>9. Press Okay, and press okay again on the previous window. </li>
 </ul>
 
 ##（二）编译 NxOgre 出错解决
