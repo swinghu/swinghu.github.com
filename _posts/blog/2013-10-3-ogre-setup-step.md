@@ -10,9 +10,9 @@ category: blog
 - 英文版：[《OGRE 3D 1.7 Beginner's Guide》][RCEN]
 
 
-ogre 1.7.0的下载、配置和编译指南
+##ogre 1.7.0的下载、配置和编译指南
 
-
+<ul>
 <li>1. ogre 1.7.0的下载地址：https://sourceforge.net/projects/ogre/files/ogre/1.7/ogre-v1-7-0.zip/download</li>
 
 <li>2. ogre 1.7.0依赖库的下载地址（不定期更新，请关注该贴）：http://www.ogre3d.org/forums/viewtopic.php?f=1&t=54533</li>
@@ -40,13 +40,13 @@ ogre 1.7.0的下载、配置和编译指南
 <li>13. 编译出ogre的debug和release</li>
 
 <li>14. 如果不需要运行samples，那么只需要编译OgreMain、RenderSystem_Direct3D9（或其他）和所需的Plugin即可 </li>
+</ul>
 
 
+##cegui 0.7.1的下载、配置和编译指南
 
-cegui 0.7.1的下载、配置和编译指南
 
------------------------------------------------ 
-
+<ul>
 <li>1. cegui 0.7.1的下载地址：http://prdownloads.sourceforge.net/crayzedsgui/CEGUI-0.7.1.zip?download</li>
 
 <li>2. cegui 0.7.1依赖库的下载地址：http://prdownloads.sourceforge.net/crayzedsgui/CEGUI-DEPS-0.7.x-r1-vc9.zip?download</li>
@@ -62,7 +62,6 @@ cegui 0.7.1的下载、配置和编译指南
 <li>7. 将其修改成对应的ogre和ois的路径，例如：</li>
 
 	OGRE_PATHS = { "F:/SDK/ogre-v1-7-0", "OgreMain/include", "lib" }
-
 	OIS_PATHS = { "F:/SDK/ogre-v1-7-0/Dependencies/include/OIS/", "", "lib" }
 
 <li>8. 找到CEGUI_OLD_OIS_API变量，设置为false</li>
@@ -80,7 +79,7 @@ cegui 0.7.1的下载、配置和编译指南
 <li>14. 请注意ogre 1.7.0的lib是生成在debug和release子目录中，记得修改为正确的link路径</li>
 
 <li>15. 运行sample前，记得先复制F:/SDK/cegui-v0-7-1/dependencies/bin下的所有dll到F:/SDK/cegui-v0-7-1/bin下面，这样就不会报错提示缺少dll了</li>
-
+</ul>
 
 - 英文版：[《OGRE 3D 1.7 Beginner's Guide》][RCEN]
 
