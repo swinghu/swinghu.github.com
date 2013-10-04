@@ -24,6 +24,5 @@ Facebook快速并且顺利的成长，作者初期选择他，悬念并不大，
 - 豆瓣链接：[《打造Facebook》][Facebook]
 - 在线阅读：[《打造Facebook》][ReadDB]
 
-[BeiYuu]:    http://beiyuu.com  "BeiYuu"
 [Facebook]: http://book.douban.com/subject/20471120/ "打造Facebook"
 [ReadDB]: http://read.douban.com/ebook/500486/
