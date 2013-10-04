@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CEGUI + Ogre 安装设置详解（附有自己的体会）
-description: 将《The Art of Readable Code》的读书笔记和一点自己的认识总结起来写就这么一篇安装手记，强烈推荐此书。
+description: 将《OGRE 3D 1.7 Beginner's Guide》的读书笔记和一点自己的认识总结起来写就这么一篇安装手记，强烈推荐此书。
 category: blog
 ---
 
