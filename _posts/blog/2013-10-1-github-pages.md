@@ -32,7 +32,7 @@ Github Pages有以下几个优点：
 
 域名的购买不用多讲，注册、选域名、支付，有网购经验的都毫无压力，优惠码也遍地皆是。域名的配置需要提醒一下，因为伟大英明的GFW的存在，我们必须多做些事情。
 
-流传Godaddy的域名解析服务器被墙掉，导致域名无法访问，后来这个事情在[BeiYuu][]也发生了，不得已需要把域名解析服务迁移到国内比较稳定的服务商处，这个迁移对于域名来说没有什么风险，最终的控制权还是在Godaddy那里，你随时都可以改回去。
+流传Godaddy的域名解析服务器被墙掉，导致域名无法访问，后来这个事情在其他网站上也发生了，不得已需要把域名解析服务迁移到国内比较稳定的服务商处，这个迁移对于域名来说没有什么风险，最终的控制权还是在Godaddy那里，你随时都可以改回去。
 
 我们选择[DNSPod][]的服务，他们的产品做得不错，易用、免费，收费版有更高端的功能，暂不需要。注册登录之后，按照DNSPod的说法，只需三步（我们插入一步）：
 
@@ -147,27 +147,27 @@ Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信�
 与GitHub建立好链接之后，就可以方便的使用它提供的Pages服务，GitHub Pages分两种，一种是你的GitHub用户名建立的`username.github.io`这样的用户&组织页（站），另一种是依附项目的pages。
 
 ###User & Organization Pages
-想建立个人博客是用的第一种，形如`beiyuu.github.io`这样的可访问的站，每个用户名下面只能建立一个，创建之后点击`Admin`进入项目管理，可以看到是这样的：
+想建立个人博客是用的第一种，形如'用户名.github.io`这样的可访问的站，每个用户名下面只能建立一个，创建之后点击`Admin`进入项目管理，可以看到是这样的：
 ![user pages](/images/githubpages/user-pages.png)
 而普通的项目是这样的，即使你也是用的`othername.github.io`：
 ![other pages](/images/githubpages/other-pages.png)
 
 创建好`username.github.io`项目之后，提交一个`index.html`文件，然后`push`到GitHub的`master`分支（也就是普通意义上的主干）。第一次页面生效需要一些时间，大概10分钟左右。
 
-生效之后，访问`username.github.io`就可以看到你上传的页面了，[beiyuu.github.com][7]就是一个例子。
+生效之后，访问`username.github.io`就可以看到你上传的页面了。
 
 关于第二种项目`pages`，简单提一下，他和用户pages使用的后台程序是同一套，只不过它的目的是项目的帮助文档等跟项目绑定的内容，所以需要在项目的`gh-pages`分支上去提交相应的文件，GitHub会自动帮你生成项目pages。具体的使用帮助可以参考[Github Pages][]的官方文档：
 
 ###绑定域名
 我们在第一部分就提到了在DNS部分的设置，再来看在GitHub的配置，要想让`username.github.io`能通过你自己的域名来访问，需要在项目的根目录下新建一个名为`CNAME`的文件，文件内容形如：
 
-    beiyuu.com
+    username.com
 
 你也可以绑定在二级域名上：
 
-    blog.beiyuu.com
+    blog.username.com
 
-需要提醒的一点是，如果你使用形如`beiyuu.com`这样的一级域名的话，需要在DNS处设置A记录到`207.97.227.245`（**这个地址会有变动，[这里][a-record]查看**），而不是在DNS处设置为CNAME的形式，否则可能会对其他服务（比如email）造成影响。
+需要提醒的一点是，如果你使用形如`username.com`这样的一级域名的话，需要在DNS处设置A记录到`207.97.227.245`（**这个地址会有变动，[这里][a-record]查看**），而不是在DNS处设置为CNAME的形式，否则可能会对其他服务（比如email）造成影响。
 
 设置成功后，根据DNS的情况，最长可能需要一天才能生效，耐心等待吧。
 
@@ -233,7 +233,7 @@ Jekyll的配置写在_config.yml文件中，可配置项有很多，我们不去
 
 * `permalink: /:title` /github-pages
 
-自定义项的内容，例如我们定义了`title:BeiYuu的博客`这样一项，那么你就可以在文章中使用`{ { site.title }}`来引用这个变量了，非常方便定义些全局变量。
+自定义项的内容，例如我们定义了`title:username的博客`这样一项，那么你就可以在文章中使用`{ { site.title }}`来引用这个变量了，非常方便定义些全局变量。
 
 ###YAML Front Matter和模板变量
 对于使用YAML定义格式的文章，Jekyll会特别对待，他的格式要求比较严格，必须是这样的形式：
@@ -283,7 +283,7 @@ Jekyll的配置写在_config.yml文件中，可配置项有很多，我们不去
 
     $('#disqus_container .comment').on('click',function(){
             $(this).html('加载中...');
-            var disqus_shortname = 'beiyuu';
+            var disqus_shortname = 'username';
             var that = this;
             BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()}); //这是一个加载js的函数
     });
@@ -325,7 +325,7 @@ Google的高亮插件使用也比较方便，只需要在`<pre>`的标签上加�
 
 这个时候，你就可以通过`localhost:4000`来访问了。还有关于[jekyll bootstrap][17]的资料，需要自己修改调试的，可以研究一下。
 
-我在这个过程中还遇到两个诡异的没有解决的问题，一个是我放在根目录下面的blog.md等文件，在GitHub的pages服务上一切正常，可以通过`beiyuu.com/blog`访问的到，但是在本地环境下，总是`not found`，很是让人郁闷，看生成的`_site`目录下面的文件，也是正常的`blog.html`，但就是找不到，只有当我把URL改为`localhost:4000/blog.html`的时候，才能访问的到，环境不同真糟糕。
+我在这个过程中还遇到两个诡异的没有解决的问题，一个是我放在根目录下面的blog.md等文件，在GitHub的pages服务上一切正常，可以通过`username.com/blog`访问的到，但是在本地环境下，总是`not found`，很是让人郁闷，看生成的`_site`目录下面的文件，也是正常的`blog.html`，但就是找不到，只有当我把URL改为`localhost:4000/blog.html`的时候，才能访问的到，环境不同真糟糕。
 
 还有一个是关于`category`的问题，根据`YAML`的语法，我们在文章头部可以定义文章所属的类别，也可以定义为`category:[blog,rss]`这样子的多类别，我在本地试一切正常，但是push到GitHub之后，就无法读取了，真让人着急，没有办法，只能采用别的办法满足我的需求了。这里还有一篇[Jekyll 本地调试之若干问题][18]，安装中如果有其他问题，也可以对照参考一下。
 
@@ -349,11 +349,11 @@ Google的高亮插件使用也比较方便，只需要在`<pre>`的标签上加�
 [4]: http://progit.org/book/zh/ "Pro Git中文版"
 [5]: http://help.github.com/mac-set-up-git/ "Mac下Git安装"
 [6]: http://help.github.com/ssh-key-passphrases/
-[7]: http://beiyuu.github.com
+[7]: http://username.github.com
 [8]: https://github.com/mojombo/jekyll/blob/master/README.textile
 [9]: https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter
 [10]: https://github.com/mojombo/jekyll/wiki/configuration
-[11]: https://github.com/beiyuu/beiyuu.github.com
+[11]: https://github.com/username/username.github.com
 [12]: http://docs.disqus.com/developers/universal/
 [13]: http://mihai.bazon.net/projects/javascript-syntax-highlighting-engine
 [14]: http://code.google.com/p/google-code-prettify/
