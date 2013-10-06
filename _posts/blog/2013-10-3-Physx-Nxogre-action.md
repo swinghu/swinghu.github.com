@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 编译安装Physx + NxOgre 遇到的问题 （总算编译成功）
+title: 编译安装Physx + NxOgre 遇到的问题
 description: 编译安装Physx + NxOgre 
 category: blog
 ---
