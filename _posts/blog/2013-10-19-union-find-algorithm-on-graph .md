@@ -10,21 +10,23 @@ description: 利用并查集求解graph中的子图以及连通性问题
 并查集是一种树形的数据结构，其保持着处理一些不相交集合（Disjoint Sets）的合并及查询问题。有一个联合-查找算法（union-find algorithm）定义了两个操作用于此数据结构：
 <ul>
 <li>getAcestor：确定元素属于哪一个子集。它可以被用来确定两个元素是否属于同一子集。</li>
+</ul>
 	int getAcestor(int c)
 	{
 		if (ancestor[c] == c)
 			return c;
 		return ancestor[c] = getAcestor(ancestor[c]);
 	}
-
+<ul>
 <li>Union：将两个子集合并成同一个集合，如果他们之间有某种关系。</li>
+</ul>
 	void Union(int x,int y){
 		int fx=getAcestor(x);
 		int fy=getAcestor(y);
 		if (fx==fy) return ;
 		ancestor[fx]=fy;
 	}
-</ul>
+
 因为它支持这两种操作，一个不相交集也常被称为联合-查找数据结构（union-find data structure）或合并-查找集合（merge-find set）。
 有了以上这些方法，就可以解决许多经典的节点划分问题。
 
