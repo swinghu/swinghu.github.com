@@ -8,18 +8,18 @@ description: 利用并查集求解graph中的子图以及连通性问题
 最近在解决一个图的问题，问题要求解一个图中的各个子图，并且将连通子图顶点和边输出来，首先想到的是用BFS，或者什么DFS，但是数据集开始用的C++ STL中的mulitmap存储，并没有按照经典的图的存储模型邻接表，或者邻接矩阵存储，所以BFS、DFS算法操作起来不是很方便，
 进而google，了解到并查集这一概念。了解到并查集可以求解无向图的连通分量个数， 将其应用到Kruskar算法求最小生成树，ACM中朋友与敌人的问题（朋友的朋友是朋友，敌人的敌人是朋友），进而学习了一番。
 并查集是一种树形的数据结构，其保持着处理一些不相交集合（Disjoint Sets）的合并及查询问题。有一个联合-查找算法（union-find algorithm）定义了两个操作用于此数据结构：
-<ul>
+
 <li>getAcestor：确定元素属于哪一个子集。它可以被用来确定两个元素是否属于同一子集。</li>
-</ul>
+
 	int getAcestor(int c)
 	{
 		if (ancestor[c] == c)
 			return c;
 		return ancestor[c] = getAcestor(ancestor[c]);
 	}
-<ul>
+
 <li>Union：将两个子集合并成同一个集合，如果他们之间有某种关系。</li>
-</ul>
+
 	void Union(int x,int y){
 		int fx=getAcestor(x);
 		int fy=getAcestor(y);
