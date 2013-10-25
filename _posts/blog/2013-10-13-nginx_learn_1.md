@@ -35,14 +35,11 @@ category: blog
 	/usr/local/nginx/sbin/nginx -s reload 重启
 	/usr/local/nginx/sbin/nginx -s stop 关闭
 	如：root@swinghu ~# usr/local/nginx/sbin/nginx/ -s reload
-	
 <li>3.Nginx查看连接信息：</li>
 编辑nginx.conf 文件：加入
-
 	localtion/nginx_status {
 	stub_status on;
 	access_log off;
 	}
-	
 在浏览器中输入：127.0.0.1./nginx_status   
 
