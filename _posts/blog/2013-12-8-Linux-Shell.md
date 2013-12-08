@@ -1,8 +1,9 @@
-﻿---
+﻿
+---
 layout: post
-title: Linux Shell
-description: Shell是用户与Linux操作系统沟通的桥梁，Shell编程仍然起着不可忽视的作用。深入地了解和熟练地掌握Shell编程，是每一个Linux用户的必修功课之一。
+title: Linux Shell编程
 category: blog
+description: Shell是用户与Linux操作系统沟通的桥梁,Shell编程仍然起着不可忽视的作用,深入地了解和熟练地掌握Shell编程,是每一个Linux用户的必修功课之一。
 ---
 
 ##1、 Linux 脚本编写基础
