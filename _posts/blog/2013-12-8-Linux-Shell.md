@@ -53,7 +53,7 @@ shell可以不先声明变量，就可以使用，例如
 (2)重定向(>)可以将命令的结果输出到文件，而不是标准输出(控制台)
 	./shell_program_name -i [value] -n [value] -d [value] > dataout.txt
 	./mrmr -i 2.csv -t 0.5 >outputfile.txt
-###1.1.5	控制流程语句
+###1.1.6	控制流程语句
 (1)字符串的比较(注意字符串之间的空格)
 	if(str1 = str2)　　　　　　当两个串有相同内容、长度时为真   
 　　if(str1 != str2)　　　　　 当串str1和str2不等时为真    
