@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux：Shell
+title: Linux Shell
 category: blog
 description: Shell是用户与Linux操作系统沟通的桥梁，Shell编程仍然起着不可忽视的作用。深入地了解和熟练地掌握Shell编程，是每一个Linux用户的必修功课之一。
 ---
@@ -8,7 +8,9 @@ description: Shell是用户与Linux操作系统沟通的桥梁，Shell编程仍�
 ##1、 Linux 脚本编写基础
 
 ##1.1	基本语法介绍
+
 ###1.1.1	开头
+
 Shell程序必须以下面的行开始(首行)
 	#!/bin/sh
 例如：命令vi test.sh进入vi编辑页面输入
@@ -17,14 +19,20 @@ Shell程序必须以下面的行开始(首行)
 编辑好后，进入vi的命令模式(按ESC键)，按下wq保存退出，此时还不能运行该shell命令，因为该文件还没有执行权限，要使得
 该脚本可以执行运行
 	chmod +x test.sh		//添加可执行权限
+
 ###1.1.2	注释
+
 进行shell编程时，shell中的注释以#开头，直到该行末尾
+
 ###1.1.3	变量
+
 shell可以不先声明变量，就可以使用，例如
 	csv =".csv"
 	echo $csv
 	for((i=0; i<10;i++))
+	
 ###1.1.4	常用shell命令(重点grep，awk，sed)
+
 	echo "some text": 将文字内容打印在屏幕上
 　　ls: 文件列表
 　　wc –l filewc -w filewc -c file: 计算文件行数计算文件中的单词数计算文件中的字符数
@@ -46,13 +54,17 @@ shell可以不先声明变量，就可以使用，例如
 　　tail file : 打印文本文件末尾几行
 　　sed: Sed是一个基本的查找替换程序。可以从标准输入（比如命令管道）读入文本，并将结果输出到标准输出（屏幕）。该命令采用正则表达式（见参考）进行搜索。
 	awk: awk 用来从文本文件中提取字段。缺省地，字段分割符是空格，可以使用-F指定其他分割符。cat file.txt | awk -F, '{print $1 "," $3 }'这里我们使用，作为字段分割符，同时打印第一个和第三个字段。如果该文件内容如下： Adam Bor, 34, IndiaKerry Miller, 22, USA命令输出结果为：Adam Bor, IndiaKerry Miller, USA
+	
 ###1.1.5	管道 重定向 backtick
+
 (1)管道(|)可以用来将一个命令的输出作为另一个命令的输入，或者输出该命令执行结果到指定文件,如：
 	./shell_program_name -i [value] -n [value] -d [value] | dataout.txt
 	grep "hadoop" hadoop.config |wc -l  //在hadoop.config文件中搜索”hadoop“，并且grep输出作为wc命令的输入，最后统计出现行数
+	
 (2)重定向(>)可以将命令的结果输出到文件，而不是标准输出(控制台)
 	./shell_program_name -i [value] -n [value] -d [value] > dataout.txt
 	./mrmr -i 2.csv -t 0.5 >outputfile.txt
+	
 ###1.1.6	控制流程语句
 (1)字符串的比较(注意字符串之间的空格)
 	if(str1 = str2)　　　　　　当两个串有相同内容、长度时为真   
