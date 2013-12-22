@@ -39,8 +39,8 @@ category: blog
 	gem sources -a http://ruby.taobao.org/
 	
 然后用gem sources -l看看现在源列表(我的电脑上添加了多次，所以有多个项)
-	$ gem sources -l
 	
+	$ gem sources -l
 	*** CURRENT SOURCES ***
 	http://ruby.taobao.org/
 	http://ruby.taobao.org/
