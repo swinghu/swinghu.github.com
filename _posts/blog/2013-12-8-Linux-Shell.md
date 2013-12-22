@@ -82,7 +82,7 @@ shell可以不先声明变量，就可以使用，例如
     
 (2)整数之间的比较
 
-	int1 -eq int2　　　　两数相等为真    
+	int1 -eq int2　　　　两数相等为真
 	int1 -ne int2　　　　两数不等为真   
 	int1 -gt int2　　　　int1大于int2为真   
 	int1 -ge int2　　　　int1大于等于int2为真    
@@ -97,32 +97,31 @@ shell可以不先声明变量，就可以使用，例如
 (4)嵌套if语句
 
 	if command 
-	then 
-		command 
-	else 
-		if command 
 		then 
 			command 
 		else 
-		if command 
+			if command 
 			then 
 				command 
+			else 
+			if command 
+				then 
+					command 
 			fi 
 		fi 
 	fi
 
 (4)case语句
-
 	case value in    
-	pattem 1)    
-		command    
-	command;;    
-	pattem 2)    
-		command    
-	command;;    
-	....    
-	pattem)    
-		command;    
+		pattem 1)    
+			command    
+		command;;    
+		pattem 2)    
+			command    
+		command;;    
+		....    
+		pattem)    
+			command;    
 	esac
 
 (4)for语句的各种写法
@@ -138,12 +137,12 @@ shell可以不先声明变量，就可以使用，例如
 
 	for I in {1..100}; 
 	do 
-	if [ $[$I%2] -eq 0 ]; then 
-		let sum1+=$I 
-	else 
-		let sum2+=$I 
-	fi 
-done 
+		if [ $[$I%2] -eq 0 ]; then 
+			let sum1+=$I 
+		else 
+			let sum2+=$I 
+		fi 
+	done 
 
 遍历目录下的文件：
 
@@ -163,7 +162,6 @@ done
 	注意”((“与count有空格
 	
 例如：
-
 	for (( i=1; i<=5; i++ ))
 		do
 			echo "i=$i"
@@ -184,5 +182,6 @@ done
 		echo $var
 		var=$(($var + 1))
 	done
+
 下文待续
 	
