@@ -170,9 +170,10 @@ shell可以不先声明变量，就可以使用，例如
 	done
 	
 (5)while语句
+
 	while true
 		do
-		语句
+		...
 	done
 	
 例如
