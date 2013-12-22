@@ -112,6 +112,7 @@ shell可以不先声明变量，就可以使用，例如
 	fi
 
 (4)case语句
+
 	case value in    
 		pattem 1)    
 			command    
