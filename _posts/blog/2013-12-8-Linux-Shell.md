@@ -61,7 +61,7 @@ shell可以不先声明变量，就可以使用，例如
 	
 ###1.1.5	管道 重定向 backtick
 
-(1)管道(|)可以用来将一个命令的输出作为另一个命令的输入，或者输出该命令执行结果到指定文件,如：
+(1)管道(|)可以用来将一个命令的输出作为另一个命令的输入，或者输出该命令执行结果到指定文件,如:
 	
 	$ ./shell_program_name -i [value] -n [value] -d [value] | dataout.txt
 	$ grep "hadoop" hadoop.config |wc -l  //在hadoop.config文件中搜索”hadoop“，并且grep输出作为wc命令的输入，最后统计出现行数
@@ -74,11 +74,11 @@ shell可以不先声明变量，就可以使用，例如
 ###1.1.6	控制流程语句
 (1)字符串的比较(注意字符串之间的空格)
 	
-	if(str1 = str2)　　　　　　当两个串有相同内容、长度时为真   
-	if(str1 != str2)　　　　　 当串str1和str2不等时为真    
-	if(-n str1)　　　　　　　  当串的长度大于0时为真(串非空)    
-	if(-z str1)　　　　　　　  当串的长度为0时为真(空串)    
-	if(str1)　　　　　　　　   当串str1为非空时为真
+	if(str1 = str2)		当两个串有相同内容、长度时为真   
+	if(str1 != str2)	当串str1和str2不等时为真    
+	if(-n str1)	  		当串的长度大于0时为真(串非空)    
+	if(-z str1)  		当串的长度为0时为真(空串)    
+	if(str1)			当串str1为非空时为真
     
 (2)整数之间的比较
 
@@ -114,16 +114,16 @@ shell可以不先声明变量，就可以使用，例如
 (4)case语句
 
 	case value in    
-　　　pattem 1)    
-　　　　command    
-　　　　command;;    
-　　　pattem 2)    
-　　　　command    
-　　　　command;;    
-　　　....    
-　　　pattem)    
-　　　　command;    
-　　esac
+	pattem 1)    
+		command    
+	command;;    
+	pattem 2)    
+		command    
+	command;;    
+	....    
+	pattem)    
+		command;    
+	esac
 
 (4)for语句的各种写法
 第一种写法
@@ -157,7 +157,7 @@ done
 第二种写法
 
 	for (( count=0; count < 100; count++ ))
-	do
+		do
 		...
 	done
 	注意”((“与count有空格
@@ -165,14 +165,13 @@ done
 例如：
 
 	for (( i=1; i<=5; i++ ))
-	do
-        echo "i=$i"
+		do
+			echo "i=$i"
 	done
 	
 (5)while语句
-
 	while true
-	do
+		do
 		语句
 	done
 	
@@ -185,6 +184,7 @@ done
 		echo $var
 		var=$(($var + 1))
 	done
+下文待续
 	
 
 
