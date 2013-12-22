@@ -61,7 +61,7 @@ shell可以不先声明变量，就可以使用，例如
 	
 ###1.1.5	管道 重定向 backtick
 
-(1)管道(|)可以用来将一个命令的输出作为另一个命令的输入，或者输出该命令执行结果到指定文件,如:
+(1)管道(|)可以用来将一个命令的输出作为另一个命令的输入，或者输出该命令执行结果到指定文件，如:
 	
 	$ ./shell_program_name -i [value] -n [value] -d [value] | dataout.txt
 	$ grep "hadoop" hadoop.config |wc -l  //在hadoop.config文件中搜索”hadoop“，并且grep输出作为wc命令的输入，最后统计出现行数
@@ -83,11 +83,11 @@ shell可以不先声明变量，就可以使用，例如
 (2)整数之间的比较
 
 	int1 -eq int2　　　　两数相等为真    
-　　int1 -ne int2　　　　两数不等为真   
-　　int1 -gt int2　　　　int1大于int2为真   
-　　int1 -ge int2　　　　int1大于等于int2为真    
-　　int1 -lt int2　　　　int1小于int2为真    
-　　int1 -le int2　　　　int1小于等于int2为真 
+	int1 -ne int2　　　　两数不等为真   
+	int1 -gt int2　　　　int1大于int2为真   
+	int1 -ge int2　　　　int1大于等于int2为真    
+	int1 -lt int2　　　　int1小于int2为真    
+	int1 -le int2　　　　int1小于等于int2为真 
    
 (3)逻辑组合条件测试(and 、or 、not)
 
@@ -96,20 +96,20 @@ shell可以不先声明变量，就可以使用，例如
 	!      非 
 (4)嵌套if语句
 
-	if command    
-　　　　then    
-　　　　　　command    
-　　　　else    
-　　　　　　if command    
-　　　　　　then    
-　　　　　　　　command    
-　　　　　　else   
-　　　　　　	if command    
-　　　　　　　　then    
-　　　　　　　　　　command    
-　　　　　　　  fi    
-　　　　　  fi    
-　　fi
+	if command 
+	then 
+		command 
+	else 
+		if command 
+		then 
+			command 
+		else 
+		if command 
+			then 
+				command 
+			fi 
+		fi 
+	fi
 
 (4)case语句
 
@@ -186,24 +186,3 @@ done
 	done
 下文待续
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
