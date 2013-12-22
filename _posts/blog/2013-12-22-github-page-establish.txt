@@ -8,7 +8,7 @@ category: blog
 也是帮助没有使用过github和Jekyll的童鞋可以快速掌握搭建过程，快速体验。
 
 如果你对ruby完全没有了解，仅仅对html有初步的了解，这都没有关系，只要你懂一点点linux命令就行
-例如ls,cd,mkdir,cp,ssh命令等(不懂也没有关系),不懂请用到时Google。一切软件的下载见后面的附录，具体步骤如下：
+例如ls,cd,mkdir,cp,ssh命令等(不懂也没有关系),不懂请用到时Google。一切软件的下载见后面的软件汇总，具体步骤如下：
 1，安装Git
 在windows下安装git，我选择的是GitExtensions233SetupComplete.msi默认安装就行
 2，安装ruby环境
@@ -53,7 +53,7 @@ category: blog
 	git clone git@github.com:user_name/dkd.git
 执行以后，git会把存放在github上的代码库文件下载到本地的，生成名为dkd的目录。删掉.git目录，并且将网站文件放置在该文件夹下
 
-6.写博文，发博客(请打开：开始->程序->RailsInstaller –> Command Prompt with Ruby and Rails控制台应用程序，今后我们的博文推送都将会通过这个控制台进行)
+6，写博文，发博客(请打开：开始->程序->RailsInstaller –> Command Prompt with Ruby and Rails控制台应用程序，今后我们的博文推送都将会通过这个控制台进行)
 编辑博客，并以文件后缀.md命名，博文开头格式如下
 	---
 	layout: post
@@ -78,7 +78,7 @@ category: blog
 	To prevent you from losing history, non-fast-forward updates were rejected
 	Merge the remote changes (e.g. 'git pull') before pushing again.  See the
 	'Note about fast-forwards' section of 'git push --help' for details.
-7.浏览器打开浏览username.github.com
+7，浏览器打开浏览username.github.com
 稍等片刻，github就会为你生成网页。用浏览器打开网址：username.github.com
 
 
