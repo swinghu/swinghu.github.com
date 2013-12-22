@@ -121,7 +121,7 @@ shell可以不先声明变量，就可以使用，例如
 			command    
 		command;;    
 		....    
-		pattem)    
+		pattem 3)    
 			command;    
 	esac
 
