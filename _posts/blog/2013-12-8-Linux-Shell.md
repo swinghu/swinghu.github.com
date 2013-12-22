@@ -24,7 +24,6 @@ Shell程序必须以下面的行开始(首行)
 	$ chmod +x test.sh		//添加可执行权限
 
 ###1.1.2	注释
-
 进行shell编程时，shell中的注释以#开头，直到该行末尾
 
 ###1.1.3	变量
@@ -63,32 +62,40 @@ shell可以不先声明变量，就可以使用，例如
 ###1.1.5	管道 重定向 backtick
 
 (1)管道(|)可以用来将一个命令的输出作为另一个命令的输入，或者输出该命令执行结果到指定文件,如：
+	
 	$ ./shell_program_name -i [value] -n [value] -d [value] | dataout.txt
 	$ grep "hadoop" hadoop.config |wc -l  //在hadoop.config文件中搜索”hadoop“，并且grep输出作为wc命令的输入，最后统计出现行数
 	
 (2)重定向(>)可以将命令的结果输出到文件，而不是标准输出(控制台)
+	
 	$ ./shell_program_name -i [value] -n [value] -d [value] > dataout.txt
 	$ ./mrmr -i 2.csv -t 0.5 >outputfile.txt
 	
 ###1.1.6	控制流程语句
 (1)字符串的比较(注意字符串之间的空格)
+	
 	if(str1 = str2)　　　　　　当两个串有相同内容、长度时为真   
 	if(str1 != str2)　　　　　 当串str1和str2不等时为真    
 	if(-n str1)　　　　　　　  当串的长度大于0时为真(串非空)    
 	if(-z str1)　　　　　　　  当串的长度为0时为真(空串)    
-	if(str1)　　　　　　　　   当串str1为非空时为真    
+	if(str1)　　　　　　　　   当串str1为非空时为真
+    
 (2)整数之间的比较
+
 	int1 -eq int2　　　　两数相等为真    
 　　int1 -ne int2　　　　两数不等为真   
 　　int1 -gt int2　　　　int1大于int2为真   
 　　int1 -ge int2　　　　int1大于等于int2为真    
 　　int1 -lt int2　　　　int1小于int2为真    
-　　int1 -le int2　　　　int1小于等于int2为真    
+　　int1 -le int2　　　　int1小于等于int2为真 
+   
 (3)逻辑组合条件测试(and 、or 、not)
+
 	-a     与    
 	-o     或    
 	!      非 
 (4)嵌套if语句
+
 	if command    
 　　　　then    
 　　　　　　command    
@@ -103,7 +110,9 @@ shell可以不先声明变量，就可以使用，例如
 　　　　　　　  fi    
 　　　　　  fi    
 　　fi
+
 (4)case语句
+
 	case value in    
 　　　pattem 1)    
 　　　　command    
@@ -115,14 +124,18 @@ shell可以不先声明变量，就可以使用，例如
 　　　pattem)    
 　　　　command;    
 　　esac
+
 (4)for语句的各种写法
 第一种写法
+
 	for 变量名 in 列表  
 	do  
 		命令1  
 		命令2…  
 	done  
+	
 例如：
+
 	for I in {1..100}; 
 	do 
 	if [ $[$I%2] -eq 0 ]; then 
@@ -131,30 +144,40 @@ shell可以不先声明变量，就可以使用，例如
 		let sum2+=$I 
 	fi 
 done 
+
 遍历目录下的文件：
+
 	#!/bin/bash
 	for x in /var/log/*
 	do
         #echo "$x is a file living in /var/log"
         echo $(basename $x) is a file living in /var/log
 	done
+	
 第二种写法
+
 	for (( count=0; count < 100; count++ ))
 	do
 		...
 	done
 	注意”((“与count有空格
+	
 例如：
+
 	for (( i=1; i<=5; i++ ))
 	do
         echo "i=$i"
 	done
+	
 (5)while语句
+
 	while true
 	do
 		语句
 	done
+	
 例如
+
 	#!/bin/sh
 	var=1
 	while (( $var <= 3 ))
@@ -162,6 +185,7 @@ done
 		echo $var
 		var=$(($var + 1))
 	done
+	
 
 
 
