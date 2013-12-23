@@ -94,7 +94,7 @@ category: blog
 	Merge the remote changes (e.g. 'git pull') before pushing again.  See the
 	'Note about fast-forwards' section of 'git push --help' for details.
 7，浏览器打开浏览username.github.io
-稍等片刻，github就会为你生成网页。用浏览器打开网址：username.github.com
+稍等片刻，github就会为你生成网页。用浏览器打开网址：username.github.io
 
 
 软件汇总：
