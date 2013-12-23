@@ -79,9 +79,11 @@ category: blog
 	2013-12-8-Linux-Shell.md
 请确保你的文件被保存为不含 BOM 的 UTF-8(若不是将会出错，可以使用notepad++ 来进行格式转换) 
 使用git命令推送到git服务器上，先加入本地库中
+
 	git add .
 	git commit -m"备注修改信息“
 	git push
+	
 如果你在其他机器上修改过，那么先要执行 git pull否则会提示： non-fast-forward错误
 
 	C:\Sites\username.github.com>git push
