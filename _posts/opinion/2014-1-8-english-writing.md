@@ -7,8 +7,7 @@ description: 全方位提高写作技巧
 
 首先推荐老师的Facebook公共专页：<a href="https://www.facebook.com/pages/Maggie-Sokolik/548248971930234">https://www.facebook.com/pages/Maggie-Sokolik/548248971930234</a>
 课程的Facebook小组：<a href="https://www.facebook.com/groups/CWP2X/>https://www.facebook.com/groups/CWP2X/</a>
-
-Maggie老师是个特别可爱的胖女人，为自己的课程非常用心，也喜欢和学生交流，我很喜欢这个老师~
+Maggie老师是个特别可爱的胖女人，为自己的课程非常用心，也喜欢和学生交流，我很喜欢这个老师
 
 语法网站：
 <ul>
