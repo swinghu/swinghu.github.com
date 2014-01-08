@@ -41,7 +41,7 @@ description: 全方位提高写作技巧
     <li>the everyday writer:<a href="http://bcs.bedfordstmartins.com/everyday_writer/20errors/default.asp">http://bcs.bedfordstmartins.com/everyday_writer/20errors/default.asp</a></li>网站上有英文写作中人们经常犯的错误及更正，并且仔细地解释)
     <li>The writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/</a></li>
 </ul>
-###学习怎么写好introduction和结论
+##学习怎么写好introduction和结论
 
 北卡罗纳大学的writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/</a>
 <ul> 
