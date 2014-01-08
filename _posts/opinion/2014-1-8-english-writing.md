@@ -11,13 +11,13 @@ description: 全方位提高写作技巧
 
 老师Maggie是个特别可爱的胖女人，为自己的课程非常用心，也喜欢和学生交流，我很喜欢这个老师
 
-语法网站
+###语法网站
 <ul>
     <li>Using English:<a href="http://www.usingenglish.com/glossary/">http://www.usingenglish.com/glossary/</a></li>
     <li>About.com, Grammar:<a href="http://grammar.about.com/od/terms/a/100-Key-Grammatical-Terms.htm">http://grammar.about.com/od/terms/a/100-Key-Grammatical-Terms.htm</a></li>
     <li>English Plus: <a href="http://englishplus.com/grammar/glossary.htm">http://englishplus.com/grammar/glossary.htm</a></li>
 </ul>
-段落写作
+###段落写作
 <ul>
     <li>1、普渡大学 OWL (online writing lab): <a href="http://owl.english.purdue.edu/owl/">http://owl.english.purdue.edu/owl/</a></li>
     <li>2、Revising Prose: <a href="http://www.ccp.rpi.edu/resources/revising-prose/">http://www.ccp.rpi.edu/resources/revising-prose/</a></li>
@@ -29,7 +29,7 @@ description: 全方位提高写作技巧
     <li>6、How to Write a Clear and Concise Thesis Statement：<a href="http://www.sophia.org/tutorials/how-to-write-a-clear-and-concise-thesis-statement">http://www.sophia.org/tutorials/how-to-write-a-clear-and-concise-thesis-statement</a></li>
     <li><a href="http://www.sophia.org/tutorials/how-to-write-a-clear-and-concise-thesis-statement">http://www.sophia.org/tutorials/how-to-write-a-clear-and-concise-thesis-statement</a></li>
 </ul>
-Essay写作
+###Essay写作
 <ul>
     <li>1、UC Berkeley Library's page: <a href="https://www.lib.berkeley.edu/TeachingLib/Guides/Internet/Evaluate.html">https://www.lib.berkeley.edu/TeachingLib/Guides/Internet/Evaluate.html</a></li>
     （学会有效使用图书馆资源，图书馆并不是只有图书阅览服务，还有很多文献查询、资料传递等为学术研究提供帮助的服务，值得我们去探索）
@@ -42,7 +42,7 @@ Essay写作
     (网站上有英文写作中人们经常犯的错误及更正，并且仔细地解释)
     <li>2、The writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/</a></li>
 </ul>
-(学习怎么写好introduction)
+###学习怎么写好introduction
 3、北卡罗纳大学的writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">
 <ul> 
     <li>Introduction写法)<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/"</a></li>
