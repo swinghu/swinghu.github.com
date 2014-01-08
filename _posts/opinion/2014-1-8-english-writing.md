@@ -6,13 +6,15 @@ description: 全方位提高写作技巧
 ---
 
 首先推荐老师的Facebook公共专页：<a href="https://www.facebook.com/pages/Maggie-Sokolik/548248971930234">https://www.facebook.com/pages/Maggie-Sokolik/548248971930234</a>
-课程的Facebook小组：<a href="https://www.facebook.com/groups/CWP2X/>https://www.facebook.com/groups/CWP2X/</a>
-Maggie老师是个特别可爱的胖女人，为自己的课程非常用心，也喜欢和学生交流，我很喜欢这个老师
 
-语法网站：
+课程的Facebook小组：<a href="https://www.facebook.com/groups/CWP2X/>https://www.facebook.com/groups/CWP2X/</a>
+
+老师Maggie是个特别可爱的胖女人，为自己的课程非常用心，也喜欢和学生交流，我很喜欢这个老师
+
+语法网站
 <ul>
-    <li>Using English:  <a href="http://www.usingenglish.com/glossary/">http://www.usingenglish.com/glossary/</a></li>
-    <li>About.com, Grammar: <a href="http://grammar.about.com/od/terms/a/100-Key-Grammatical-Terms.htm">http://grammar.about.com/od/terms/a/100-Key-Grammatical-Terms.htm</a></li>
+    <li>Using English:<a href="http://www.usingenglish.com/glossary/">http://www.usingenglish.com/glossary/</a></li>
+    <li>About.com, Grammar:<a href="http://grammar.about.com/od/terms/a/100-Key-Grammatical-Terms.htm">http://grammar.about.com/od/terms/a/100-Key-Grammatical-Terms.htm</a></li>
     <li>English Plus: <a href="http://englishplus.com/grammar/glossary.htm">http://englishplus.com/grammar/glossary.htm</a></li>
 </ul>
 段落写作
