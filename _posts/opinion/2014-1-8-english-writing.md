@@ -38,12 +38,11 @@ description: 全方位提高写作技巧
 </ul>
 ##还有其他为写作助一臂之力的网站
 <ul> 
-    <li>1、the everyday writer:<a href="http://bcs.bedfordstmartins.com/everyday_writer/20errors/default.asp">http://bcs.bedfordstmartins.com/everyday_writer/20errors/default.asp</a></li>
-    (网站上有英文写作中人们经常犯的错误及更正，并且仔细地解释)
+    <li>1、the everyday writer:<a href="http://bcs.bedfordstmartins.com/everyday_writer/20errors/default.asp">http://bcs.bedfordstmartins.com/everyday_writer/20errors/default.asp</a></li>网站上有英文写作中人们经常犯的错误及更正，并且仔细地解释)
     <li>2、The writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/</a></li>
 </ul>
 ###学习怎么写好introduction
-3、北卡罗纳大学的writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/</a>
+北卡罗纳大学的writing center:<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/</a>
 <ul> 
     <li>Introduction写法<a href="http://writingcenter.unc.edu/handouts/introductions/">http://writingcenter.unc.edu/handouts/introductions/"</a></li>
     <li>结论写法<a href="http://writingcenter.unc.edu/handouts/conclusions/">http://writingcenter.unc.edu/handouts/conclusions/</a></li>
