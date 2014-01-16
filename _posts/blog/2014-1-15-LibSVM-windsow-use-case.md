@@ -22,14 +22,15 @@ category: blog
 >    Python, R, MATLAB, Perl, Ruby, Weka, Common LISP, CLISP, Haskell, OCaml, LabVIEW, and PHP interfaces. C# .NET code and CUDA extension is available. (多语言多平台支持)
 >    It's also included in some data mining environments: RapidMiner, PCP, and LIONsolver.
 >    Automatic model selection which can generate contour of cross valiation accuracy.
+
 ###Download LIBSVM
->The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the [zip file][zip_file](http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip)or [tar.gz][tar_gz](http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz) file. You can also check this [github][github](https://github.com/cjlin1/libsvm) directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)
+>The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the [zip file][zip_file]or [tar.gz][tar_gz] file. You can also check this [github][github]directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)
 ##运行前需安装软件
 (1)[Python][python]：
 到http://www.python.org/download/ 官网提示(The current production versions are Python 2.7.6 and Python 3.3.3.)下载完直接安裝就好(最好在最后一步，将提示“python加入到path路径”中的选项选上)。
 我的电脑上安装的是python2.7(应该对版本没什么特别要求，尽量使用新版本的python)
 
-(2)[Gnuplot][gnuplot]安装(http://gnuplot.info/)
+(2)[Gnuplot][gnuplot]安装
 本机使用09.10.2013: Release gnuplot 4.6.4，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
 (3)下载libsvm包
 下载地址前文已经给出(下载zip格式的那个压缩包)。假设解压在D:\libsvm-3.17目录
