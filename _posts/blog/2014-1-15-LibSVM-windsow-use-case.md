@@ -166,8 +166,7 @@ svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种
 获取最佳交叉验证(cross validation)参数（就是grid.py作的事）
 运行命令
 
-    ---D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\wind
-ows\ala.scale
+    ---D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\windows\ala.scale
     结果如下(部分)
     
     [local] 5 -7 80.4361 (best c=32.0, g=0.0078125, rate=80.4361)
