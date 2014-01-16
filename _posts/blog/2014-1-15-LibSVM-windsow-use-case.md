@@ -37,6 +37,7 @@ category: blog
 ##使用libsvm进行数据测试
 (1)下载数据集
     本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。一下是该数据集的一些介绍
+    
     •Source: UCI / Adult
     •Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are categorical. In this data set, continuous features are discretized into quantiles, and each quantile is represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features. Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data](http://research.microsoft.com/en-us/um/people/jplatt/adult.zip）. [JP98a] 
     •# of classes: 2
@@ -45,7 +46,9 @@ category: blog
     •Files: 
         ◦[a1a][a1a](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
         ◦[a1a.t][ala_t](testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
+    
     原始数据的介绍如下：
+    
     This archive contains a nested set of training data for the UCI "adult"
     benchmark. Each file is in .dst format, which will be described below. The
     benchmark task is to predict whether a household has >$50K income based on
