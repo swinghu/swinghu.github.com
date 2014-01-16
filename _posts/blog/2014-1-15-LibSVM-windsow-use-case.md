@@ -45,19 +45,19 @@ category: blog
 ##使用libsvm进行数据测试
 
 ###下载数据集
-    本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。以下是该数据集的一些介绍:
+本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。以下是该数据集的一些介绍:
 •Source: UCI / Adult
 •Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are
 categorical. In this data set, continuous features are discretized into quantiles, and each quantile is 
 represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features.
-Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data](
-http://research.microsoft.com/en-us/um/people/jplatt/adult.zip）. [JP98a] 
+Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data]. [JP98a] 
+
 •# of classes: 2
 •# of data: 1,605 / 30,956 (testing) 
 •# of features: 123 / 123 (testing) 
 •Files: 
- ◦[a1a][a1a](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
- ◦[a1a.t][ala_t](testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
+ ◦[a1a][a1a]
+ ◦[a1a.t][ala_t](testing)
     
 原始数据的介绍如下：
     
@@ -231,8 +231,6 @@ ows\ala.scale
 <li>用步骤四得到的参数来train model (svm-train)</li>
 <li>对测试数据集进行测试Test(svm-predict)</li>
 </ul>
-
-
 
 
 [LIBSVM]: http://www.csie.ntu.edu.tw/~cjlin/libsvm/
