@@ -71,7 +71,6 @@ which yields a total of 123 sparse binary features.
 数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:a1a和a1a.t。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
 ###所使用到的exe文件
 在进行测试的时候，主要用到window下面的以下几个exe文件和一个python文件(所以要安装python)
-
 svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的范围进行调整，也就是对数据集进行归一化(调整到0～1或者-1～+1之间)，以避免某一项feature的值过高(之处一定要对训练集和测试集同时进行缩放)
 具体用法为：
 
@@ -83,20 +82,18 @@ svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的
     -l：设定数据下限，缺省值为-1
     -u：设定数据上限，缺省值为1
     -s：将缩放的规则保存为文件save_filename
-    -r: restore_filename,表示将按照已经存在的规则文件restore_filename进行缩放
-    
-filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm格式
+    -r: restore_filename,表示将按照已经存在的规则文件restore_filename进行缩放  
+    filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm格式
 例如：
+
     svm-svale -l 0 -u 1 -s test.range test.txt > out.txt 
 
 svm-train.exe:该文件可以将训练数据集(training data)做成一個model
-    具体用法为参数设置：
-![synchronizes-with](/images/libsvm1/svm-s-t.png)
-![synchronizes-with](/images/libsvm1/svm-d.png)    
-    
-    
+    具体用法为参数设置：   
 svm-train [options]training_set_file[model_file]
     options为操作参数，可选参数为：
+![synchronizes-with](/images/libsvm1/svm-s-t.png)
+![synchronizes-with](/images/libsvm1/svm-d.png) 
 
 svm-predict.exe:该文件可以使用已有的model(svm-train.exe)对测试集进行预测
 svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种
@@ -112,11 +109,10 @@ svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种
     -1 4:1 6:1 14:1 22:1 36:1 42:1 54:1 64:1 67:1 73:1 74:1 76:1 80:1 83:1 
     +1 3:1 6:1 17:1 29:1 39:1 40:1 52:1 63:1 67:1 73:1 74:1 76:1 79:1 83:1 
     -1 3:1 6:1 18:1 19:1 39:1 40:1 50:1 61:1 67:1 72:1 74:1 76:1 78:1 83:1 
-    -1 2:1 6:1 14:1 24:1 38:1 40:1 53:1 63:1 67:1 73:1 74:1 76:1 80:1 83:1 
-    
+    -1 2:1 6:1 14:1 24:1 38:1 40:1 53:1 63:1 67:1 73:1 74:1 76:1 80:1 83:1   
 冒号前后分别代表的是是feature的编号和数值，一行为一个example，如第一行中有属性：3，11，14，19，39，42，55，64，67，73，75，，76，80，83(这些属性ID号，可以在事先给予编号，如3：代表学历，受教育程度等等)。最前面数字的是分类的编号，本数据集(训练数据集)两个类：-1，+1。“-1”代表收入大于50k的人是在14个城市里面，+1代表收入大于50k的人不是在14个城市里面。
 ##对数据集进行scale(归一化)
-    当自定义格式的数据需要归一化的时候，使用以下命令
+当自定义格式的数据需要归一化的时候，使用以下命令
     
     svmscale.exe –s scale trainingdata > trainingdata.scale 
     svmscale.exe –r scale testdata > testdata.scale 
@@ -148,14 +144,11 @@ svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种
         ctor file scale.
         WARNING: original #nonzeros 429343
                  new      #nonzeros 3807588
-        Use -l 0 if many original feature values are zeros
-        
+        Use -l 0 if many original feature values are zeros       
 注意文件名，我测试的时候提示总是打不文件a1a，通过拷贝那个文件名才解决这个问题
-
 ####(ii)为交叉验证选择参数：
 
     D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\windows\a1a
-
 运行结果为：
 
     [local] 5 -7 82.4299 (best c=32.0, g=0.0078125, rate=82.4299)
@@ -203,7 +196,7 @@ ows\ala.scale
 ![synchronizes-with](/images/libsvm1/gridpy5.png)
 
 ####((iv)接上一步骤，进行train试验
-    我们得到最后一行，最佳交叉验证参数2.0 0.001953125 82.9907，只是用到前面两个参数。进行train
+我们得到最后一行，最佳交叉验证参数2.0 0.001953125 82.9907，只是用到前面两个参数。进行train
 运行命令，得到以下结果
    
     D:\libsvm-3.17\windows>svm-train -c 2.0 -g 0.001953125 a1a.scale
