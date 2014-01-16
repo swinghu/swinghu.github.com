@@ -43,7 +43,7 @@ category: blog
     •# of features: 123 / 123 (testing) 
     •Files: 
         ◦[a1a][a1a](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
-        ◦[a1a.t][a1a_t] (testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
+        ◦[a1a.t][ala_t](testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
     原始数据的介绍如下：
     This archive contains a nested set of training data for the UCI "adult"
     benchmark. Each file is in .dst format, which will be described below. The
@@ -80,7 +80,7 @@ filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm�
     svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种颜色的
     点出来，不同颜色代表不同的类，然后点击Run，该工具可以进行svm分类。
     
-(3)dataset的格式(以后只要将数据集制作成这个格式就行，可能还支持其他格式，没有测试过)
+(3)dataset的格式要求(以后只要将数据集制作成这个格式就行，可能还支持其他格式，没有测试过)
 
     -1 3:1 11:1 14:1 19:1 39:1 42:1 55:1 64:1 67:1 73:1 75:1 76:1 80:1 83:1 
     -1 3:1 6:1 17:1 27:1 35:1 40:1 57:1 63:1 69:1 73:1 74:1 76:1 81:1 103:1 
@@ -100,8 +100,8 @@ filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm�
     svmscale.exe –r scale testdata > testdata.scale 
            
 其中用到了shell中的 “>”重定向操作符，就是将运行的结果存储到另一个文中。
-(5)实验流程及结果
-(i)对数据进行scale(归一化)
+###(5)实验流程及结果
+###(i)对数据进行scale(归一化)
 先对ala文件归一化
 
     D:\libsvm-3.17\windows>svm-scale.exe -s scale a1a > ala.scale
@@ -130,10 +130,9 @@ filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm�
         
 注意文件名，我测试的时候提示总是打不文件a1a，通过拷贝那个文件名才解决这个问题
 
-(ii)为交叉验证选择参数：
+###(ii)为交叉验证选择参数：
 
-    D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\wind
-ows\a1a
+    D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\windows\a1a
 
 运行结果为：
 
@@ -156,7 +155,7 @@ ows\a1a
 有必要注意一下grid.py的工作方式，它是采用暴力方法对参数进行尝试试验，整个跑完之后给出一个结果,结果为一个一行三列的数据，
 如本例中的：2.0 0.0078125 82.9907 前两个数字为：c和γ，这是对C-SVC的参数c和γ做优选的最后的结果，最后一个数字表示的是交叉验证精度CV Rate = 82.9907%
 
-(iii)接上一步骤，获取最佳交叉验证(cross validation)参数（就是grid.py作的事）
+###(iii)接上一步骤，获取最佳交叉验证(cross validation)参数（就是grid.py作的事）
 运行命令
 
     ---D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\wind
@@ -179,7 +178,7 @@ ows\ala.scale
 ![synchronizes-with](/images/libsvm1/gridpy4.png)
 ![synchronizes-with](/images/libsvm1/gridpy5.png)
 
-(iv)接上一步骤，我们得到最后一行，最佳交叉验证参数2.0 0.001953125 82.9907，只是用到前面两个参数。进行train
+###(iv)接上一步骤，我们得到最后一行，最佳交叉验证参数2.0 0.001953125 82.9907，只是用到前面两个参数。进行train
 运行命令，得到以下结果
    
     D:\libsvm-3.17\windows>svm-train -c 2.0 -g 0.001953125 a1a.scale
@@ -191,7 +190,7 @@ ows\ala.scale
     nSV = 715, nBSV = 677
     Total nSV = 715
     
-(v)进行预测
+###(v)进行预测
 运行命令，得到以下结果
     
     D:\libsvm-3.17\windows>svm-predict a1a.t.scale a1a.scale.model a1a.t.out
@@ -211,8 +210,7 @@ ows\ala.scale
 
 
 [LIBSVM]: http://www.csie.ntu.edu.tw/~cjlin/libsvm/
-[zip_file]:
-http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip 
+[zip_file]:http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip 
 [tar_gz]:http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz
 [github]:https://github.com/cjlin1/libsvm
 [python]:http://www.python.org/download/
