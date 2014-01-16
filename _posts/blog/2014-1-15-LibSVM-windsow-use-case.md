@@ -45,43 +45,46 @@ category: blog
 ##使用libsvm进行数据测试
 
 ###下载数据集
-    本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。以下是该数据集的一些介绍
+    本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。以下是该数据集的一些介绍:
+•Source: UCI / Adult
+•Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are
+categorical. In this data set, continuous features are discretized into quantiles, and each quantile is 
+represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features.
+Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data](
+http://research.microsoft.com/en-us/um/people/jplatt/adult.zip）. [JP98a] 
+•# of classes: 2
+•# of data: 1,605 / 30,956 (testing) 
+•# of features: 123 / 123 (testing) 
+•Files: 
+ ◦[a1a][a1a](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
+ ◦[a1a.t][ala_t](testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
     
-    •Source: UCI / Adult
-    •Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are
-    categorical. In this data set, continuous features are discretized into quantiles, and each quantile is 
-    represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features.
-    Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data](
-    http://research.microsoft.com/en-us/um/people/jplatt/adult.zip）. [JP98a] 
-    •# of classes: 2
-    •# of data: 1,605 / 30,956 (testing) 
-    •# of features: 123 / 123 (testing) 
-    •Files: 
-        ◦[a1a][a1a](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
-        ◦[a1a.t][ala_t](testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
+原始数据的介绍如下：
     
-    原始数据的介绍如下：
-    
-    This archive contains a nested set of training data for the UCI "adult"
-    benchmark. Each file is in .dst format, which will be described below. The
-    benchmark task is to predict whether a household has >$50K income based on
-    14 other fields in a census form. Eight of those fields are categorical,
-    while six are continuous(注：年龄:age，接受教育的时间程度：eduVal). The six fields are quantized into quintiles(
-    注：连续的Feature，按五分之一被分成五个类),
-    which yields a total of 123 sparse binary features.
+This archive contains a nested set of training data for the UCI "adult"
+benchmark. Each file is in .dst format, which will be described below. The
+benchmark task is to predict whether a household has >$50K income based on
+14 other fields in a census form. Eight of those fields are categorical,
+while six are continuous(注：年龄:age，接受教育的时间程度：eduVal). The six fields are quantized into quintiles(
+注：连续的Feature，按五分之一被分成五个类),
+which yields a total of 123 sparse binary features.
     数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:a1a和a1a.t。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
 ###所使用到的exe文件
-    在进行测试的时候，主要用到window下面的以下几个exe文件和一个python文件(所以要安装python)
-    svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的范围进行调整，也就是对数据集进行归一化(调整到0～1或者-1～+1之间)，以避免某一项feature的值过高(之处一定要对训练集和测试集同时进行缩放)
-    具体用法为：
+在进行测试的时候，主要用到window下面的以下几个exe文件和一个python文件(所以要安装python)
+
+svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的范围进行调整，也就是对数据集进行归一化(调整到0～1或者-1～+1之间)，以避免某一项feature的值过高(之处一定要对训练集和测试集同时进行缩放)
+具体用法为：
+
     svm-scale [-l lower][-u upper]
         [-y y_lower yupper]
         [-s save_filename]
         [-r restore_filename] filename
--l：设定数据下限，缺省值为-1
--u：设定数据上限，缺省值为1
--s：将缩放的规则保存为文件save_filename
--r: restore_filename,表示将按照已经存在的规则文件restore_filename进行缩放
+
+    -l：设定数据下限，缺省值为-1
+    -u：设定数据上限，缺省值为1
+    -s：将缩放的规则保存为文件save_filename
+    -r: restore_filename,表示将按照已经存在的规则文件restore_filename进行缩放
+    
 filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm格式
 例如：svm-svale -l 0 -u 1 -s test.range test.txt > out.txt 
 
