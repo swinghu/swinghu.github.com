@@ -8,7 +8,7 @@ category: blog
 ##libsvm介绍
 
 ### [LIBSVM][LIBSVM] 
->    A Library for Support Vector Machines
+>    `A Library for Support Vector Machines
 >    LIBSVM is an integrated software for support vector classification, (C-SVC, nu-SVC), regression (epsilon-SVR, nu-SVR) 
 >and distribution estimation (one-class SVM). It supports multi-class classification.
 >Our goal is to help users from other fields to easily use SVM as a tool. LIBSVM provides a simple 
@@ -23,35 +23,27 @@ category: blog
 >    GUI demonstrating SVM classification and regression
 >    Python, R, MATLAB, Perl, Ruby, Weka, Common LISP, CLISP, Haskell, OCaml, LabVIEW, and PHP interfaces. C# .NET code and CUDA extension is available. (多语言多平台支持)
 >    It's also included in some data mining environments: RapidMiner, PCP, and LIONsolver.
->    Automatic model selection which can generate contour of cross valiation accuracy.
-
+>    Automatic model selection which can generate contour of cross valiation accuracy.`
 ###Download LIBSVM
->The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the [zip file][zip_file]or [tar.gz][tar_gz] file. You can also check this [github][github]directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)
+>`The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the [zip file][zip_file]or [tar.gz][tar_gz] file. You can also check this [github][github]directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)`
 
 ##运行前需安装软件
 (1)[Python][python]
-
 到http://www.python.org/download/ 官网提示(The current production versions are Python 2.7.6 and Python 3.3.3.)下载完直接安裝就好(最好在最后一步，将提示“python加入到path路径”中的选项选上)。
 我的电脑上安装的是python2.7(应该对版本没什么特别要求，尽量使用新版本的python)
-
 (2)[Gnuplot][gnuplot]安装
-
 本机使用09.10.2013: Release gnuplot 4.6.4，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好,点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
-
 (3)下载libsvm包
-
 下载地址前文已经给出(下载zip格式的那个压缩包)。假设解压在D:\libsvm-3.17目录
-
 ##使用libsvm进行数据测试
-
 ###下载数据集
 本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。以下是该数据集的一些介绍:
 •Source: UCI / Adult
 •Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are
 categorical. In this data set, continuous features are discretized into quantiles, and each quantile is 
 represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features.
-Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data]. [JP98a] 
-
+Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data].
+[JP98a] 
 •# of classes: 2
 •# of data: 1,605 / 30,956 (testing) 
 •# of features: 123 / 123 (testing) 
@@ -60,14 +52,13 @@ Details on how each feature is converted can be found in the beginning of each f
  ◦[a1a.t][ala_t](testing)
     
 原始数据的介绍如下:
-This archive contains a nested set of training data for the UCI "adult"
+`This archive contains a nested set of training data for the UCI "adult"
 benchmark. Each file is in .dst format, which will be described below. The
 benchmark task is to predict whether a household has >$50K income based on
 14 other fields in a census form. Eight of those fields are categorical,
 while six are continuous(注：年龄:age，接受教育的时间程度：eduVal). The six fields are quantized into quintiles(
 注：连续的Feature，按五分之一被分成五个类),
-which yields a total of 123 sparse binary features.
-
+which yields a total of 123 sparse binary features.`
 数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:a1a和a1a.t。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
 ###所使用到的exe文件
 在进行测试的时候，主要用到window下面的以下几个exe文件和一个python文件(所以要安装python)
