@@ -59,8 +59,7 @@ Details on how each feature is converted can be found in the beginning of each f
  ◦[a1a][a1a]
  ◦[a1a.t][ala_t](testing)
     
-原始数据的介绍如下：
-    
+原始数据的介绍如下:
 This archive contains a nested set of training data for the UCI "adult"
 benchmark. Each file is in .dst format, which will be described below. The
 benchmark task is to predict whether a household has >$50K income based on
@@ -68,7 +67,8 @@ benchmark task is to predict whether a household has >$50K income based on
 while six are continuous(注：年龄:age，接受教育的时间程度：eduVal). The six fields are quantized into quintiles(
 注：连续的Feature，按五分之一被分成五个类),
 which yields a total of 123 sparse binary features.
-    数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:a1a和a1a.t。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
+
+数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:a1a和a1a.t。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
 ###所使用到的exe文件
 在进行测试的时候，主要用到window下面的以下几个exe文件和一个python文件(所以要安装python)
 
@@ -86,20 +86,21 @@ svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的
     -r: restore_filename,表示将按照已经存在的规则文件restore_filename进行缩放
     
 filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm格式
-例如：svm-svale -l 0 -u 1 -s test.range test.txt > out.txt 
+例如：
+    svm-svale -l 0 -u 1 -s test.range test.txt > out.txt 
 
-    svm-train.exe:该文件可以将训练数据集(training data)做成一個model
-    具体用法为：
+svm-train.exe:该文件可以将训练数据集(training data)做成一個model
+    具体用法为参数设置：
 ![synchronizes-with](/images/libsvm1/svm-s-t.png)
 ![synchronizes-with](/images/libsvm1/svm-d.png)    
     
     
-    svm-train [options]training_set_file[model_file]
+svm-train [options]training_set_file[model_file]
     options为操作参数，可选参数为：
 
-    svm-predict.exe:该文件可以使用已有的model(svm-train.exe)对测试集进行预测
-    svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种颜色的
-    点出来，不同颜色代表不同的类，然后点击Run，该工具可以进行svm分类。
+svm-predict.exe:该文件可以使用已有的model(svm-train.exe)对测试集进行预测
+svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种
+颜色的点出来，不同颜色代表不同的类，然后点击Run，该工具可以进行svm分类。
     
 ###dataset的格式要求(以后只要将数据集制作成这个格式就行，可能还支持其他格式，没有测试过)
 
