@@ -8,7 +8,7 @@ category: blog
 ##libsvm介绍
 
 ### [LIBSVM][LIBSVM] 
->   -- A Library for Support Vector Machines
+>    A Library for Support Vector Machines
 >    LIBSVM is an integrated software for support vector classification, (C-SVC, nu-SVC), regression (epsilon-SVR, nu-SVR) 
 >and distribution estimation (one-class SVM). It supports multi-class classification.
 >Our goal is to help users from other fields to easily use SVM as a tool. LIBSVM provides a simple 
@@ -27,6 +27,7 @@ category: blog
 
 ###Download LIBSVM
 >The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the [zip file][zip_file]or [tar.gz][tar_gz] file. You can also check this [github][github]directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)
+
 ##运行前需安装软件
 (1)[Python][python]
 
@@ -35,7 +36,7 @@ category: blog
 
 (2)[Gnuplot][gnuplot]安装
 
-本机使用09.10.2013: Release gnuplot 4.6.4，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
+本机使用09.10.2013: Release gnuplot 4.6.4，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好,点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
 
 (3)下载libsvm包
 
