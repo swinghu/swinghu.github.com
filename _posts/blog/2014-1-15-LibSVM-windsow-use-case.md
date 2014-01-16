@@ -31,10 +31,11 @@ category: blog
 (1)[Python][python]
 到`http://www.python.org/download/` 官网提示(`The current production versions are Python 2.7.6 and Python 3.3.3.`)下载完直接安裝就好(最好在最后一步，将提示“python加入到path路径”中的选项选上)。
 我的电脑上安装的是python2.7(应该对版本没什么特别要求，尽量使用新版本的python)
-(2)[Gnuplot][gnuplot]安装
-本机使用`09.10.2013: Release gnuplot 4.6.4`，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好,点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
+
+(2)[gnuplot][gnuplot]安装
+本机使用`09.10.2013: Release gnuplot 4.6.4`，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好,点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：`gnuplot executable not found`就要用到)
 (3)下载libsvm包
-下载地址前文已经给出(下载zip格式的那个压缩包)。假设解压在D:\libsvm-3.17目录
+下载地址前文已经给出(下载zip格式的那个压缩包)。假设解压在`D:\libsvm-3.17`目录
 ##使用libsvm进行数据测试
 ###下载数据集
 本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。以下是该数据集的一些介绍:
@@ -48,8 +49,8 @@ Details on how each feature is converted can be found in the beginning of each f
 •# of data: 1,605 / 30,956 (testing) 
 •# of features: 123 / 123 (testing) 
 •Files: `
- ◦[a1a][a1a]
- ◦[a1a.t][ala_t](testing)
+     ◦[a1a][a1a]
+     ◦[a1a.t][ala_t](testing)
     
 原始数据的介绍如下:
 
@@ -61,7 +62,7 @@ while six are continuous(注：年龄:age，接受教育的时间程度：eduVal
 注：连续的Feature，按五分之一被分成五个类),
 which yields a total of 123 sparse binary features.`
 
-数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:a1a和a1a.t。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
+数据下载好后，将数据拷贝到之前解压libsvm中的windows目录里面(两个文件应该是:`a1a`和`a1a.t`。其实新建一个data文件夹也可以,在使用命令时，指定该目录就行，当时没注意！！)
 ###所使用到的exe文件
 在进行测试的时候，主要用到window下面的以下几个exe文件和一个python文件(所以要安装python)
 svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的范围进行调整，也就是对数据集进行归一化(调整到0～1或者-1～+1之间)，以避免某一项feature的值过高(之处一定要对训练集和测试集同时进行缩放)
@@ -77,19 +78,17 @@ svm-scale.exe:该文件可以将数据集(训练和测试数据集)的feature的
     -s：将缩放的规则保存为文件save_filename
     -r: restore_filename,表示将按照已经存在的规则文件restore_filename进行缩放  
     filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm格式
-例如：
+例如以下测试命令，将结果输出到out.txt文件中：
 
     svm-svale -l 0 -u 1 -s test.range test.txt > out.txt 
-
 svm-train.exe:该文件可以将训练数据集(training data)做成一個model
     具体用法为参数设置：   
 svm-train [options]training_set_file[model_file]
     options为操作参数，可选参数为：
 ![synchronizes-with](/images/libsvm1/svm-s-t.png)
 ![synchronizes-with](/images/libsvm1/svm-d.png) 
-
 svm-predict.exe:该文件可以使用已有的model(svm-train.exe)对测试集进行预测
-svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种
+svm-toy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种
 颜色的点出来，不同颜色代表不同的类，然后点击Run，该工具可以进行svm分类。
     
 ###dataset的格式要求(以后只要将数据集制作成这个格式就行，可能还支持其他格式，没有测试过)
