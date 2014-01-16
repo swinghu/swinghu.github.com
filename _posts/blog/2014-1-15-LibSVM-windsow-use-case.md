@@ -25,7 +25,7 @@ category: blog
 >    It's also included in some data mining environments: RapidMiner, PCP, and LIONsolver.
 >    Automatic model selection which can generate contour of cross valiation accuracy.`
 ###Download LIBSVM
->`The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the` [zip file][zip_file]`or `[tar.gz][tar_gz]`file. You can also check this [github][github]directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.``(压缩文件中已经包含matlab,python,java等版本)`
+>`The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the` [zip file][zip_file]`or `[tar.gz][tar_gz]`file. You can also check this` [github][github]`directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.``(压缩文件中已经包含matlab,python,java等版本)`
 
 ##运行前需安装软件
 (1)[Python][python]
