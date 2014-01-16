@@ -201,13 +201,15 @@ ows\ala.scale
 ##总结
 整个操作流程可以归结为以下几步：
 <ul>
-<li>把实验数据转换成libsvm能识别的格式</ul>
-<li>数据是否需要归一化，如需要，对数据进行Scaling </ul>
-<li>选用效能好的RBF kernel(程序预设的默认值选择的是RBF，所以不用管道这一行)</ul>
-<li>为交叉验证(cross validation)选择参数（就是grid.py作的事）</ul>
-<li>用步骤四得到的参数来train model (svm-train)</ul>
-<li>对测试数据集进行测试Test(svm-predict)</ul>
+<li>把实验数据转换成libsvm能识别的格式</li>
+<li>数据是否需要归一化，如需要，对数据进行Scaling </li>
+<li>选用效能好的RBF kernel(程序预设的默认值选择的是RBF，所以不用管道这一行)</li>
+<li>为交叉验证(cross validation)选择参数（就是grid.py作的事）</li>
+<li>用步骤四得到的参数来train model (svm-train)</li>
+<li>对测试数据集进行测试Test(svm-predict)</li>
 </ul>
+
+
 
 
 [LIBSVM]: http://www.csie.ntu.edu.tw/~cjlin/libsvm/
