@@ -7,43 +7,43 @@ category: blog
 
 ##libsvm介绍
 
-### LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/)
-    -- A Library for Support Vector Machines
-    LIBSVM is an integrated software for support vector classification, (C-SVC, nu-SVC), regression (epsilon-SVR, nu-SVR) and distribution estimation (one-class SVM). It supports multi-class classification.
-Our goal is to help users from other fields to easily use SVM as a tool. LIBSVM provides a simple interface where users can easily link it with their own programs. Main features of LIBSVM include
-    Different SVM formulations
-    Efficient multi-class classification
-    Cross validation for model selection
-    Probability estimates
-    Various kernels (including precomputed kernel matrix)
-    Weighted SVM for unbalanced data
-    Both C++ and Java sources
-    GUI demonstrating SVM classification and regression
-    Python, R, MATLAB, Perl, Ruby, Weka, Common LISP, CLISP, Haskell, OCaml, LabVIEW, and PHP interfaces. C# .NET code and CUDA extension is available. (多语言多平台支持)
-    It's also included in some data mining environments: RapidMiner, PCP, and LIONsolver.
-    Automatic model selection which can generate contour of cross valiation accuracy.
+### [LIBSVM][LIBSVM] 
+>   -- A Library for Support Vector Machines
+>    LIBSVM is an integrated software for support vector classification, (C-SVC, nu-SVC), regression (epsilon-SVR, nu-SVR) and distribution estimation (one-class SVM). It supports multi-class classification.
+>Our goal is to help users from other fields to easily use SVM as a tool. LIBSVM provides a simple interface where users can easily link it with their own programs. Main features of LIBSVM include
+>    Different SVM formulations
+>    Efficient multi-class classification
+>    Cross validation for model selection
+>    Probability estimates
+>    Various kernels (including precomputed kernel matrix)
+>    Weighted SVM for unbalanced data
+>    Both C++ and Java sources
+>    GUI demonstrating SVM classification and regression
+>    Python, R, MATLAB, Perl, Ruby, Weka, Common LISP, CLISP, Haskell, OCaml, LabVIEW, and PHP interfaces. C# .NET code and CUDA extension is available. (多语言多平台支持)
+>    It's also included in some data mining environments: RapidMiner, PCP, and LIONsolver.
+>    Automatic model selection which can generate contour of cross valiation accuracy.
 ###Download LIBSVM
-The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the zip file(http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip)or tar.gz(http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz) file. You can also check this github(https://github.com/cjlin1/libsvm) directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)
+>The current release (Version 3.17, April 2013) of LIBSVM can be obtained by downloading the [zip file][zip_file](http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip)or [tar.gz][tar_gz](http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz) file. You can also check this [github][github](https://github.com/cjlin1/libsvm) directory. The package includes the source code of the library in C++ and Java, and a simple program for scaling training data. A README file with detailed explanation is provided. For MS Windows users, there is a subdirectory in the zip file containing binary executable files. Precompiled Java class archive is also included.(压缩文件中已经包含matlab,python,java等版本)
 ##运行前需安装软件
-(1)Python：
+(1)[Python][python]：
 到http://www.python.org/download/ 官网提示(The current production versions are Python 2.7.6 and Python 3.3.3.)下载完直接安裝就好(最好在最后一步，将提示“python加入到path路径”中的选项选上)。
 我的电脑上安装的是python2.7(应该对版本没什么特别要求，尽量使用新版本的python)
 
-(2)Gnuplot安装(http://gnuplot.info/)
-本机使用09.10.2013: Release gnuplot 4.6.4，到官网上找到download的链接，点击下载(在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
+(2)[Gnuplot][gnuplot]安装(http://gnuplot.info/)
+本机使用09.10.2013: Release gnuplot 4.6.4，到官网上找到download的链接，点击[下载]([gnuplot_download]在这里提供链接：http://sourceforge.net/projects/gnuplot/files/latest/download?source=files)下载好点击安装即可(可更改安装目录，但请记住，因为后面如果出现错误：gnuplot executable not found就要用到)
 (3)下载libsvm包
 下载地址前文已经给出(下载zip格式的那个压缩包)。假设解压在D:\libsvm-3.17目录
 ##使用libsvm进行数据测试
 (1)下载数据集
     本文使用数据集为libsvm官网提供的UCI公共数据集中的a1a。一下是该数据集的一些介绍
     •Source: UCI / Adult
-    •Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are categorical. In this data set, continuous features are discretized into quantiles, and each quantile is represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features. Details on how each feature is converted can be found in the beginning of each file from this page(http://research.microsoft.com/en-us/um/people/jplatt/adult.zip）. [JP98a] 
+    •Preprocessing: The original Adult data set has 14 features, among which six are continuous and eight are categorical. In this data set, continuous features are discretized into quantiles, and each quantile is represented by a binary feature. Also, a categorical feature with m categories is converted to m binary features. Details on how each feature is converted can be found in the beginning of each file from this [page][uci_data](http://research.microsoft.com/en-us/um/people/jplatt/adult.zip）. [JP98a] 
     •# of classes: 2
     •# of data: 1,605 / 30,956 (testing) 
     •# of features: 123 / 123 (testing) 
     •Files: 
-        ◦a1a(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
-        ◦a1a.t (testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
+        ◦[a1a][a1a](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a)
+        ◦[a1a.t][a1a_t] (testing)(http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t)
     原始数据的介绍如下：
     This archive contains a nested set of training data for the UCI "adult"
     benchmark. Each file is in .dst format, which will be described below. The
@@ -76,7 +76,7 @@ filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm�
     svm-train [options]training_set_file[model_file]
     options为操作参数，可选参数为：
 
-   svm-predict.exe:该文件可以使用已有的model(svm-train.exe)对测试集进行预测
+    svm-predict.exe:该文件可以使用已有的model(svm-train.exe)对测试集进行预测
     svmtoy.exe：一个基于java的窗口应用程序，可以在里面选择某种颜色点击"画出"一些点，然后Change，改变颜色就可以画出另外一种颜色的
     点出来，不同颜色代表不同的类，然后点击Run，该工具可以进行svm分类。
     
@@ -103,13 +103,15 @@ filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm�
 (5)实验流程及结果
 (i)对数据进行scale(归一化)
 先对ala文件归一化
+
     D:\libsvm-3.17\windows>svm-scale.exe -s scale a1a > ala.scale
         
         WARNING: original #nonzeros 22249
                  new      #nonzeros 181365
         Use -l 0 if many original feature values are zeros
-        
+
 然后对ala.t文件进行归一化
+
     D:\libsvm-3.17\windows>svm-scale.exe -r  scale a1a.t > ala.t.scale
        
        WARNING: feature index 12 appeared in file a1a.t was not seen in the scaling fac
@@ -129,9 +131,12 @@ filename：带缩放的数据文件(训练数据集)，文件格式参见libsvm�
 注意文件名，我测试的时候提示总是打不文件a1a，通过拷贝那个文件名才解决这个问题
 
 (ii)为交叉验证选择参数：
+
     D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\wind
 ows\a1a
+
 运行结果为：
+
     [local] 5 -7 82.4299 (best c=32.0, g=0.0078125, rate=82.4299)
     [local] -1 -7 78.5047 (best c=32.0, g=0.0078125, rate=82.4299)
     [local] 5 -1 79.3146 (best c=32.0, g=0.0078125, rate=82.4299)
@@ -150,8 +155,10 @@ ows\a1a
 
 有必要注意一下grid.py的工作方式，它是采用暴力方法对参数进行尝试试验，整个跑完之后给出一个结果,结果为一个一行三列的数据，
 如本例中的：2.0 0.0078125 82.9907 前两个数字为：c和γ，这是对C-SVC的参数c和γ做优选的最后的结果，最后一个数字表示的是交叉验证精度CV Rate = 82.9907%
+
 (iii)接上一步骤，获取最佳交叉验证(cross validation)参数（就是grid.py作的事）
 运行命令
+
     ---D:\libsvm-3.17\windows>python D:\libsvm-3.17\windows\grid.py D:\libsvm-3.17\wind
 ows\ala.scale
     结果如下(部分)
@@ -174,6 +181,7 @@ ows\ala.scale
 
 (iv)接上一步骤，我们得到最后一行，最佳交叉验证参数2.0 0.001953125 82.9907，只是用到前面两个参数。进行train
 运行命令，得到以下结果
+   
     D:\libsvm-3.17\windows>svm-train -c 2.0 -g 0.001953125 a1a.scale
     得到以下结果
     *
@@ -182,18 +190,36 @@ ows\ala.scale
     obj = -1271.932734, rho = 0.547671
     nSV = 715, nBSV = 677
     Total nSV = 715
+    
 (v)进行预测
 运行命令，得到以下结果
+    
     D:\libsvm-3.17\windows>svm-predict a1a.t.scale a1a.scale.model a1a.t.out
     结果：
     Accuracy = 84.0225% (26010/30956) (classification)
 
 ##总结
 整个操作流程可以归结为以下几步：
-1. 把实验数据转换成libsvm能识别的格式
-2. 数据是否需要归一化，如需要，对数据进行Scaling 
-3. 选用效能好的RBF kernel(程序预设的默认值选择的是RBF，所以不用管道这一行)
-4. 为交叉验证(cross validation)选择参数（就是grid.py作的事）
-5. 用步骤四得到的参数来train model (svm-train)
-6. 对测试数据集进行测试Test(svm-predict)
+<ul>
+<li>把实验数据转换成libsvm能识别的格式</ul>
+<li>数据是否需要归一化，如需要，对数据进行Scaling </ul>
+<li>选用效能好的RBF kernel(程序预设的默认值选择的是RBF，所以不用管道这一行)</ul>
+<li>为交叉验证(cross validation)选择参数（就是grid.py作的事）</ul>
+<li>用步骤四得到的参数来train model (svm-train)</ul>
+<li>对测试数据集进行测试Test(svm-predict)</ul>
+</ul>
+
+
+[LIBSVM]: http://www.csie.ntu.edu.tw/~cjlin/libsvm/
+[zip_file]:
+http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip 
+[tar_gz]:http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?+http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz
+[github]:https://github.com/cjlin1/libsvm
+[python]:http://www.python.org/download/
+[gnuplot]:http://gnuplot.info/
+[gnuplot_download]:http://sourceforge.net/projects/gnuplot/files/latest/download?source=files
+[uci_data]:http://research.microsoft.com/en-us/um/people/jplatt/adult.zip
+[a1a]:http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a
+[ala_t]:http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a.t
+
 
