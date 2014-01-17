@@ -64,21 +64,22 @@ category: blog
  `addressbook.proto`文件，清单
 `addressbook.proto`文件已经清楚的给出。该文件编译后，生成的java文件所在的包为：`java_package=com.example.tutorial`，这条代码的意思就是所生成的java类文件名为`AddressBookProtos.java `所在的包应该是`com.example.tutorial`,所生成的java类文件名为`AddressBookProtos`(就是最后生成一个AddressBookProtos.java文件)
 ###编译 .proto 文件
-写好 proto 文件之后就可以用 Protobuf 编译器将该文件编译成目标语言了。本例中我们将使用Java语言。
-1.将protoc.exe 文件拷贝到 C:/Windows目录下
+写好`proto`文件之后就可以用 `Protobuf `编译器将该文件编译成目标语言了。本例中我们将使用Java语言。
+1.将`protoc.exe`文件拷贝到 `C:/Windows`目录下
 各文件目录结构如下：
 ![synchronizes-with](/images/protocolbuffer/dir_of_protobuf_file.png) 
-其中addressbook.proto文件在message文件夹内
+其中`addressbook.proto`文件在`message`文件夹内
 2.执行编译命令
 
     D:\Twisted\java> protoc -I=D:/Twisted/java/message --java_out=D:/Twisted/java/src "D:/Twisted/java/message/addressbook.proto"    
 ![synchronizes-with](/images/protocolbuffer/compiler_prot_file.png)
 如果没有错误，那么就会在本地磁盘目录`D:/Twisted/java/src`中找到一个为com的子文件夹，依次打开子文件夹(路径为：`D:\Twisted\java\src\com\example\tutorial`)就可以找到`AddressBookProtos.java`这个文件，该文件就是`protobuffer`为我们生成的，就是我们需要的`java`文件
 
-###编写 AddPerson和ListPeople
-如前所述， AddPerson 将把一个结构化数据写入磁盘，以便其他人来读取。
-ListPeople将读从本地文件中读取结构化数据，并将其打印出来。
+###编写 `AddPerson`和`ListPeople`
+如前所述， `AddPerson` 将把一个结构化数据写入磁盘，以便其他人来读取。
+`ListPeople`将读从本地文件中读取结构化数据，并将其打印出来。
 两个Java文件具体的代码如下.
+
 清单 `AddPerson.java`文件
 
     package com.example.tutorial;
