@@ -220,9 +220,10 @@ category: blog
 从上图可知pb主要为我们生成了一些get方法，方便我们进行操作,整个文件代码长度2000多行。
 
 ##Relate reading
-一篇介绍Protocol Buffers, Avro, Thrift & MessagePack区别文[文章][pb_thrift].
-介绍Thrift vs. Protocol Buffers之间的的[区别][thrift_pb_diff].
-介绍使用pb,thrift,MessagePack,Avro构建RPC的[site][pb_rpc]
+<li>一篇介绍Protocol Buffers, Avro, Thrift & MessagePack区别文[文章][pb_thrift].</li>
+<li>介绍Thrift vs. Protocol Buffers之间的的[区别][thrift_pb_diff].</li>
+<li>介绍使用pb,thrift,MessagePack,Avro构建RPC的[site][pb_rpc].</li>
+
 [develop_guide]: https://developers.google.com/protocol-buffers/docs/overview?hl=zh-CN
 [pb_download]: http://code.google.com/p/protobuf/downloads/
 [web_site]:http://code.google.com/p/protobuf/downloads/list
