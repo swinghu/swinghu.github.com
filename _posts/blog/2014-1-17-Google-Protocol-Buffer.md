@@ -201,6 +201,7 @@ ListPeople将读从本地文件中读取结构化数据，并将其打印出来�
 ###建立`eclipse java`项目
 建立一个java项目添加以上文件到工程中，整个工程的文件，包如下所示：
 ![synchronizes-with](/images/protocolbuffer/projlist.png)
+注意添加所需jar包文件：protobuf-java-2.5.0.jar,可点击此处[下载][protobuf_jar]
 选运行AddPerson.java文件进行添加
 ![synchronizes-with](/images/protocolbuffer/inputprofile.png)
 再运行ListPerson.java文件进行内容的显示
@@ -215,6 +216,6 @@ ListPeople将读从本地文件中读取结构化数据，并将其打印出来�
 [develop_guide]: https://developers.google.com/protocol-buffers/docs/overview?hl=zh-CN
 [pb_download]: http://code.google.com/p/protobuf/downloads/
 [web_site]:http://code.google.com/p/protobuf/downloads/list
-
+[protobuf_jar]:http://grepcode.com/project/repo1.maven.org/maven2/com.google.protobuf/protobuf-java/
 
 
