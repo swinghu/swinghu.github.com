@@ -19,19 +19,19 @@ category: blog
 ##一个简单的例子
 ###安装 Google Protocol Buffer
 本文开发平台为windows7操作系统，直接下载网站发布的windows binary版本。
-在[网站][web_site]上可以下载 Protobuf ,例如选择这个版本“protoc-2.5.0-win32.zip	 Protocol Buffers 2.5.0 compiler -- Windows binary   Featured”。当然你也可以选择其他版本，如linux,在Linux中编译源码安装Protocol Buffer。
+在[网站][web_site]上可以下载 Protobuf ,例如选择这个版本`“protoc-2.5.0-win32.zip	 Protocol Buffers 2.5.0 compiler -- Windows binary   Featured”`。当然你也可以选择其他版本，如linux,在Linux中编译源码安装`Protocol Buffer`。
 
 ###关于简单例子的描述
 我打算使用 Protobuf 和 Java 开发一个十分简单的例子程序。
-该程序由两部分组成。这两个部分共同完成一个类似于电话簿的程序，实现向电话簿中添加信息，和读取信息。第一部分被称为 AddPerson，第二部分叫做 ListPeople。
-AddPerson  负责将一些结构化的数据写入一个磁盘文件，如本例中的文件 23 
-
-ListPeople 则负责从该磁盘文件中读取结构化数据并打印到屏幕上。
-准备用于演示的结构化数据是 addressbook.proto，它包含两个基本数据：
-name，为一个string数据类型
-id，这是int32
-email，字符串数据类型
-
+该程序由两部分组成。这两个部分共同完成一个类似于电话簿的程序，实现向电话簿中添加信息，和读取信息。第一部分被称为 `AddPerson`，第二部分叫做` ListPeople`。
+`AddPerson`  负责将一些结构化的数据写入一个磁盘文件，如本例中的文件 23 
+`ListPeople` 则负责从该磁盘文件中读取结构化数据并打印到屏幕上。
+准备用于演示的结构化数据是 `addressbook.proto`，它包含两个基本数据：
+<ul>
+<li>name，为一个string数据类型</li>
+<li>id，这是int32</li>
+<li>email，字符串数据类型</li>
+</ul>
 清单 addressbook.proto文件
 
     package tutorial;
@@ -62,7 +62,7 @@ email，字符串数据类型
     }
 在上例中，package 名字叫做 `tutorial`，定义了三个消息`Person,PhoneNumber,AddressBook`，三个所定义的数据类型可以见上面的清单
  `addressbook.proto`文件，清单
-`addressbook.proto`文件已经清楚的给出。该文件编译后，生成的java文件所在的包为：java_package=com.example.tutorial，这条代码的意思就是所生成的java类文件名为`AddressBookProtos.java `所在的包应该是`com.example.tutorial`,所生成的java类文件名为`AddressBookProtos`(就是最后生成一个AddressBookProtos.java文件)
+`addressbook.proto`文件已经清楚的给出。该文件编译后，生成的java文件所在的包为：`java_package=com.example.tutorial`，这条代码的意思就是所生成的java类文件名为`AddressBookProtos.java `所在的包应该是`com.example.tutorial`,所生成的java类文件名为`AddressBookProtos`(就是最后生成一个AddressBookProtos.java文件)
 ###编译 .proto 文件
 写好 proto 文件之后就可以用 Protobuf 编译器将该文件编译成目标语言了。本例中我们将使用Java语言。
 1.将protoc.exe 文件拷贝到 C:/Windows目录下
@@ -79,7 +79,7 @@ email，字符串数据类型
 如前所述， AddPerson 将把一个结构化数据写入磁盘，以便其他人来读取。
 ListPeople将读从本地文件中读取结构化数据，并将其打印出来。
 两个Java文件具体的代码如下.
-清单 AddPerson.java文件
+清单 `AddPerson.java`文件
 
     package com.example.tutorial;
     import com.example.tutorial.AddressBookProtos.AddressBook;
@@ -150,7 +150,7 @@ ListPeople将读从本地文件中读取结构化数据，并将其打印出来�
         } 
     }
 
-清单 ListPerson.java文件
+清单 `ListPerson.java`文件
 
     package com.example.tutorial;
     
@@ -198,7 +198,7 @@ ListPeople将读从本地文件中读取结构化数据，并将其打印出来�
                 Print(addressBook);    
             }  
     }
-###建立eclipse java项目
+###建立`eclipse java`项目
 建立一个java项目添加以上文件到工程中，整个工程的文件，包如下所示：
 ![synchronizes-with](/images/protocolbuffer/projlist.png)
 选运行AddPerson.java文件进行添加
@@ -206,7 +206,7 @@ ListPeople将读从本地文件中读取结构化数据，并将其打印出来�
 再运行ListPerson.java文件进行内容的显示
 ![synchronizes-with](/images/protocolbuffer/listprofile.png)
 ##Protocol Buffer为我们做了什么事情
-想了解Protocol Buffer为我们做了什么事情，就要看AddressBookProtos.java这个文件，在eclipse中查看该文件的Outline
+想了解`Protocol Buffer`为我们做了什么事情，就要看`AddressBookProtos.java`这个文件，在`eclipse`中查看该文件的`Outline`
 如下图所示：
 ![synchronizes-with](/images/protocolbuffer/addressbookoutline.png)
 ![synchronizes-with](/images/protocolbuffer/addressbookoutline2.png)
