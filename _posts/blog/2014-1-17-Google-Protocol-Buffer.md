@@ -206,10 +206,10 @@ category: blog
 ![synchronizes-with](/images/protocolbuffer/projlist.png)
 注意添加所需jar包文件：protobuf-java-2.5.0.jar,可点击此处[下载][protobuf_jar]
 
-选运行AddPerson.java文件进行添加
+选运行`AddPerson.java`文件进行添加
 ![synchronizes-with](/images/protocolbuffer/inputprofile.png)
 
-再运行ListPerson.java文件进行内容的显示
+再运行`ListPerson.java`文件进行内容的显示
 ![synchronizes-with](/images/protocolbuffer/listprofile.png)
 ##Protocol Buffer为我们做了什么事情
 想了解`Protocol Buffer`为我们做了什么事情，就要看`AddressBookProtos.java`这个文件，在`eclipse`中查看该文件的`Outline`
