@@ -222,7 +222,7 @@ category: blog
 ##Relate reading
 <li>一篇介绍Protocol Buffers, Avro, Thrift & MessagePack区别文[文章][pb_thrift].</li>
 <li>介绍Thrift vs. Protocol Buffers之间的的[区别][thrift_pb_diff].</li>
-<li>介绍使用pb,thrift,MessagePack,Avro构建RPC的[site][pb_rpc].</li>
+<li>介绍使用pb,thrift,MessagePack,Avro构建RPC服务器的[site][pb_rpc].</li>
 
 [develop_guide]: https://developers.google.com/protocol-buffers/docs/overview?hl=zh-CN
 [pb_download]: http://code.google.com/p/protobuf/downloads/
