@@ -32,7 +32,7 @@ category: blog
 <li>id，这是int32</li>
 <li>email，字符串数据类型</li>
 </ul>
-清单 addressbook.proto文件
+清单 `addressbook.proto`文件
 
     package tutorial;
 
@@ -65,10 +65,12 @@ category: blog
 `addressbook.proto`文件已经清楚的给出。该文件编译后，生成的java文件所在的包为：`java_package=com.example.tutorial`，这条代码的意思就是所生成的java类文件名为`AddressBookProtos.java `所在的包应该是`com.example.tutorial`,所生成的java类文件名为`AddressBookProtos`(就是最后生成一个AddressBookProtos.java文件)
 ###编译 .proto 文件
 写好`proto`文件之后就可以用 `Protobuf `编译器将该文件编译成目标语言了。本例中我们将使用Java语言。
+
 1.将`protoc.exe`文件拷贝到 `C:/Windows`目录下
 各文件目录结构如下：
 ![synchronizes-with](/images/protocolbuffer/dir_of_protobuf_file.png) 
 其中`addressbook.proto`文件在`message`文件夹内
+
 2.执行编译命令
 
     D:\Twisted\java> protoc -I=D:/Twisted/java/message --java_out=D:/Twisted/java/src "D:/Twisted/java/message/addressbook.proto"    
@@ -203,12 +205,15 @@ category: blog
 建立一个java项目添加以上文件到工程中，整个工程的文件，包如下所示：
 ![synchronizes-with](/images/protocolbuffer/projlist.png)
 注意添加所需jar包文件：protobuf-java-2.5.0.jar,可点击此处[下载][protobuf_jar]
+
 选运行AddPerson.java文件进行添加
 ![synchronizes-with](/images/protocolbuffer/inputprofile.png)
+
 再运行ListPerson.java文件进行内容的显示
 ![synchronizes-with](/images/protocolbuffer/listprofile.png)
 ##Protocol Buffer为我们做了什么事情
 想了解`Protocol Buffer`为我们做了什么事情，就要看`AddressBookProtos.java`这个文件，在`eclipse`中查看该文件的`Outline`
+
 如下图所示：
 ![synchronizes-with](/images/protocolbuffer/addressbookoutline.png)
 ![synchronizes-with](/images/protocolbuffer/addressbookoutline2.png)
