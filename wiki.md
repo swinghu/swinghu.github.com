@@ -5,7 +5,7 @@ title: Wiki
 <div class="wiki">
    <h2>C++</h2>
     <ul class="hide">
-    	<li><a href="http://www.cnblogs.com/stephen-liu74/archive/2012/09/12/2639736.html">Step By Step(C++模板函数)</a></li>
+    	<li><a href="http://www.cnblogs.com/stephen-liu74/archive/2012/09/12/2639736.html">Step By Step -C++模板编程</a></li>
     </ul>
     <h2>Javascript</h2>
     <ul class="hide">
