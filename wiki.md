@@ -325,6 +325,7 @@ title: Wiki
 
     <h2>系统相关</h2>
     <ul class="hide">
+     <li><a href="http://blog.csdn.net/fudan_abc/article/category/655796/2" title="csdn博客介绍linux内核，以及我是usb--fudan-abc">Linux内核修炼之道</a></li>
         <li><a href="http://xbeta.info/win-run.htm" title="最绿色最高效，用win+r启动常用程序和文档">用win+r启动程序和文档</a></li>
         <li><a href="http://lamp.linux.gov.cn/Linux/LFS-6.2/index.html">Linux彻底定制指南(Linux From Scratch)</a></li>
         <li><a href="http://www.douban.com/group/topic/14530790/">服务器和架构方面的一些文章</a></li>
