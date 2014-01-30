@@ -19,7 +19,7 @@ disqus_show_comment_count: true
 # site
 title: swinghu's Blog
 url: http://swinghu.github.com
-repo: http://qianduannotes.duapp.com/github/swinghu.github.com
+repo: http://swinghu.github.com
 feed: /atom.xml
 
 # color scheme
