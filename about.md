@@ -24,7 +24,7 @@ title: about
             <a href="http://http://ilovers.sinaapp.com/" title="http://http://ilovers.sinaapp.com/" target="_blank">李文琼</a>
             <a href="http://hrwang.me/" title="http://hrwang.me/" target="_blank">王浩然的Blog</a>
             <a href="http://winares.github.io" title="http://winares.github.io" target="_blank">刘晓的Blog</a>
-			<a href="http://winares.github.io" title="http://winares.github.io" target="_blank">刘晓的Blog</a>
+			<a href="http://www.iteblog.com" title="http://www.iteblog.com" target="_blank">吴阳平的Blog</a>
         </div>
    </dd>
 </dl>
