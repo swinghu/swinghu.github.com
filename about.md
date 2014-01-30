@@ -9,7 +9,7 @@ title: about
 </form>
 <dl class="aboutDl">
 	<dt><img src="{{ site.repo }}/images/mine.jpg" />关于作者</dt>
-	<dd><strong>swinghu，</strong>Barret Lee</dd>
+	<dd><strong>swinghu，</strong>swinghu</dd>
 	<dd><strong>weibo:</strong><a href="http://weibo.com/u/1680100140" target="_blank">@coding_husiwen</a></dd>
 	<dd><strong>blog:</strong><a href="http://blog.csdn.net/jxusthusiwen" target="_blank">csdn-jxusthusiwen</a>（本博客部分文章会同步至博客园）</dd>
 	<dd><strong>email:</strong><a href="mailto:ogrecpp@gmail.com">ogrecpp@gmail.com</a></dd>

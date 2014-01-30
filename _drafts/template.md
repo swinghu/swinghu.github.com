@@ -9,4 +9,4 @@ category: blog
 
 
 
-[BarretLee]:    http://barretlee.github.com  "BarretLee"
+[swinghu]:    http://swinghu.github.com  "swinghu"
