@@ -11,8 +11,8 @@ title: about
 	<dt><img src="{{ site.repo }}/images/mine.jpg" />关于作者</dt>
 	<dd><strong>swinghu，</strong>Barret Lee</dd>
 	<dd><strong>weibo:</strong><a href="http://weibo.com/u/1680100140" target="_blank">@coding_husiwen</a></dd>
-	<dd><strong>blog:</strong><a href="http://hustskyking.cnblogs.com" target="_blank">博客园-BarretLee</a>（本博客部分文章会同步至博客园）</dd>
-	<dd><strong>email:</strong><a href="mailto:barret.china@gmail.com">barret.china@gmail.com</a></dd>
+	<dd><strong>blog:</strong><a href="http://blog.csdn.net/jxusthusiwen" target="_blank">csdn-jxusthusiwen</a>（本博客部分文章会同步至博客园）</dd>
+	<dd><strong>email:</strong><a href="mailto:ogrecpp@gmail.com">ogrecpp@gmail.com</a></dd>
 	<dd><strong>自述:</strong>whu 13 级，特别喜欢钻研新技术，喜欢深入底层相关的技术，对服务端以及数据库 (MongoDB) 知识很感兴趣。行动方式是深入底层，积极思考。</dd>
 
 	<dt>关于博客</dt>
@@ -21,7 +21,7 @@ title: about
 	<dt>好友链接</dt>
 	<dd>
         <div class="friend-link">
-            <a href="http://http://ilovers.sinaapp.com/" title="http://http://ilovers.sinaapp.com/" target="_blank">李文琼</a>
+            <a href="http://http://ilovers.sinaapp.com/" title="http://http://ilovers.sinaapp.com/" target="_blank">李文琼的Blog</a>
             <a href="http://hrwang.me/" title="http://hrwang.me/" target="_blank">王浩然的Blog</a>
             <a href="http://winares.github.io" title="http://winares.github.io" target="_blank">刘晓的Blog</a>
 			<a href="http://www.iteblog.com" title="http://www.iteblog.com" target="_blank">吴阳平的Blog</a>
@@ -30,7 +30,7 @@ title: about
 </dl>
 {% include disqus.snippet %}
 <div class="footer">
-    <small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2013 - 2023 Designed by <a href="http://barretlee.com/about.html">Barret Lee</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></small>
+    <small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2013 - 2023 Designed by <a href="http://swinghu.github.com/about.html">Barret Lee</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></small>
 </div>
 </div>
 <script type="text/javascript">
