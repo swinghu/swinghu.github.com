@@ -2,8 +2,11 @@
 layout: page
 title: Wiki
 ---
-<h1 style="display:none;">Wiki</h1>
 <div class="wiki">
+   <h2>C++</h2>
+    <ul class="hide">
+    	<li><a href="http://www.cnblogs.com/stephen-liu74/archive/2012/09/12/2639736.html">Step By Step -C++模板编程</a></li>
+    </ul>
     <h2>Javascript</h2>
     <ul class="hide">
         <li><a href="http://jqfundamentals.com/book/index.html">jQuery Fundamentals</a> - jQuery 入门教程。</li>
@@ -322,6 +325,7 @@ title: Wiki
 
     <h2>系统相关</h2>
     <ul class="hide">
+     <li><a href="http://blog.csdn.net/fudan_abc/article/category/655796/2" title="csdn博客介绍linux内核，以及我是usb--fudan-abc">Linux内核修炼之道</a></li>
         <li><a href="http://xbeta.info/win-run.htm" title="最绿色最高效，用win+r启动常用程序和文档">用win+r启动程序和文档</a></li>
         <li><a href="http://lamp.linux.gov.cn/Linux/LFS-6.2/index.html">Linux彻底定制指南(Linux From Scratch)</a></li>
         <li><a href="http://www.douban.com/group/topic/14530790/">服务器和架构方面的一些文章</a></li>
@@ -407,6 +411,7 @@ title: Wiki
     <h2>其他</h2>
     <ul class="hide">
     	<li><a href="http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt">Proxy Switchy!等使用的GFW List</a></li>
+        <li>我的两段吉他即兴：<a href="http://www.tudou.com/programs/view/1txOUWlIxJw/">Spanish风格</a>&nbsp;|&nbsp;<a href="http://www.tudou.com/programs/view/4qiVvUDWqjg/">C调即兴</a></li>
     </ul>
 </div>
 <script type="text/javascript">
@@ -414,7 +419,7 @@ title: Wiki
         $('#content a').each(function(index,element){
             var href = $(this).attr('href');
             if(href.indexOf('#') == 0){
-            }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('barretlee.github.com')>-1 ){
+            }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('beiyuu.com')>-1 ){
                 $(this).attr('target','_blank');
             }else{
                 $(this).attr('target','_blank');
