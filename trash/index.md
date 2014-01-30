@@ -5,19 +5,19 @@ layout: home
 <div class="index-content trash">
     <div class="section">
         <ul class="artical-cate">
-            <li><a href="http://barretlee.com/"><span>技术积淀</span></a></li>
-            <li><a href="http://barretlee.com/opinion"><span>交互分析</span></a></li>
-            <li><a href="http://barretlee.com/life"><span>生活杂记</span></a></li>
-            <li class="on"><a href="http://barretlee.com/trash"><span>回收站</span></a></li>
+            <li><a href="http://swinghu.github.com/"><span>技术积淀</span></a></li>
+            <li><a href="http://swinghu.github.com/opinion"><span>交互分析</span></a></li>
+            <li><a href="http://swinghu.github.com/life"><span>生活杂记</span></a></li>
+            <li class="on"><a href="http://swinghu.github.com/trash"><span>回收站</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
 
         <ul class="artical-list">
             <li itemscope itemtype="http://schema.org/Article">
-                <h2><a href="http://barretlee.com/about.html" itemprop="url">关于我</a></h2>
+                <h2><a href="http://swinghu.github.com/about.html" itemprop="url">关于我</a></h2>
                 <div class="title-desc" itemprop="description">
-                    李靖，Barret Lee，华中科技大学，本科，就职于阿里巴巴淘宝UED
+                    swinghu，coding_swinghu，whu，master，
                 </div>
             </li>
             <li itemtype="http://schema.org/Article">
