@@ -4,8 +4,8 @@ layout: single
 NotLoadComment: true
 ---
 <form class="page-loc" style="margin:0;margin-top:40px;" method="GET" action="/search">
-    <span style="float:right"><input type="text" class="web-search" name ="q" value="站内搜索" /><a href="http://swinghu.github.com/about.html">关于</a><a href="http://swinghu.github.com/atom.xml" class="page-rss" style="margin-left: 20px;">订阅</a></span>
-    swinghu的博客 » Tags
+    <span style="float:right"><input type="text" class="web-search" name ="q" value="站内搜索" /><a href="http://barretlee.com/about.html">关于</a><a href="http://barretlee.com/atom.xml" class="page-rss" style="margin-left: 20px;">订阅</a></span>
+    李靖的博客 » Tags
 </form>
 <div class="categories">
 	<div class="cate-title">

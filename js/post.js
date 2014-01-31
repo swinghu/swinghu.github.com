@@ -1,5 +1,5 @@
 if(!/barret/i.test(window.location.href)){
-    window.location.href = "http://swinghu.github.com";
+    window.location.href = "http://barretlee.com";
 }
 
 $(document).ready(function(){
@@ -293,7 +293,7 @@ $(document).ready(function(){
         }
     }
 
-    $.getScript('http://swinghu.github.com/js/prettify/prettify.js',function(){
+    $.getScript('http://qianduannotes.duapp.com/github/barretlee.github.com/js/prettify/prettify.js',function(){
         prettyPrint();
         menuIndex();
     });
