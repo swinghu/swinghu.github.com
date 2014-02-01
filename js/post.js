@@ -1,5 +1,5 @@
 if(!/barret/i.test(window.location.href)){
-    window.location.href = "http://barretlee.com";
+    window.location.href = "http://swinghu.github.com";
 }
 
 $(document).ready(function(){
@@ -51,7 +51,7 @@ $(document).ready(function(){
         var href = $(this).attr('href');
         if(href){
             if(href.indexOf('#') == 0){
-            }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('barretlee.github.io')>-1 || href.toLowerCase().indexOf('bareet.cc')>-1 ){
+            }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('swinghu.github.io')>-1 || href.toLowerCase().indexOf('bareet.cc')>-1 ){
             }else if ($(element).has('img').length){
             }else{
                 $(this).attr('target','_blank');
