@@ -7,11 +7,11 @@ layout: nil
   <channel>
      <title>{{ site.title }}</title>
      <link>{{ site.url }}</link>
-     <description>BarretLee's Blog—关注互联网，热爱生活!</description>
+     <description>swinghu's Blog—关注互联网，热爱生活!</description>
      <script xmlns="http://www.w3.org/1999/xhtml" src="./js/rss.js"></script>
      {% for post in site.posts limit:15 %}<item>
        <title>{{ post.title }}</title>
-       <link>http://barretlee.com{{ post.url }}</link>
+       <link>http://swinghu.github.com{{ post.url }}</link>
        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
        <description>
          {{ post.description | xml_escape }}
