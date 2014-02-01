@@ -1,0 +1,1 @@
+为了了解DOMContentLoaded在document.close之前还是之后，在看浏览器的工作原理
