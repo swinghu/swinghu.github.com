@@ -19,7 +19,7 @@ disqus_show_comment_count: true
 # site
 title: swinghu's Blog
 url: http://swinghu.github.com
-repo: https://github.com/swinghu/swinghu.github.com
+repo: https://github.com/swinghu/swinghu.github.io
 feed: /atom.xml
 
 # color scheme
@@ -28,4 +28,4 @@ highlight: light
 # author
 author_name: swing hu
 author_email: ogrecpp@gmail.com
-author_info: <a href="http://swinghu.github.com">swinghu</a>
+author_info: <a href="http://swinghu.github.io">swinghu</a>
