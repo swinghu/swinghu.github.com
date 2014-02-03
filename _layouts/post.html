@@ -7,7 +7,7 @@ layout: page
 	<span style="float:right"><input type="text" class="web-search" name="q" value="站内搜索" /><a href="http://swinghu.github.com/about.html">关于</a><a href="http://swinghu.github.com/atom.xml" class="page-rss" style="margin-left: 20px;">订阅</a></span>
  	
  	{% capture s %}{{ page.category }}{% endcapture %}
-  	李靖的博客 » <a href="http://swinghu.github.com/categories/#{{ s }}">{% if s == 'life' %}生活{% elsif s == 'opinion' %}交互{% else %}技术{% endif %}</a> » {{ page.category }}
+  	swinghu博客 » <a href="http://swinghu.github.com/categories/#{{ s }}">{% if s == 'life' %}生活{% elsif s == 'opinion' %}交互{% else %}技术{% endif %}</a> » {{ page.category }}
 </form>
 <div class="page-top-nav clearfix">
 	<div class="categoryList">
@@ -53,5 +53,5 @@ layout: page
 {% include disqus.snippet %}
 
 <div class="footer">
-    <small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2013 - 2023 Designed by <a href="http://barretlee.com/about.html">Barret Lee</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></small>
+    <small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2013 - 2023 Designed by <a href="http://swinghu.github.com/about.html">swinghu</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></small>
 </div>
