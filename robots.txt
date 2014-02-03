@@ -1,3 +1,0 @@
-Sitemap: http://swinghu.github.com/sitemap.xml
-User-agent: *
-Allow: /
