@@ -20,7 +20,6 @@ layout: home
             </li>
         {% endfor %}
         </ul>
-    </div>
 	<div id="post-pagination" class="pagination">
 		{% if paginator.previous_page %}
 			<span class="previous">
@@ -66,6 +65,8 @@ layout: home
 			</span>
 		{% endif %}
 		</div>
+    </div>
+	
     <div class="aside">
     </div>
 </div>
