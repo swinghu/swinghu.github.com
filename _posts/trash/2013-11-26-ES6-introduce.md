@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一、ECMAScript 6 简介
+title: 一、ECMAScript 6 简介(转)
 description: ECMAScript 6 是JavaScript的下一个标准，正处在快速开发之中，大部分已经完成了，预计将在2014年正式发布。
 category: trash
 ---
