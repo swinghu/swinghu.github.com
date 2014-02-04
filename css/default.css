@@ -125,6 +125,16 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
 
+/**************翻页样式**************/
+.pagination { margin-left: 130px; margin-bottom: 100px; *overflow:hidden;}
+.pagination .previous, .pagination .pages, .pagination .next { display: inline-block; line-height: 24px; *float:left;}
+.pagination .previous *, .pagination .next * { line-height: 24px; vertical-align: super;}
+
+.pagination .disabled { color: #CCC;}
+.pagination ul.pages { margin-left: 0;padding:0 8px;}
+.pagination li { list-style: none;float:left; width:24px; margin: 0 8px; text-align: center;}
+.pagination li a {height: 24px; display: inline-block; border: 1px solid #ccc; color:#13964C; width: 24px; text-align: center;text-decoration: none}
+.pagination li a:hover { background:#F8F8F8; font-weight: bold;}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}
