@@ -25,7 +25,7 @@ layout: home
 		{% if paginator.previous_page %}
 			<span class="previous">
 			{% if paginator.previous_page == 1 %}
-				<a href="http://swinghu.github.com/blog/">Previous</a>
+				<a href="http://swinghu.github.com/">Previous</a>
 			{% else %}
 				<a href="{{ paginator.previous_page_path }}">Previous</a>
 			{% endif %}
@@ -41,7 +41,7 @@ layout: home
 				{% if paginator.page == 1 %}
 					<span class="current-page">1</span>
 				{% else %}
-					<a href="http://swinghu.github.com/blog">1</a>
+					<a href="http://swinghu.github.com/">1</a>
 				{% endif %}
 				</li>
 
@@ -50,7 +50,7 @@ layout: home
 					{% if count == paginator.page %}
 						<span class="current-page">{{ count }}</span>
 					{% else %}
-						<a href="http://swinghu.github.com/blog/page{{ count }}">{{ count }}</a>
+						<a href="http://swinghu.github.com/page{{ count }}">{{ count }}</a>
 					{% endif %}
 					</li>
 				{% endfor %}
