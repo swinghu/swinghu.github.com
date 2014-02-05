@@ -23,6 +23,14 @@ layout: home
                 <div class="title-desc">{{ post.description }}</div>
             </li>
         {% endfor %}
+		
+		<li itemtype="http://schema.org/Article">
+                <h2><a href="http://barretlee.com/wiki.html" itemprop="url">Wiki - 知识库</a></h2>
+                <div class="title-desc" itemprop="description">
+                    Javascript,HTML & CSS,HTML5 & CSS3,前端相关,Python,正则表达式,开发相关,版本控制,系统相关,设计相关,VIM,其他
+                </div>
+        </li>
+		
         </ul>
     </div>
     <div class="aside">
