@@ -161,6 +161,14 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 
 /************layout style*****************/
 .page-loc { font-size: 18px; border-bottom: 1px solid #CCC; padding-bottom: 10px; margin-bottom: 30px; }
+.page-rss { margin-left: 20px; }
+
+/************web search*******************/
+.web-search {width: 120px; margin-right: 20px; height: 20px; line-height: 20px; font-size: 14px; text-indent: 3px; border-bottom: 1px solid #CCC;color: #999;}
+.web-search:focus {color:#333;}
+.recent .web-search {margin-top: 20px; width: 150px; height: 24px; line-height: 24px; text-indent: 0.5em;}
+.f-submit {border: 1px solid #CCC; height: 24px; line-height: 24px; padding: 0 10px; cursor: pointer; background:#EEE;}
+.f-submit:hover { background:#E3E3E3;}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}
