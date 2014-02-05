@@ -6,9 +6,9 @@ layout: home
     <div class="section">
         <ul class="artical-cate">            
 			<li><a href="/"><span>Blog</span></a></li>
-            <li style="text-align:center"><a href="/opinion"><span>Opinion</span></a></li>
-            <li style="text-align:center"><a href="/project"><span>Project</span></a></li>
-			<li class="on" style="text-align:center"><a href="/trash"><span>Trash</span></a></li>
+            <li ><a href="/opinion"><span>Opinion</span></a></li>
+            <li ><a href="/project"><span>Project</span></a></li>
+			<li class="on" ><a href="/trash"><span>Trash</span></a></li>
 		
         </ul>
 
