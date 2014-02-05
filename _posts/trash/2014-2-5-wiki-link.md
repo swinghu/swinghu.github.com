@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Wiki-知识库
-description：收集的链接，资料集
+description: 收集的链接，资料集
 category: trash
 ---
+
 <div class="wiki">
    <h2>C++</h2>
     <ul class="hide">
