@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Wiki-知识库
-description: 收集的链接，资料集
-category: trash
 ---
 
 <div class="wiki">
