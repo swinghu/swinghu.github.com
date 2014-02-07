@@ -26,7 +26,7 @@ layout: home
 		
 		
 		<li itemtype="http://schema.org/Article">
-                <h2><a href="http://swinghu,github.com/ES6/" itemprop="url">ECMAScript 6系列</a><sup class="stick-top">TOP</sup></h2>
+                <h2><a href="http://swinghu.github.com/ES6/" itemprop="url">ECMAScript 6系列</a><sup class="stick-top">TOP</sup></h2>
                 <div class="title-desc" itemprop="description">
                     ECMAScript 6 是JavaScript的下一个标准，正处在快速开发之中，大部分已经完成了，预计将在2014年正式发布。
                 </div>
