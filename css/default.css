@@ -160,6 +160,74 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .pagination li a:hover { background:#F8F8F8; font-weight: bold;}
 
 /************layout style*****************/
+/*RunatServer*/
+
+.ES6 {
+    width: 70%;
+    margin: 0 auto !important;
+}
+
+.ES6 .artical-list {
+    width: auto;
+    margin:auto;
+}
+
+.ES6 .artical-list li h1.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.ES6 .artical-list li {
+    margin-bottom: 0;
+}
+.page-ctrl {
+    overflow: hidden;
+    padding-top: 20px;
+    font-family: 宋体;
+    color: #202020;
+    font-weight: bold;
+    zoom: 1;color: #4A75B5;
+    border-top: 1px solid #4A75B5;
+    margin-top: 20px;
+}
+.page-ctrl a {
+    display: inline-block;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+}
+.page-ctrl *:hover {
+    color:red;
+}
+.page-old {
+    float: left;
+}
+.page-old a{
+    margin-left: 6px;
+}
+.page-new {
+    float: right;
+}
+.page-new a{
+    margin-right: 6px;
+}
+
+.rss:hover {
+    right:0;
+    bottom: 0;
+}
+.footer {
+    margin-top: 30px;
+    margin-top: 30px;
+    border-top: 1px dashed #CCC;
+    padding-top: 10px;
+}
+.footer a {
+    color: orange;
+}
 .page-loc { font-size: 18px; border-bottom: 1px solid #CCC; padding-bottom: 10px; margin-bottom: 30px; }
 .page-rss { margin-left: 20px; }
 
@@ -172,7 +240,48 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .footer a {
     color: orange;
 }
+/*==========
+  categories
+============*/
+.categories { padding:25px 15px;}
+.cate-title { padding:10px 0;}
+.cate-title a { font-weight: bold; color:orange; display:inline-block; padding: 3px 8px; margin:5px 8px 5px 0; background:#F4F4F4; box-shadow: 3px 3px 5px #CCC;}
+.cate-title a:hover sup { color:#000;}
+.cate-list {}
+.cate-list h3 {margin-bottom: 0; margin-top: 15px; line-height: 50px; font-size: 22px;}
+.cate-list li { padding-left: 8px; line-height: 24px; }
+.cate-list a {}
+.cate-list time {color: #AAA; font-family: Monaco, "Courier New", monospace;}
 
+/*==========
+   about me
+============*/
+.aboutMe {
+    width: 70% !important;
+}
+.aboutDl {
+    margin-bottom: 50px;
+}
+.aboutDl dd {
+    text-indent: 2em;
+    line-height: 30px;
+}
+.aboutDl dt {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.aboutDl strong {
+    margin-right: 5px;
+    text-align: left;
+}
+.aboutDl img {
+    float: right;
+    width: 200px;
+    margin: 15px;
+    box-shadow: 3px 3px 5px #CCC;
+}
 
 
 /************web search*******************/
