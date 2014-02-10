@@ -2,7 +2,8 @@ auto: true
 
 markdown: rdiscount
 pygments: true
-paginate: 8
+paginate: 5
+paginate_path: /blog/page:num
 permalink: /:title
 
 title: swinghu.com
