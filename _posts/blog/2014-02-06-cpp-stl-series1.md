@@ -5,8 +5,9 @@ description: C++ STL 系列之---C++模板函数
 category: blog
 ---
 
-一、模板函数实例化：
+##一、模板函数实例化：
 有时候我们需要这样一种函数，它们能够在行为上完全一致，然而能够"自动"灵活的处理多种参数类型。对于这种函数，在C++中我们完全可以利用其＂语法糖＂来分析该类型问题。我们可以应用C++ STL中的模板和泛型技术来帮助我们优雅的解决实际问题。先上来一个简单的代码：
+
 	template <typename T>
 	inline T const& min(T const& a ,T const& b ){
 		return a<b ? b:a ;
@@ -45,6 +46,7 @@ category: blog
 		return 0;
 	}
 测试结果为：
+
 	the max value is 9
 	the max value is 4.500000
 从上面的实例中可以看出，也能达到同样的效果，但是相比于模板函数，宏的方式存在一些问题，例如类型不安全（type-safe,类型安全参加附文)。虽然C++给我们很大的方便，但是同时我们要注意一下几点
@@ -91,11 +93,13 @@ category: blog
 			return 0;
 		}
 这只是一个简单例子，运行，测试执行结果为：
+
 	operator < is define and used
 	3 and 4
 从执行结果可以看出operator <()操作符被调用，可正确执行
     (3)max,min 函数传递的是参数的引用类型，而不是值传递 (如：max,min(T const& a ,T const& b )，这样就可以避免出现在max,min 中使用临时变量(副本copy)，而在函数返回中，返回一个临时变量的引用(会造成野指针错误)问题。
     (4)C++的编译器会为每一种类型都产生一个实例化函数，而不是仅仅构造出一个函数实例，然后再基于不同的参数类型调用该通用函数.如:
+    
     #include <iostream>
     #include <stdio.h>
 
@@ -149,33 +153,11 @@ category: blog
     //operator < is define and used
     //3 and 4
 		
-	
-
 	template <typename T>
 	inline T const& min(T const& a,T const& b ){
 		return a>b ? b:a ;
 	}
-
-
-	#include <iostream>
-	#include <stdio.h>
-	using namespace std;
-	template <typename T>
-	inline T const& max(T const& a ,T const& b ){
-		return a<b ? b:a ;
-	}
-	int main()
-	{
-		printf("the max value is %d\n",::max(4,5));　　//ok 适用于 max(int,int)
-		printf("the max value is %f\n",::max(54.5,32.2));//ok 适用于 max(float,float)
-
-		return 0;
-	}
-
-
-
-
-二、"重载"函数模板：
+##二、"重载"函数模板：
 初看这个标题有点模糊，其实指的是 模板函数的重载。模板函数和其他函数一样，也可以实现重载。如：
     #include <iostream>
     #include<stdio.h>
@@ -245,13 +227,10 @@ category: blog
     inline int const& max(int const& a,int const& b is revoked.
 
 从上面的输出可以看出，可以了解到以下几点：
+
   1.非模板函数和模板函数可以同名，调用的时候编译器可以一起进行函数重载的推演
   2.在推演的时候，首选非模板函数
-  3.指定<>，则推演时，可限定为模板函数
-  4.模板函数在推演时，要对参数类型进行分析，判断参数类型是否和定义的模板一致,因此在第4个测试中，因为调用的参数表类型与模板函数不一致，则调用非模板函数(非模板函数可对参数进行类型转换，转换为int类型)，如若要使用模板函数，则需要定义不同参数的模板函数。
-
-
-
+  3.指定<>，则推演时，可限定为模板函数  4.模板函数在推演时，要对参数类型进行分析，判断参数类型是否和定义的模板一致,因此在第4个测试中，因为调用的参数表类型与模板函数不一致，则调用非模板函数(非模板函数可对参数进行类型转换，转换为int类型)，如若要使用模板函数，则需要定义不同参数的模板函数。
 
 
 附：
@@ -260,6 +239,7 @@ C++的类型安全
 类型安全很大程度上可以等价于内存安全，类型安全的代码不会试图访问自己没被授权的内存区域。“类型安全”常被用来形容编程语言，其根据在于该门编程语言是否提供保障类型安全的机制；有的时候也用“类型安全”形容某个程序，判别的标准在于该程序是否隐含类型错误。类型安全的编程语言与类型安全的程序之间，没有必然联系。好的程序员可以使用类型不那么安全的语言写出类型相当安全的程序，相反的，差一点儿的程序员可能使用类型相当安全的语言写出类型不太安全的程序。绝对类型安全的编程语言暂时还没有。
 
 C++保障类型安全机制：
+
 （1）操作符new返回的指针类型严格与对象匹配，而不是void*；
 （2）C中很多以void*为参数的函数可以改写为C++模板函数，而模板是支持类型检查的；
 （3）引入const关键字代替#define constants，它是有类型、有作用域的，而#define constants只是简单的文本替换；
