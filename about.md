@@ -21,9 +21,9 @@ title: about
 	<dt>好友链接</dt>
 	<dd>
         <div class="friend-link">
-        <a href="http://www.iteblog.com/" title="http://www.iteblog.com/" target="_blank">过往记忆'Blog</a>
-            <a href="http://hrwang.me/" title="http://hrwang.me/" target="_blank">王浩然的Blog</a>
-            <a href="http://winares.github.io/" title="http://winares.github.io/" target="_blank">刘晓的Blog</a>
+        <a href="http://www.iteblog.com/" title="http://www.iteblog.com/" target="_blank">过往记忆'Blog  </a>
+            <a href="http://hrwang.me/" title="http://hrwang.me/" target="_blank">王浩然的Blog  </a>
+            <a href="http://winares.github.io/" title="http://winares.github.io/" target="_blank">刘晓的Blog  </a>
             <a href="http://ilovers.sinaapp.com/" title="http://ilovers.sinaapp.com/" target="_blank">李文琼的Blog</a>
         </div>
    </dd>
