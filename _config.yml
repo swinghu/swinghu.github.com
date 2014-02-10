@@ -1,0 +1,11 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: swinghu.com
+url: http://www.weibo.com/p/1005051680100140
+feed: /atom.xml
+author_info: <a href="http://weibo.com/u/1680100140">swinghu</a>
