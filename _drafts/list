@@ -1,0 +1,31 @@
+韵苑一楼改版后的变化及其分析
+
+绘制render树 边绘制边呈现 chrome白屏现象
+
+div div div div｛…｝ 是如何影响解析效率的
+
+
+同步和异步
+
+信仰是如何毁掉程序员的
+
+Array.prototype.unique = function(){
+	var table = {}, len, i, key, res = [];
+
+	for(i = 0, len = this.length; i < len; i++){
+		if(this[i] in table) {
+			continue;
+		} else {
+			table[this[i]] = 1;
+		}
+	}
+
+	for(key in table) res.push(key);
+
+	return res;
+
+}
+<div class="page-ctrl">
+	<span class="page-old" title="上一篇">&lt;&lt;<a href="#"></a></span>
+	<span class="page-new" title="下一篇"><a href="#"></a>&gt;&gt;</span>
+</div>
