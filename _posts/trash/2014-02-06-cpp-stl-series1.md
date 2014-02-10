@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learn C++ STL The Hard Way 1---C++模板函数
+title: Learn C++ STL 1---C++模板函数
 description: C++ STL 系列之---C++模板函数
 category: trash
 ---
