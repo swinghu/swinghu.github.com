@@ -1,7 +1,8 @@
 ---
 layout: post
-category: Java
-title:  Google Java编程风格指南(转)
+title: Google Java编程风格指南(转)
+description: Google Java编程指南
+category: trash
 ---
 
 ## 目录
