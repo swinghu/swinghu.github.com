@@ -7,7 +7,8 @@ category: trash
 
 一、模板函数实例化：
 有时候我们需要这样一种函数，它们能够在行为上完全一致，然而能够"自动"灵活的处理多种参数类型。对于这种函数，在C++中我们完全可以利用其＂语法糖＂来分析该类型问题。我们可以应用C++ STL中的模板和泛型技术来帮助我们优雅的解决实际问题。先上来一个简单的代码：
-	template <typename T>
+	
+    template <typename T>
 	inline T const& min(T const& a ,T const& b ){
 		return a<b ? b:a ;
 	}
@@ -45,7 +46,8 @@ category: trash
 		return 0;
 	}
 测试结果为：
-	the max value is 9
+	
+    the max value is 9
 	the max value is 4.500000
 从上面的实例中可以看出，也能达到同样的效果，但是相比于模板函数，宏的方式存在一些问题，例如类型不安全（type-safe,类型安全参加附文)。虽然C++给我们很大的方便，但是同时我们要注意一下几点
 	(1)参数a 和 b 的类型要保持一致，否则编译不能通过，例如以上给出的max函数对于参数(54.5,32)就不适用;
@@ -91,11 +93,13 @@ category: trash
 			return 0;
 		}
 这只是一个简单例子，运行，测试执行结果为：
-	operator < is define and used
+	
+    operator < is define and used
 	3 and 4
 从执行结果可以看出operator <()操作符被调用，可正确执行
     (3)max,min 函数传递的是参数的引用类型，而不是值传递 (如：max,min(T const& a ,T const& b )，这样就可以避免出现在max,min 中使用临时变量(副本copy)，而在函数返回中，返回一个临时变量的引用(会造成野指针错误)问题。
     (4)C++的编译器会为每一种类型都产生一个实例化函数，而不是仅仅构造出一个函数实例，然后再基于不同的参数类型调用该通用函数.如:
+    
     #include <iostream>
     #include <stdio.h>
 
@@ -110,7 +114,6 @@ category: trash
         inline T const& max(T const& a ,T const& b ){
         return a<b ? b:a ;
     }
-
 
     class MyPoint {//省略的相关头文件
                 public:
@@ -149,34 +152,9 @@ category: trash
     //operator < is define and used
     //3 and 4
 		
-	
-
-	template <typename T>
-	inline T const& min(T const& a,T const& b ){
-		return a>b ? b:a ;
-	}
-
-
-	#include <iostream>
-	#include <stdio.h>
-	using namespace std;
-	template <typename T>
-	inline T const& max(T const& a ,T const& b ){
-		return a<b ? b:a ;
-	}
-	int main()
-	{
-		printf("the max value is %d\n",::max(4,5));　　//ok 适用于 max(int,int)
-		printf("the max value is %f\n",::max(54.5,32.2));//ok 适用于 max(float,float)
-
-		return 0;
-	}
-
-
-
-
 二、"重载"函数模板：
 初看这个标题有点模糊，其实指的是 模板函数的重载。模板函数和其他函数一样，也可以实现重载。如：
+    
     #include <iostream>
     #include<stdio.h>
     using namespace std;
