@@ -15,10 +15,7 @@ category: trash
 	template <typename T>
 	inline T const& max(T const& a ,T const& b ){
     return a<b ? b:a ;
-	}
-    
-
-		
+	}		
 #二、"重载"函数模板
 初看这个标题有点模糊，其实指的是 模板函数的重载。模板函数和其他函数一样，也可以实现重载。如：
     
