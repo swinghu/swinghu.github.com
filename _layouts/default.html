@@ -56,6 +56,19 @@
     <script type="text/javascript"
         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    <script type="text/javascript" src="js/code/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+         $(function(){
+            $("pre").addClass("prettyprint linenums");
+            prettyPrint();
+            $('.entry a').each(function(){
+                if($(this).attr("href").indexOf("swinghu") == -1){
+                $(this).attr("target", "_blank");
+          }
+        })
+      });
+    </script>
    
 </body>
 </html>

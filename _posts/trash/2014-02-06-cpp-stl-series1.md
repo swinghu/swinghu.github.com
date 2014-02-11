@@ -55,7 +55,7 @@ category: trash
 
 - (2)对于类型T(由typename定义给出)而言，该类型不管是C++ 内置类型，还是用户自定义类型，该类型必需提供对操作符operator <() 的支持，否则否则无法成功编译(main.cpp|27|error: no match for 'operator<' (operand types are 'MyPoint' and 'MyPoint')|)。例如，对于用户定义的class来说，则必须对class进行重载小于操作符；
     
->  对于以上(1),(2)两点，解决方法分别是；
+>  对于以上(1),(2)两点，解决方法分别是：
 	
 > 	(1)定义多参数类型的max函数，如：
 	
