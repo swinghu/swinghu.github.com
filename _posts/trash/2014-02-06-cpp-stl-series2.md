@@ -16,7 +16,7 @@ category: trash
 	inline T const& max(T const& a ,T const& b ){
     return a<b ? b:a ;
 	}
-    
+    pre
 
 		
 #二、"重载"函数模板
