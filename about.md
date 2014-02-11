@@ -8,7 +8,7 @@ title: about
   	swinghu的博客 » 关于我
 </form>
 <dl class="aboutDl">
-	<dt><img src="{{ site.repo }}/images/mine.jpg" />关于作者</dt>
+	<dt><img src="/images/mine.jpg" />关于作者</dt>
 	<dd><strong>swinghu，</strong>husiwen </dd>
 	<dd><strong>weibo:</strong><a href="http://weibo.com/http://weibo.com/u/1680100140" target="_blank">@coding_husiwen</a></dd>
 	<dd><strong>blog:</strong><a href="http://blog.csdn.net/jxusthusiwen" target="_blank">csdn博客园-</a>（本博客部分文章会同步至博客园）</dd>
