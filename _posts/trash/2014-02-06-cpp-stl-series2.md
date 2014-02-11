@@ -7,7 +7,7 @@ category: trash
 
 #一、模板函数实例化
 有时候我们需要这样一种函数，它们能够在行为上完全一致，然而能够"自动"灵活的处理多种参数类型。对于这种函数，在C++中我们完全可以利用其＂语法糖＂来分析该类型问题。我们可以应用C++ STL中的模板和泛型技术来帮助我们优雅的解决实际问题。先上来一个简单的代码：
-	pre
+	<pre><code>
     template <typename T>
 	inline T const& min(T const& a ,T const& b ){
 		return a<b ? b:a ;
@@ -16,7 +16,7 @@ category: trash
 	inline T const& max(T const& a ,T const& b ){
     return a<b ? b:a ;
 	}
-    pre
+    </code></pre>
 
 		
 #二、"重载"函数模板
