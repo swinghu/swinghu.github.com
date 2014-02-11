@@ -10,7 +10,7 @@ title: about
 <dl class="aboutDl">
 	<dt><img src="/images/mine.jpg" />关于作者</dt>
 	<dd><strong>swinghu，</strong>husiwen </dd>
-	<dd><strong>weibo:</strong><a href="http://weibo.com/http://weibo.com/u/1680100140" target="_blank">@coding_husiwen</a></dd>
+	<dd><strong>weibo:</strong><a href="http://weibo.com/u/1680100140" target="_blank">@coding_husiwen</a></dd>
 	<dd><strong>blog:</strong><a href="http://blog.csdn.net/jxusthusiwen" target="_blank">csdn博客园-</a>（本博客部分文章会同步至博客园）</dd>
 	<dd><strong>email:</strong><a href="mailto:ogrecpp@gmail.com">ogrecpp@gmail.com</a></dd>
 	<dd><strong>自述:</strong>WHUer,特别喜欢钻研新技术，对服务器端开发,linux,服务端 (NodeJS),Go,Lua,以及数据库 (MongoDB) 知识很感兴趣。行动方式是底层再底层思考，创新再创新实践。</dd>
