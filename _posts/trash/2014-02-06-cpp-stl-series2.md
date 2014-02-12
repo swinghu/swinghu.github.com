@@ -5,7 +5,7 @@ description: C++ STL 系列之---C++模板类，和函数类似，类也可以�
 category: trash
 ---
 
-#目录
+###目录
 1. [类模板的实现](#class_sx)
 1. [类模板的声明](#ct_define)
 1. [怎么写成员函数](#htw_mf)
