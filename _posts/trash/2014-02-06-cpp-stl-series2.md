@@ -6,13 +6,13 @@ category: trash
 ---
 
 #目录
-1. [一、类模板的实现](#class_sx)
+1. [类模板的实现](#class_sx)
 1. [类模板的声明](#ct_define)
 1. [怎么写成员函数](#htw_mf)
-1. [二、类模板的使用](#c_template_use)
-1. [三、类模板的特化](#init)
-1. [四、局部特化(偏特化)](#partial_init)
-1. [五、缺省模板实参](#dflt_param)
+1. [类模板的使用](#c_template_use)
+1. [类模板的特化](#init)
+1. [局部特化(偏特化)](#partial_init)
+1. [缺省模板实参](#dflt_param)
 1. [小结](#end)
 
 #<a id="class_sx">一、类模板的实现</a>
