@@ -71,7 +71,7 @@ C++模板类，和模板函数类似，类也可以被一种或者多种类型�
     int_stck top is:100
     char_stck top is:d
     char_stck top is:s
-### 类模板的声明 
+##类模板的声明 
 类模板(*class template*)的声明和函数模板(*function template*)的声明很相似：先声明类型参数的标识符，使用T，如 *class/typename T*：
 	
 	template<typename T>
@@ -105,10 +105,10 @@ C++模板类，和模板函数类似，类也可以被一种或者多种类型�
 	
 	Stack (Stack<T> const&);	//拷贝构造函数
     Stack<T> operator= (Stack<T> const& );	//赋值运算符
-### 怎么写成员函数 ##
+##怎么写成员函数
 在实现成员函数时，必须指定该成员函数是一个函数模板，并且还需使用这个类模板的完整类型限定符(即：`Stack<T>::`)。如pop函数的实现：
-template <typename T>
 	
+	template <typename T>
 	void Stack<T>::pop(){
 	    if(elems.empty()){
 	        throw std::out_of_range("Stack<>::pop: empty stack");
@@ -156,16 +156,313 @@ template <typename T>
     		......
     	}
 5. 结合类型定义typedef，可以更简便的使用类模板如：`typedef Stack<int> IntStack;`
-6. 模板实参可以是任何类型，`float* ,Stack<int>`都可以
-
-
-	
-
+6. 模板实参可以是任何类型，`float* ,Stack<int>`都可以，如：
+		
+    	Stack<float*> floatStack;
+    	Stack<Stack<int>>	intStackStack;
+在新的C++标准中，定义中出现的">>"不需要空格分开成“> >"
 
 #三、类模板的特化
+类比函数模板的重载，可以用模板实参类特化类模板。通过特化类模板，可以对某种特定类的实现进行优化，克服某些不足(举个例子，某个类模板没有提供某种操作,但是我在实例化后又想使用)。
 
-#四、局部特化
+在特化类模板时，还需将所有成员函数一并特化(虽然可以，但是如果没有全部进行特化，那么就没特化整个模板类)。
 
+特化类模板的方法:
+
+
+1. 必须在代码首行声明一个` template<>`,接下来声明用来特化类模板的类型：在类名后面指定该类型：
+	
+    	template<>
+    	class Stack<std::string>{
+    		......
+    	}
+1. 将所有成员函数重新定义为普通函数，将原来函数中的T用相应的特化类型进行取代
+如
+	
+    	void Stack<std::string>:: push(std::string const& elem)
+    	{
+    		elems.push_back(elem);
+    	}
+整理以上所述，结合一个完整例子进行说明(`std::string`特化版的`Stack<>`)
+
+		//--------------------------stack1.hpp 头文件
+    	#include<vector>
+    	#include<stdexcept>
+    	#include <iostream>
+		template <typename T>
+		class Stack{
+		private:
+		    std::vector<T> elems;
+		
+		public :
+		
+		    void push(T const&);
+		    void pop();
+		    T top() const;
+		    bool empty() const{
+		        return elems.empty();
+		    }
+		
+		};
+		
+		template <typename T>
+		void Stack<T>:: push(T const& elem){
+		   elems.push_back(elem);
+		}
+		
+		template <typename T>
+		void Stack<T>::pop(){
+		    if(elems.empty()){
+		        throw std::out_of_range("Stack<>::pop: empty stack");
+		    }
+		    elems.pop_back();
+		}
+		
+		template <typename T>
+		T Stack<T>::top() const{
+		    if(elems.empty()){
+		        throw std::out_of_range("Stack<>::pop: empty stack");
+		    }
+		    return elems.back();
+		}
+ 		
+实例测试实现为
+
+		//-----------------------------c++ main.cpp
+		#include <iostream>
+		#include "stack1.hpp"
+		#include <deque>
+		#include <stdexcept>
+		using namespace std;
+		template<>
+		class Stack<std::string>
+		{
+		private :
+		    std::deque<std::string> elems;
+		
+		public:
+		    void push(std::string const&);
+		    void pop();
+		    std::string top() const;
+		    bool empty() const
+		    {
+		        return elems.empty();
+		    }
+		};
+		
+		void Stack<std::string>:: push(std::string const& elem)
+		{
+		    elems.push_back(elem);
+		}
+		void Stack<std::string>:: pop()
+		{
+		    if(elems.empty())
+		    {
+		        throw std::out_of_range("Stack<std::string>::pop :empty stack ");
+		    }
+		    elems.pop_back();
+		}
+		std::string Stack<std::string>:: top() const
+		{
+		    if(elems.empty())
+		    {
+		        throw std::out_of_range("Stack<std::string>::top :empty stack ");
+		    }
+		    return elems.back();
+		}
+		
+		
+		
+		int main()
+		{
+		    Stack<std::string> strStack;
+		    strStack.push("helloworld");
+		    strStack.push("Lily and lucy");
+		    strStack.push("hello c++");
+		    strStack.push("hello STL");
+		    strStack.push("hello SGI");
+		
+
+		    while(!strStack.empty())
+		    {
+		        cout<<"the top element is: "<<strStack.top()<<endl;
+		        strStack.pop();
+		    }
+		
+		    Stack<int> intStack;
+		    intStack.push('a');
+		    intStack.push('z');
+		    intStack.push(3567);
+		    cout<<"the top elem of intStack is : "<< intStack.top()<<endl;
+		}
+		/*
+		the top element is: hello SGI
+		the top element is: hello STL
+		the top element is: hello c++
+		the top element is: Lily and lucy
+		the top element is: helloworld
+		the top elem of intStack is : 3567
+		*/
+在以上实例中使用deque，而不是vector来管理存储Stack内部的元素。说明：特化的实现可以和基本类模板的实现完全不同。
+
+2014/2/12 14:06:20 
+#四、局部特化(偏特化)
+和函数模板可以局部特化类似，类模板也可以被局部特化,用户在需要是指定特化类型，以达到满足用户自定义需求。如类模板
+	
+	//-----------------------------stack1.hpp 
+	template<typename T,typename P>
+	class MyClass{
+	private:
+	    T t_value;
+	    P p_value;
+	public:
+	    T get_t()
+	    {
+	        return t_value;
+	    }
+	    P get_p()
+	    {
+	        return p_value;
+	    }
+	    void set_t(T t_v)
+	    {
+	        t_value = t_v;
+	    }
+	    void set_p(P p_v)
+	    {
+	        p_value = p_v;
+	    }
+	};
+用户可以自行决定怎么样特化类模板，在此略举以下几种局部特化
+
+1. 局部特化：两个模板参数具有相同类型
+	
+		template<typename T>
+		class MyClass<T,T>{
+			......
+		};
+2. 局部特化：第二个模板参数类型为 int
+
+		template<typename T>
+		class MyClass<T,int>{
+			.....
+		};
+3. 局部特化：两个模板参数是指针类型
+
+		template<typename T1,typename T2>
+		class MyClass<T1*,T2*>{
+			.....
+		};
+
+对于第二种局部特化的例子完整的实现为：
+	
+	//-----------------------------main.cpp
+	//局部特化 Myclass
+	template<typename T>
+	class MyClass<T,int>{
+	   private:
+	    T t_value;
+	    int p_value;
+	public:
+	    T get_t()
+	    {
+	        return t_value;
+	    }
+	    int get_p()
+	    {
+	        return p_value;
+	    }
+	    void set_t(T t_v)
+	    {
+	        t_value = t_v;
+	    }
+	    void set_p(int p_v)
+	    {
+	        p_value = p_v;
+	    }
+	};
+
+局部特化的二义性,指的是当有多种局部特化时，可以会存在多个匹配，此时就成为二义性，例如：
+	
+	MyClass<int ,int> int_intm;     //错误：同时匹配MyClass<T,T>和 MyClass<T ,int>
+	Myclass<float* ,float*> f_fm	//错误：同时匹配MyClass<T,T>和 MyClass<T1*,T2*>
 #五、缺省模板实参
+对于类模板，可以为模板参数定义缺省值：这些值就称为缺省模板实参。看实例
+
+	//-----------------------------stack3.hpp
+	#include<vector>
+	#include<stdexcept>
+	//缺省模板参数,容器：存储T类型的元素。改为template<typename T,typename CONT = std::vector<T>>出错
+	template<typename T,typename CONT = std::vector<T> >
+	class Stack{
+	    private:
+	        CONT elems;
+	    public:
+	        void push(T const&);
+	        void pop();
+	        T top() const;
+	        bool empty()const{
+	            return elems.empty();
+	        }
+	};
+	//使用正确的类类型，由于类模板有两个参数，
+	//所以所有成员函数也需要两个参数，以达到类型一致
+	template<typename T ,typename CONT>
+	void Stack<T,CONT>::pop(){
+	    if(elems.empty()){
+	        throw std::out_of_range("Stack<T,CONT>:: pop:empty stack");
+	    }
+	    elems.pop_back();
+	}
+	template<typename T ,typename CONT>
+	void Stack<T,CONT>::push(T const& elem){
+	    elems.push_back(elem);
+	}
+	template<typename T ,typename CONT>
+	T Stack<T,CONT>:: top() const{
+	    if(elems.empty()){
+	        throw std::out_of_range("Stack<T,CONT>:: pop:empty stack");
+	    }
+	    return elems.back();
+	}
+实例测试实现为
+
+	//-----------------------------c++ main.cpp
+	#include <iostream>
+	#include <deque>
+	#include "stack3.hpp"// 改为：#include <stack3.hpp>出错
+	
+	
+	using namespace std;
+	
+	int main()
+	{
+	    Stack<int> intStack;// 使用默认类模板参数vector<int>
+	    intStack.push(12);
+	    intStack.push(34);
+	    intStack.push(56);
+	    intStack.push(910);
+	    cout<<"the top elem of intStack is " <<intStack.top()<<endl;
+	    intStack.pop();
+	    cout<<"After pop ,the top elem of intStack is " <<intStack.top()<<endl;
+	    Stack<double ,std::deque<double> > dblStack;//使用自定义模板参数容器deque<double>
+	    dblStack.push(12);
+	    dblStack.push(34);
+	    dblStack.push(56);
+	    dblStack.push(19);
+	    cout<<"the top elem of dblStack is "<<dblStack.top()<<endl;
+	    dblStack.pop();
+	    dblStack.pop();
+	    dblStack.pop();
+	    dblStack.pop();
+	    cout<<"After pop ,the top elem of dblStack is "<<dblStack.top()<<endl;
+	    return 0;
+	}
 
 #小结
+1. 所谓的类模板(class template)是包含一个或者多个尚未确切定义的类别的class
+2. 必须实例化类别参数 T，才能使用类模板，这样后成员函数，变量以该实例化类型去实例化，编译器生成实例化代码
+3. 类模板中只有真正调用的函数，才会被实例化
+4. 可以对类模板进行特化
+5. 可以对类模板进行偏特化
+6. 可以对类模板定义缺省模板实参，该预设定义可以使用前一步定义的模板参数
