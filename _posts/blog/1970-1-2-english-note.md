@@ -25,8 +25,15 @@ category: blog
 	data frame		--数据框
 	table			--列联表	
 	Boxplot			--箱线图 箱形图
+
+(4) 本体
 	
-		
+	domain concept  领域概念阶层
+	value partition 分割值
+	spiceness	辛辣
+	disjoint with  不相交
+	asserted conditions 断言条件
+	
 		
 		
 		
