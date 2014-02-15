@@ -11,7 +11,11 @@ title: Wiki
     <ul class="hide">
     	<li><a href="http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html">Cygwin安装Hadoop(1)</a></li>
 		<li><a href="http://blog.csdn.net/liu_jason/article/details/7705484">Cygwin安装Hadoop(2)</a>--Cygwin安装Hadoop</li>
+	<li><a href="http://www.2cto.com/os/201304/205780.html">Cygwin安装Hadoop </a>--Cygwin安装Hadoop--sshd服务启动不了解决</li>
+
+
 		<li><a href="http://www.geedoo.info/">极豆技术博客</a>--hadoop源码分析,结合MongoDB开发</li>
+
     </ul>
     <h2>Javascript</h2>
     <ul class="hide">
@@ -416,8 +420,7 @@ title: Wiki
 
     <h2>其他</h2>
     <ul class="hide">
-    	<li><a href="http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt">Proxy Switchy!等使用的GFW List</a></li>
-        <li>我的两段吉他即兴：<a href="http://www.tudou.com/programs/view/1txOUWlIxJw/">Spanish风格</a>&nbsp;|&nbsp;<a href="http://www.tudou.com/programs/view/4qiVvUDWqjg/">C调即兴</a></li>
+    	<li><a href="http://www.wordlm.com/html/2219.html">word自动保存设置</a></li>
     </ul>
 </div>
 <script type="text/javascript">

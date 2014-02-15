@@ -1,0 +1,72 @@
+Administrator@swinghupc /
+$ ssh-host-config
+
+ssh-keygen: generating new host keys: RSA1 RSA DSA ECDSA ED25519
+*** Info: Creating default /etc/ssh_config file
+*** Info: Creating default /etc/sshd_config file
+*** Info: Privilege separation is set to yes by default since OpenSSH 3.3.
+*** Info: However, this requires a non-privileged account called 'sshd'.
+*** Info: For more info on privilege separation read /usr/share/doc/openssh/README.privsep.
+*** Query: Should privilege separation be used? (yes/no) no
+*** Info: Updating /etc/sshd_config file
+
+*** Query: Do you want to install sshd as a service?
+*** Query: (Say "no" if it is already installed as a service) (yes/no) yes
+*** Query: Enter the value of CYGWIN for the daemon: []
+*** Info: On Windows Server 2003, Windows Vista, and above, the
+*** Info: SYSTEM account cannot setuid to other users -- a capability
+*** Info: sshd requires.  You need to have or to create a privileged
+*** Info: account.  This script will help you do so.
+
+*** Info: You appear to be running Windows XP 64bit, Windows 2003 Server,
+*** Info: or later.  On these systems, it's not possible to use the LocalSystem
+*** Info: account for services that can change the user id without an
+*** Info: explicit password (such as passwordless logins [e.g. public key
+*** Info: authentication] via sshd).
+
+*** Info: If you want to enable that functionality, it's required to create
+*** Info: a new account with special privileges (unless a similar account
+*** Info: already exists). This account is then used to run these special
+*** Info: servers.
+
+*** Info: Note that creating a new user requires that the current account
+*** Info: have Administrator privileges itself.
+
+*** Info: No privileged account could be found.
+
+*** Info: This script plans to use 'cyg_server'.
+*** Info: 'cyg_server' will only be used by registered services.
+*** Query: Do you want to use a different name? (yes/no) no
+
+*** Query: Create new privileged user account 'cyg_server'? (yes/no) yes
+*** Info: Please enter a password for new user cyg_server.  Please be sure
+*** Info: that this password matches the password rules given on your system.
+*** Info: Entering no password will exit the configuration.
+*** Query: Please enter the password:
+*** Query: Please enter the password:
+*** Query: Please enter the password:
+*** Query: Reenter:
+
+*** Info: User 'cyg_server' has been created with password '123456'.
+*** Info: If you change the password, please remember also to change the
+*** Info: password for the installed services which use (or will soon use)
+*** Info: the 'cyg_server' account.
+
+*** Info: Also keep in mind that the user 'cyg_server' needs read permissions
+*** Info: on all users' relevant files for the services running as 'cyg_server'.
+*** Info: In particular, for the sshd server all users' .ssh/authorized_keys
+*** Info: files must have appropriate permissions to allow public key
+*** Info: authentication. (Re-)running ssh-user-config for each user will set
+*** Info: these permissions correctly. [Similar restrictions apply, for
+*** Info: instance, for .rhosts files if the rshd server is running, etc].
+
+
+*** Info: The sshd service has been installed under the 'cyg_server'
+*** Info: account.  To start the service now, call `net start sshd' or
+*** Info: `cygrunsrv -S sshd'.  Otherwise, it will start automatically
+*** Info: after the next reboot.
+
+*** Info: Host configuration finished. Have fun!
+
+Administrator@swinghupc /
+$
