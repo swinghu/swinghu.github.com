@@ -6,14 +6,14 @@ title: Wiki
   	<h2>C++</h2>
     <ul class="hide">
     	<li><a href="http://www.cnblogs.com/stephen-liu74/archive/2012/09/12/2639736.html">Step By Step -C++模板编程</a></li>
+        <li><a href="heather.cs.ucdavis.edu~matloff/">ucdavis ftp站点(python cuda 等资料)</a></li>
+        
     </ul>
   	<h2>Hadoop</h2>
     <ul class="hide">
     	<li><a href="http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html">Cygwin安装Hadoop(1)</a></li>
 		<li><a href="http://blog.csdn.net/liu_jason/article/details/7705484">Cygwin安装Hadoop(2)</a>--Cygwin安装Hadoop</li>
-	<li><a href="http://www.2cto.com/os/201304/205780.html">Cygwin安装Hadoop </a>--Cygwin安装Hadoop--sshd服务启动不了解决</li>
-
-
+	<li><a href="http://www.2cto.com/os/201304/205780.html">Cygwin安装Hadoop </a>--Cygwin安装Hadoop--sshd服务启动不了解决</li>      
 		<li><a href="http://www.geedoo.info/">极豆技术博客</a>--hadoop源码分析,结合MongoDB开发</li>
 
     </ul>
