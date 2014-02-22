@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: 训练集和测试集最近距离匹配
+category: project
+description: 训练集和测试集最近距离匹配选择
+---
 
 #训练集和测试集最近距离匹配选择
 有两个数据集，分别叫训练集和测试集（前者的实例instance比后者多）
