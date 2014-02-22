@@ -17,7 +17,7 @@ description: 算法实现
 - 	同一测试集中的孤立实例，可以根据其最近的K个测试实例的缺陷情况，通过概率计算得到预测结果。
 - 输出结果要求为每一个测试集分配一个训练集，并输出
 
-- sourcecode：https://github.com/swinghu/DataMatch.git
+- sourcecode：[github](https://github.com/swinghu/DataMatch.git)
 
 
 
