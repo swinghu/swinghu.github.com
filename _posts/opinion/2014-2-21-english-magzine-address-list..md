@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>2014-2-21-english-magzine-address-list</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<hr>
+<p>layout: post<br>title: 英文知名报刊网址<br>category: opinion</p>
+<h2 id="description-">description: 网罗英美各大英文报刊网址，了解英美最新动态，奇人异事，生活见闻，持续更新，欢迎回复添加</h2>
+<h1 id="-">英文报刊网址</h1>
+<ol>
+<li><a href="http://www.liberation.com/">自由报[法] ★★★★★　[评论]</a>　<a href="http://www.liberation.com/">http://www.liberation.com/</a></li>
+<li><a href="http://www.lemonde.fr/">世界报[法] ★★★★★　[评论]</a>　<a href="http://www.lemonde.fr/">http://www.lemonde.fr/</a> </li>
+<li><a href="http://www.independent.co.uk/">独立报[英] ★★★★★　[评论]</a>　<a href="http://www.independent.co.uk/">http://www.independent.co.uk/</a> </li>
+<li><a href="http://www.nytimes.com/">纽约时报[美] ★★★★★　[评论]</a>　<a href="http://www.nytimes.com/">http://www.nytimes.com/</a> </li>
+<li><a href="http://www.fortune.com/">财富[美] ★★★★★　[评论]</a>　<a href="http://www.fortune.com/">http://www.fortune.com/</a> </li>
+<li><a href="http://www.time.com/">时代[美] ★★★★★　[评论]</a>　<a href="http://www.time.com/">http://www.time.com/</a></li>
+<li><a href="http://www.wsj.com/">华尔街日报[美] ★★★★★　[评论]</a>　<a href="http://www.wsj.com/">http://www.wsj.com/</a></li>
+<li><a href="http://www.nationalgeographic.com/">美国国家地理杂志[美] ★★★★　[评论]</a>　<a href="http://www.nationalgeographic.com/">http://www.nationalgeographic.com/</a></li>
+<li><a href="http://www.sciencemag.org/">科学[美] ★★★★　[评论]</a>　<a href="http://www.sciencemag.org/">http://www.sciencemag.org/</a> </li>
+<li><a href="http://www.readersdigest.com/">读者文摘[美] ★★★★　[评论]</a>　<a href="http://www.readersdigest.com/">http://www.readersdigest.com/</a> </li>
+</ol>
+<p>11 <a href="http://www.usatoday.com/">今日美国[美] ★★★★　[评论]</a>　<a href="http://www.usatoday.com/">http://www.usatoday.com/</a><br>12 <a href="http://www.washingtonpost.com/">华盛顿邮报[美] ★★★★　[评论]</a>　<a href="http://www.washingtonpost.com/">http://www.washingtonpost.com/</a><br>13 <a href="http://www.repubblica.it/">共和报[意] ★★★★　[评论]</a>　<a href="http://www.repubblica.it/">http://www.repubblica.it/</a><br>14 <a href="http://www.welt.de/">世界报[德] ★★★★　[评论]</a>　<a href="http://www.welt.de/">http://www.welt.de/</a><br>15 <a href="http://www.nature.com/">自然[英] ★★★　[评论]</a>　<a href="http://www.nature.com/">http://www.nature.com/</a><br>16 <a href="http://jdw.janes.com/">简氏防务周刊[英] ★★★　[评论]</a>　<a href="http://jdw.janes.com/">http://jdw.janes.com/</a><br>17 <a href="http://www.iht.com/">国际先驱论坛报[法] ★★★　[评论]</a>　<a href="http://www.iht.com/">http://www.iht.com/</a><br>18 <a href="http://www.telegraph.co.uk/">每日电讯报[英] ★★★　[评论]</a>　<a href="http://www.telegraph.co.uk/">http://www.telegraph.co.uk/</a><br>19 <a href="http://www.guardian.co.uk/">卫报[英] ★★★　[评论]</a>　<a href="http://www.guardian.co.uk/">http://www.guardian.co.uk/</a><br>20 <a href="http://www.thetimes.co.uk/">泰晤士报[英] ★★★　[评论]</a>　<a href="http://www.thetimes.co.uk/">http://www.thetimes.co.uk/</a><br>21 <a href="http://www.tagesspiegel.de/">镜报[德] ★★★　[评论]</a>　<a href="http://www.tagesspiegel.de/">http://www.tagesspiegel.de/</a><br>22 <a href="http://www.worth.com/">价值[美] ★★★　[评论]</a>　<a href="http://www.worth.com/">http://www.worth.com/</a><br>23 <a href="http://www.forbes.com/">福布斯[美] ★★★　[评论]</a>　<a href="http://www.forbes.com/">http://www.forbes.com/</a><br>24 <a href="http://www.chicagotribune.com/">芝加哥论坛报[美] ★★★　[评论]</a>　<a href="http://www.chicagotribune.com/">http://www.chicagotribune.com/</a><br>25 <a href="http://www.csmonitor.com/">基督教科学箴言报[美] ★★★　[评论]</a>　<a href="http://www.csmonitor.com/">http://www.csmonitor.com/</a><br>26 <a href="http://www.techreview.com/">技术评论[美] ★★★　[评论]</a>　<a href="http://www.techreview.com/">http://www.techreview.com/</a><br>27 <a href="http://straitstimes.asia1.com.sg/">海峡时报[新加坡] ★★★　[评论]</a>　<a href="http://straitstimes.asia1.com.sg/">http://straitstimes.asia1.com.sg/</a><br>28 <a href="http://www.smh.com.au/">悉尼晨报[澳大利亚] ★★★　[评论]</a>　<a href="http://www.smh.com.au/">http://www.smh.com.au/</a><br>29 <a href="http://www.chosun.com/">朝鲜日报[韩] ★★★　[评论]</a>　<a href="http://www.chosun.com/">http://www.chosun.com/</a><br>30 <a href="http://www.nikkei.co.jp/">日本经济新闻[日] ★★★　[评论]</a>　<a href="http://www.nikkei.co.jp/">http://www.nikkei.co.jp/</a><br>31 <a href="http://www.japantimes.co.jp/">日本时报[日] ★★★　[评论]</a>　<a href="http://www.japantimes.co.jp/">http://www.japantimes.co.jp/</a><br>32 <a href="http://www.yomiuri.co.jp/">读买新闻[日] ★★★　[评论]</a>　<a href="http://www.yomiuri.co.jp/">http://www.yomiuri.co.jp/</a><br>33 <a href="http://www.asahi.com/">朝日新闻[日] ★★★　[评论]</a>　<a href="http://www.asahi.com/">http://www.asahi.com/</a><br>34 <a href="http://www.lefigaro.fr/">费加罗报[法] ★★★　[评论]</a>　<a href="http://www.lefigaro.fr/">http://www.lefigaro.fr/</a><br>35 <a href="http://www.utusan.com.my/">Utusan日报[马来] ★★★　[评论]</a>　<a href="http://www.utusan.com.my/">http://www.utusan.com.my/</a><br>36 <a href="http://www.elle.fr/">伊丽[法] ★★★　[评论]</a>　<a href="http://www.elle.fr/">http://www.elle.fr/</a><br>37 <a href="http://www.zaobao.com/">联合早报[新加坡] ★★★　[评论]</a>　<a href="http://www.zaobao.com/">http://www.zaobao.com/</a><br>38 <a href="http://www.thestar.com/">多伦多星报[加] ★★★　[评论]</a>　<a href="http://www.thestar.com/">http://www.thestar.com/</a><br>39 <a href="http://www.jpost.com/">耶路撒冷邮报[以] ★★★　[评论]</a>　<a href="http://www.jpost.com/">http://www.jpost.com/</a><br>40 <a href="http://www.kppublish.ru/">共青团报[俄] ★★★　[评论]</a>　<a href="http://www.kppublish.ru/">http://www.kppublish.ru/</a><br>41 <a href="http://www.izvestia.ru/">消息报[俄] ★★★　[评论]</a>　<a href="http://www.izvestia.ru/">http://www.izvestia.ru/</a><br>42 <a href="http://www.pravda.ru/">真理报[俄] ★★★　[评论]</a>　<a href="http://www.pravda.ru/">http://www.pravda.ru/</a><br>43 <a href="http://www.independent.ie/">爱尔兰独立报[爱] ★★★　[评论]</a>　<a href="http://www.independent.ie/">http://www.independent.ie/</a><br>44 <a href="http://www.nzherald.co.nz/">新西兰先驱报[新西兰] ★★★　[评论]</a>　<a href="http://www.nzherald.co.nz/">http://www.nzherald.co.nz/</a><br>45 <a href="http://www.manilatimes.net/">马尼拉时报[菲] ★★　[评论]</a>　<a href="http://www.manilatimes.net/">http://www.manilatimes.net/</a><br>46 <a href="http://www.bangkokpost.net/">曼谷邮报[泰] ★★　[评论]</a>　<a href="http://www.bangkokpost.net/">http://www.bangkokpost.net/</a><br>47 <a href="http://www.kwongwah.com.my/">光华日报[马来] ★★　[评论]</a>　<a href="http://www.kwongwah.com.my/">http://www.kwongwah.com.my/</a><br>48 <a href="http://www.nanyang.com.my/">南洋商报[马来] ★★　[评论]</a>　<a href="http://www.nanyang.com.my/">http://www.nanyang.com.my/</a><br>49 <a href="http://www.sinchew-i.com/">星洲日报[马来] ★★　[评论]</a>　<a href="http://www.sinchew-i.com/">http://www.sinchew-i.com/</a></p>
+<p>一、美国报纸<br>1、最有影响的报纸有：<br>　　1）、<a href="http://www.latimes.com">The Los Angeles Times</a>《洛杉矶时报》<a href="http://www.latimes.com　">http://www.latimes.com　</a><br>　　2）、<a href="http://www.nytimes.com">The New York Times</a>《纽约时报》 <a href="http://www.nytimes.com">http://www.nytimes.com</a><br>　　3）、<a href="http://www.washingtonpost.com">Washington Post</a>《华盛顿邮报》 <a href="http://www.washingtonpost.com">http://www.washingtonpost.com</a><br>　　4）、<a href="http://www.wsj.com">The Wall Street Journal</a>《华尔街日报》<a href="http://www.wsj.com">http://www.wsj.com</a><br>　　5）、<a href="http://www.nydailynews.com">The New York Daily News </a>《纽约每日新闻》 <a href="http://www.nydailynews.com">http://www.nydailynews.com</a><br>　　6）、<a href="http://www.chicagotribune.com/">Chicago Daily Tribune</a>《芝加哥论坛报》 <a href="http://www.chicagotribune.com/">http://www.chicagotribune.com/</a><br>　　7）、<a href="http://www.usatoday.com">USA Today</a> 《今日美国》 <a href="http://www.usatoday.com">http://www.usatoday.com</a><br>　　8）、<a href="http://www.nypost.com">New York Post</a>《纽约邮报》<a href="http://www.nypost.com">http://www.nypost.com</a><br>　　<br>2、较有影响的报纸有：<br>　　1）、<a href="http://www.csmonitor.com">The Christian Science Monitor</a> 《基督教科学箴言报》<a href="http://www.csmonitor.com">http://www.csmonitor.com</a><br>　　2）、<a href="http://www.iht.com">International Herald Tribune</a> 《国际先驱论坛报》<a href="http://www.iht.com">http://www.iht.com</a><br>　　3）、<a href="http://www.newsday.com">Washington News</a> 《华盛顿新闻报》<a href="http://www.newsday.com">http://www.newsday.com</a><br>　　4）、<a href="http://www.wdnweb.com">Washington Daily News</a> 《华盛顿每日新闻》<a href="http://www.wdnweb.com">http://www.wdnweb.com</a><br>　　5）、<a href="http://www.baltimoresun.com">Baltimore Sun </a>《巴尔的摩太阳报》<a href="http://www.baltimoresun.com">http://www.baltimoresun.com</a><br>　　<br>3、较受欢迎的报纸有：<br>　　1）、<a href="http://hjnews.townnews.com/">Herald Journal </a>《先驱日报》 <a href="http://hjnews.townnews.com/">http://hjnews.townnews.com/</a><br>　　2）、<a href="http://home.americanexpress.com">American Express </a>《美国快报》 <a href="http://home.americanexpress.com">http://home.americanexpress.com</a><br>　　3）、<a href="http://www.joc.com">Journal of Commerce </a>《商业日报》 <a href="http://www.joc.com">http://www.joc.com</a><br>　　4）、<a href="http://www.tribune.com">Tribune </a>《论坛报》<a href="http://www.tribune.com">http://www.tribune.com</a><br>　　5）、<a href="http://www.usnews.com/usnews/home.htm">American News </a>《美国新闻》<a href="http://www.usnews.com/usnews/home.htm">http://www.usnews.com/usnews/home.htm</a><br>　　6）、<a href="http://www.newsweekly.com.au">News Weekly </a>《新闻周刊》 <a href="http://www.newsweekly.com.au">http://www.newsweekly.com.au</a><br>　　7）、<a href="http://theworldreport.org/">The World Report </a>《世界报道》 <a href="http://theworldreport.org/">http://theworldreport.org/</a><br>　　　　<br>二、美国杂志<br>　　1、<a href="http://www.rd.com">Reader’s Digest</a> 《读者文摘》：<a href="http://www.rd.com">http://www.rd.com</a><br>　　2、TIME 《时代周刊》：<a href="http://www.time.com">http://www.time.com</a><br>　　3、Life 《生活》 <a href="http://www.life.com">http://www.life.com</a><br>　　4、People 《人民》 <a href="http://www.people.com">http://www.people.com</a><br>　　5、Cosmopolitan women《世界妇女》<a href="http://www.cosmomag.com">http://www.cosmomag.com</a><br>　　6、American Home 《美国家庭》 <a href="http://www.americanhomeshield.com">http://www.americanhomeshield.com</a><br>　　7、American Child 《美国儿童》 <a href="http://www.americanbaby.com">http://www.americanbaby.com</a><br>　　8、American Literature 《美国文学》<a href="http://americanliterature.com/">http://americanliterature.com/</a><br>　　<a href="http://guweb2.gonzaga.edu/faculty/campbell/enl310/sites.htm">http://guweb2.gonzaga.edu/faculty/campbell/enl310/sites.htm</a> （很多美国名著）<br>　　<a href="http://www.nagasaki-gaigo.ac.jp/ishikawa/amlit/　　">http://www.nagasaki-gaigo.ac.jp/ishikawa/amlit/　　</a><br>　　9、Scientific American 《美国科学》<a href="http://www.sciam.com　">http://www.sciam.com　</a><br>　　10、Playboy 《花花公子》 <a href="http://www.playboy.com">http://www.playboy.com</a><br>    11、Beautify Home and Garden 《美化家庭和园林》<br>　　12、Homes Circle 《家庭圈》<a href="http://www.newhomes.com　">http://www.newhomes.com　</a><br>　　13、Good Manager 《好管家》<br>　　14、Magus 《麦哥氏》<a href="http://www.magusbooks.com　">http://www.magusbooks.com　</a><br>　　15、、American Television Magazine 《电视指南》<a href="http://www.realitytvmagazine.com">http://www.realitytvmagazine.com</a><br>　　<br>三、美国主要报纸简介<br>　　1、《纽约时报》 (The New York Times) 1851年创刊，为苏兹贝格家族(Sulzberger)所有。<br>　　2、《华盛顿邮报》(The Washington Post) 1877年创刊华盛顿，属格雷厄姆家族(Graham)所有。<br>　　3、《洛杉矶时报》(The Los Angeles Times) 创刊于1881年，属钱德勒家族(Chandler)所有。<br>　　4、《华尔街日报》 (The Wall Street Journal) 1889年创刊。<br>　　5、《基督教科学箴言报》 (The Christian Science Monitor) 1909年创刊，由基督教科学出版社出版。<br>　　6、《芝加哥论坛报》(The Chicago Tribune) 创刊于1947年，在芝加哥出版。<br>　　7、《今日美国》(Gannett Newspapers) 由甘尼特集团于1982年创刊。<br>　　<br>四、美国主要期刊简介:<br>　　1、《时代周刊》 (TIME) <a href="http://www.time.com">http://www.time.com</a><br>　　2、《新闻周刊》 (NEWS WEEK) <a href="http://www.Newsweek.com">http://www.Newsweek.com</a><br>　　3、《美国新闻与世界报道》 (U.S. NEWS &amp;WORLD REPORT) <a href="http://www.usnews.com">http://www.usnews.com</a><br>　　4、《读者文摘》 (READER’S DIGEST) <a href="http://www.rd.com">http://www.rd.com</a><br>　　5、《商业周刊》 (Business Week) <a href="http://www.businessweek.com">http://www.businessweek.com</a><br>　　6、《财富》 (Fortune) <a href="http://www.fortune.com">http://www.fortune.com</a><br>　　<br>五、美国的党报<br>　　1、支持政府的报纸：<br>　　《国务院公报》 (Department of State Bulletin) <a href="http://www.findarticles.com">http://www.findarticles.com</a><br>　　《纽约时报》 (The New York Times) <a href="http://www.nytimes.com">http://www.nytimes.com</a><br>　　《华盛顿明星报》 (Washington Star) <a href="http://www.washingtonstar.com">http://www.washingtonstar.com</a><br>　　《美国新闻与世界报道》 (U.S. News &amp;World Report) <a href="http://www.usnews.com">http://www.usnews.com</a><br>　　<br>　　2、支持共和党的报纸：<br>　　《纽约先驱论坛报》 (New York Herald)<br>　　《芝加哥论坛报》 (Chicago Tribune) <a href="http://www.chicagotribune.com">http://www.chicagotribune.com</a><br>　　《洛杉矶时报》 (Los Angeles Times) <a href="http://www.latimes.com">http://www.latimes.com</a><br>　　《旧金山纪事报》 (San Francisco Chronicle) <a href="http://www.sfgate.com">http://www.sfgate.com</a><br>　　<br>　　3、支持民主党的报纸：<br>　　《巴尔的摩太阳报》 (Baltimore Sun) <a href="http://www.baltimoresun.com">http://www.baltimoresun.com</a><br>　　《芝加哥太阳时报》 (Chicago Sun-Times) <a href="http://www.suntimes.com">http://www.suntimes.com</a><br>　　《圣路易邮电报》 (St. Louis Post) <a href="http://www.stltoday.com">http://www.stltoday.com</a><br>　　<br>　　4、中立的报刊：<br>　　《基督教科学箴言报》 (The Christian Science Monitor) <a href="http://www.csmonitor.com">http://www.csmonitor.com</a><br>　　《纽约邮报》 (New York Post) <a href="http://www.nypost.com">http://www.nypost.com</a><br>　　《纽约每日新闻》 (New York Daily News) <a href="http://www.nydailynews.com">http://www.nydailynews.com</a><br>　　《华尔街日报》 (Wall Street Journal) <a href="http://www.wsj.com">http://www.wsj.com</a><br>　　<br>　　5、杂志方面：<br>　　1）、《新闻周刊》 (Newsweek) <a href="http://www.Newsweek.com">http://www.Newsweek.com</a><br>　　2）、《时代周刊》 (Time) <a href="http://www.time.com">http://www.time.com</a><br>　　3）、《展望周刊》 (Look) <a href="http://www.onelook.com">http://www.onelook.com</a><br>　　<br>六、美国广播公司<br>　　1、全国广播公司(National Broadcasting Company 简称 NBC )于1926年创办： <a href="http://www.nbc.com">http://www.nbc.com</a><br>　　2、哥伦比亚广播公司(Columbia Broadcasting System,简称CBS)于1927年创办：<a href="http://www.cbs.com">http://www.cbs.com</a><br>　　3、美国广播公司(American Broadcasting Company, 简称ABC) <a href="http://www.abc.com">http://www.abc.com</a><br>　　4、美国之音 (Voice of America,简称VOA) 于1942年创办： <a href="http://www.voa.gov">http://www.voa.gov</a><br>　　5、美联社 (Associated Press,简称AP)于1848年创办： <a href="http://www.ap.org">http://www.ap.org</a><br>　　6、合众国际社 (United Press-International News Service,简称UPI)于1907年创办：<a href="http://www.upi.com">http://www.upi.com</a><br>　　<br>第二部分、英国报刊杂志介绍<br>一、英国全国性高级报纸有：<br>　　1、《泰晤士报》 Times：<a href="http://www.thetimes.co.uk">http://www.thetimes.co.uk</a><br>　　2、《每日电讯报》 The Daily Telegraph：<a href="http://www.dailytelegraph.co.uk">http://www.dailytelegraph.co.uk</a><br>　　3、《卫报》 The Guardian：<a href="http://www.guardian.co.uk/">http://www.guardian.co.uk/</a><br>　　4、《金融时报》 The Financial Times：<a href="http://news.ft.com/home/rw">http://news.ft.com/home/rw</a><br>　　5、《星期日电讯报》 Sunday Dispatch：<br>　　6、《观察家报》 The Observer：<a href="http://www.observer.co.uk">http://www.observer.co.uk</a><br>　　7、《星期日泰晤士报》The Sunday Times：<a href="http://www.sunday-times.co.uk/">http://www.sunday-times.co.uk/</a><br>　　<br>二、英国全国性通俗报纸有：<br>　　1、《每日快报》 The Daily Express：<a href="http://www.express.co.uk/">http://www.express.co.uk/</a><br>　　2、《每日邮报》 The Daily Mail：<a href="http://www.dailymail.co.uk/">http://www.dailymail.co.uk/</a><br>　　3、《每日镜报》 Daily Mirror：<a href="http://www.mirror.co.uk/">http://www.mirror.co.uk/</a><br>　　4、《星期日快报》 The Sunday Express<br>　　5、《世界新闻报》 The News of the World：<a href="http://www.newsoftheworld.co.uk">http://www.newsoftheworld.co.uk</a> （一个很有特点的英语新闻网站）<br>　　<br>三、地方性报纸<br>　　它主要以刊登本地新闻和广告为主,具有浓厚的地方特色。包括晨报、晚报、周报、3日刊。<br>　　1、《格拉斯哥先驱报》 (Glasgow Herald) <a href="http://www.theherald.co.uk/">http://www.theherald.co.uk/</a><br>　　2、《旗帜晚报》 ( The Evening Standard ) <a href="http://www.thisislondon.com/">http://www.thisislondon.com/</a><br>　　3、《新闻晚报》 (The Evening News)：<a href="http://www.eveningtimes.co.uk">http://www.eveningtimes.co.uk</a><br>　　<br>四、主要报纸简介<br>　　1、《泰晤士报》(Times)：1785年由约翰•沃尔特在创敦创刊，誉为“世界第一大报纸”（the First Newspaper in the World）.<br>　　<a href="http://www.thetimes.co.uk">http://www.thetimes.co.uk</a><br>　　2、《卫报》(The Guardian)：原名《曼彻斯特卫报》(The Man- Chester Guardian),1821年创刊于曼彻斯特，后迁伦敦，1959年改称《卫报》.<br>　　<a href="http://www.guardian.co.uk/">http://www.guardian.co.uk/</a><br>　　3、《金融时报》(The Financial Times) ：1888年于伦敦创刊，是英国金融资本的晴雨表. <a href="http://news.ft.com/home/rw">http://news.ft.com/home/rw</a><br>　　4、《每日电讯报》(The Daily Telegraph) ：1855年于伦敦创刊，该报以“时效性”而著称。 <a href="http://www.dailytelegraph.co.uk">http://www.dailytelegraph.co.uk</a><br>　　5、《观察家报》(The Observer) ：1791年创刊。<br>　　<a href="http://www.observer.co.uk">http://www.observer.co.uk</a><br>　　6、《每日快报》(The Daily Express) ：1900年由比弗布鲁克爵士 ( Lord Beaverbrook) 在伦敦创刊。 <a href="http://www.express.co.uk/">http://www.express.co.uk/</a><br>　　7、《每日邮报》(The Daily Mail)： 1896年创刊，是一种知识性很强的通俗日报。<a href="http://www.dailymail.co.uk/">http://www.dailymail.co.uk/</a><br>　　8、《镜报》(The Mirror) ：1903年创刊，1985年以前名为《每日镜报》(Daily Mirror) 。<a href="http://www.mirror.co.uk/">http://www.mirror.co.uk/</a><br>　　<br>五、英国主要期刊简介<br>　　1、《经济学家》(The Economist) ：1843年创刊，与《金融时报》同属“皮尔逊父子公司”所有。<br>　　<a href="http://www.economist.com">http://www.economist.com</a><br>　　2、《旁观者》(The Spectator) ：创刊于1828年，是英国全国性周刊中历史最久的杂志。<br>　　<a href="http://www.spectator.co.uk">http://www.spectator.co.uk</a><br>　　3、《新政治家》(The New Statesman) ：创刊于1934年，主要发表有关政治、社会问题、书刊、电影、戏剧等方面的评论。<br>　　<a href="http://www.newstatesman.co.uk">http://www.newstatesman.co.uk</a><br>　　4、《妇女界》(The Woman’s Own) ：1932年创刊，是图文并茂的妇女月刊，女性朋友必看。<br>　　<a href="http://www.ipcmedia.com">http://www.ipcmedia.com</a><br>　　5、《妇女之国》(Woman’s Realm) ：创刊于1958年，适合新成家的青年妇女。<br>　　<a href="http://www.anagramgenius.com/">http://www.anagramgenius.com/</a><br>　　</p>
+<ul>
+<li><a href="http://www.the-tls.co.uk">《泰晤士报文学增刊》</a>(The Times Literary Supplement, The TLS) ：每周出一期，是英国最有影响的文学周刊之一。<br>　　<a href="http://www.the-tls.co.uk">http://www.the-tls.co.uk</a><br>　　<br>六、英国其他周刊及科普刊物 <h3 id="1-weeklies-">1、周刊 (Weeklies) ：</h3>
+　　</li>
+<li>《现在》 (Now) ：<a href="http://www.nowmagazine.co.uk">http://www.nowmagazine.co.uk</a><br>　</li>
+<li>《侦探》 (Private Eye)：<a href="http://www.private-eye.co.uk">http://www.private-eye.co.uk</a> （适合喜欢破案类小说的中学生）<br>　</li>
+<li>《笨拙》 (Punch)：<a href="http://www.punch.co.uk">http://www.punch.co.uk</a> （非常不错的漫画类杂志）<br>　</li>
+<li>《听众》 (The Listener) <a href="http://www.listener.co.nz/">http://www.listener.co.nz/</a><br>　</li>
+<li>《新社会》 (New Society) <a href="http://www.newsociety.com">http://www.newsociety.com</a><br>　</li>
+<li>《闲暇》 (Time Out) <a href="http://www.timeout.com/london/">http://www.timeout.com/london/</a> （是伦敦一本很好的休闲杂志，它的网站也很棒！） 　</li>
+</ul>
+<h3 id="2-scientific-periodicals-">2、科普 (Scientific periodicals)</h3>
+<ul>
+<li>《发现》 (Discovery) <a href="http://www.discovery.com/">http://www.discovery.com/</a> </li>
+<li>《自然》 (Nature) <a href="http://www.nature.com">http://www.nature.com</a> / 　</li>
+<li>中国地区自然杂志网址：<a href="http://www.natureasia.com/ch/gta/index.php">http://www.natureasia.com/ch/gta/index.php</a><br>　　　　简单介绍：《自然》系列期刊是由每周出版的多学科《自然》杂志和8种每月出版的期刊组成。《自然》杂志发表在某一学科内具有高最影响、其它领域的科学家也会感兴趣的研究工作；8种学术期刊的名称是根据其报道领域命名的，它们都发表在其领域中质量最高、影响力显著的论文，这8种期刊的名称分别是：《自然生物技术》、《自然细胞生物学》、《自然遗传学》、《自然免疫学》、《自然材料学》、《自然医学》、《自然方法学》、《自然结构和分子生物学》。所有的这些期刊都是国际性的，它们在美国、英国和日本出版和印刷。 </li>
+<li>《科学通讯》 (Science News) <a href="http://www.sciencenews.org">http://www.sciencenews.org</a> </li>
+<li>《地理杂志》 (The Geographical Magazine) <a href="http://www.geographical.co.uk">http://www.geographical.co.uk</a> </li>
+<li>《新科学家》 (New Scientist) <a href="http://www.newscientist.com">http://www.newscientist.com</a> </li>
+<li>《科学世界》 (Scientific World) <a href="http://www.thescientificworld.com">http://www.thescientificworld.com</a> </li>
+<li><a href="http://www.futuremusic.co.uk">《未来音乐》</a> (Future Music) <a href="http://www.futuremusic.co.uk">http://www.futuremusic.co.uk</a> </li>
+<li><p><a href="http://www.scilet.com">《学科进展》</a> (Science Progress) <a href="http://www.scilet.com">http://www.scilet.com</a><br>　　<br>另外附上：世界主要英文报刊名称 </p>
+</li>
+<li><p>　《泰晤士报》：The Times </p>
+</li>
+<li>　《每日电讯报》：The Daily Telegraph - 　　　　</li>
+<li>　《金融时报》：The Financial Times </li>
+<li>　《卫报》：The Guardians </li>
+<li>　《太阳报》：The Sun </li>
+<li>　《纽约时报》: The New York Times　　　　 　</li>
+<li>　《华盛顿邮报》：The Washington Post</li>
+<li>　《洛杉矶时报》：Los Angeles Times </li>
+<li>　《国际先驱论坛报》：International Herald Tribune </li>
+<li>　《华尔街日报》：The Wall Street Journal </li>
+<li>　《今日美国》：USA Today </li>
+<li>　《时代》：Time 　</li>
+<li>　《财富》：Fortune 　</li>
+<li>　《新闻周刊》：News Week </li>
+<li>　《商业周刊》：Business Week </li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
