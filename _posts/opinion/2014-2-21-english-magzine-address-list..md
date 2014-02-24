@@ -6,10 +6,8 @@ description: 网罗英美各大英文报刊网址，了解英美最新动态，�
 category: trash
 ---
 
-<body>
-<hr>
-<p>layout: post<br>title: 英文知名报刊网址<br>category: opinion</p>
-<h2 id="description-">description: 网罗英美各大英文报刊网址，了解英美最新动态，奇人异事，生活见闻，持续更新，欢迎回复添加</h2>
+
+<h2 id="">description: 网罗英美各大英文报刊网址，了解英美最新动态，奇人异事，生活见闻，持续更新，欢迎回复添加</h2>
 <h1 id="-">英文报刊网址</h1>
 <ol>
 <li><a href="http://www.liberation.com/">自由报[法] ★★★★★　[评论]</a>　<a href="http://www.liberation.com/">http://www.liberation.com/</a></li>
