@@ -13,9 +13,18 @@ title: Wiki
     <ul class="hide">
     	<li><a href="http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html">Cygwin安装Hadoop(1)</a></li>
 		<li><a href="http://blog.csdn.net/liu_jason/article/details/7705484">Cygwin安装Hadoop(2)</a>--Cygwin安装Hadoop</li>
-	<li><a href="http://www.2cto.com/os/201304/205780.html">Cygwin安装Hadoop </a>--Cygwin安装Hadoop--sshd服务启动不了解决</li>      
+		<li><a href="http://www.2cto.com/os/201304/205780.html">Cygwin安装Hadoop </a>--Cygwin安装Hadoop--sshd服务启动不了解决</li>      
 		<li><a href="http://www.geedoo.info/">极豆技术博客</a>--hadoop源码分析,结合MongoDB开发</li>
 
+    </ul>
+	  	<h2>HACK 安全</h2>
+    <ul class="hide">
+    	<li><a href="http://www.freebuf.com/">FreeBuf 黑客与Geek</a></li>
+		<li><a href="http://taosay.net/">道哥黑板报</a>道哥黑榜报 说道黑客</li>
+		<li><a href="http://www.pediy.com/">看雪学院</a>看雪学院 中国</li>
+		<li><a href="http://bbs.pediy.com/">看雪论坛</a>看雪论坛 中国</li>
+		<li><a href="http://thehackerspost.com/">安全博客主名人堂提名</a>the hackers post --America</li>
+		<li><a href="http://www.mckeay.net/author/martin/">NETWORK SECURITY BLOG</a>Martin McKeay </li>
     </ul>
     <h2>Javascript</h2>
     <ul class="hide">
