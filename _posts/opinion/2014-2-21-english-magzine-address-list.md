@@ -18,7 +18,8 @@ description: 网罗英美各大英文报刊网址，了解英美最新动态，�
 7. [华尔街日报[美] ★★★★★　[评论]](http://www.wsj.com/)　http://www.wsj.com/
 8. [美国国家地理杂志[美] ★★★★　[评论]](http://www.nationalgeographic.com/)　http://www.nationalgeographic.com/
 9. [科学[美] ★★★★　[评论]](http://www.sciencemag.org/ )　http://www.sciencemag.org/ 
-10 [读者文摘[美] ★★★★　[评论]](http://www.readersdigest.com/)　http://www.readersdigest.com/ 
+10. [读者文摘[美] ★★★★　[评论]](http://www.readersdigest.com/)　http://www.readersdigest.com/ 
+
 11 [今日美国[美] ★★★★　[评论]](http://www.usatoday.com/)　http://www.usatoday.com/ 
 12 [华盛顿邮报[美] ★★★★　[评论]](http://www.washingtonpost.com/)　http://www.washingtonpost.com/ 
 13 [共和报[意] ★★★★　[评论]](http://www.repubblica.it/)　http://www.repubblica.it/ 
