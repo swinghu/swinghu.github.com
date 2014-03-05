@@ -17,4 +17,7 @@ NotLoadComment: true
     <li itemscope itemtype="http://schema.org/Article">
         <h2><a href="http://swinghu.github.com/ST/RFC-HTTP1.1/" itemprop="url">RFC-HTTP1.1</a></h2>
     </li>
+      <li itemscope itemtype="http://schema.org/Article">
+        <h2><a href="http://swinghu.github.com/ST/NPWG-ZH/" itemprop="url">Network programming with Go中文版</a></h2>
+    </li>
 </ul>
