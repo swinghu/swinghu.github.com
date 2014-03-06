@@ -5,13 +5,6 @@ description: 学习使用Go语言实现一个web服务器，编写登陆页面�
 category: blog
 ---
 
----
-layout: post
-title: Go语言实现web服务器，登陆和文件上传
-description: 学习使用Go语言实现一个web服务器，编写登陆页面，上传文件页面，实现简单登陆验证和文件上传功能
-category: blog
----
-
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -304,7 +297,8 @@ img {
   max-width: 100%
 }
 </style>
-
+</head>
+<body>
 <h1 id="go-web-">Go语言实现web服务器，登陆和文件上传</h1>
 <p>学习使用Go语言实现一个web服务器，编写登陆页面，上传文件页面，实现简单登陆验证和文件上传功能</p>
 <h2 id="web-">web服务器</h2>
@@ -331,7 +325,31 @@ img {
     }</code></pre>
 <p>浏览器输入127.0.0.1,查看结果：<br><img src="http://i.imgur.com/WIRrOcq.png" alt=""></p>
 <h2 id="-">登陆页面设计</h2>
-<p>Notepad++ 编写html文件并保存为login.gptl(以下github自动将html转换为网页显示)<br>    <html><br>    <head><br>    <title></title><br>    </head><br>    <body><br>        <table weith="1024" heigth="400"><br>        <input type="checkbox" name = "interest" value = "football">足球<br>        <input type="checkbox" name = "interest" value= "basketball">篮球<br>        <input type="checkbox" name = "interest" value ="tennis">网球<br>        <form action="/login" method="post"><br>            用户名:<input type="text" name="username"><br>            密码:<input type="password" name="password"><br>            <input type = "hidden" name = "token" value = "{{.}}"><br>            <input type="submit" value="登陆"><br>        </form><br>        <select name = "fruit"><br>        <option value = "apple">apple</option><br>        <option value = "pear"> pear</option><br>        <option value = "banana">banana</option><br>        </select><br>    </body><br>    </html></p>
+<p>Notepad++ 编写html文件并保存为login.gptl(以下github自动将html转换为网页显示)    </p>
+<blockquote>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table weith=&quot;1024&quot; heigth=&quot;400&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name = &quot;interest&quot; value = &quot;football&quot;&gt;足球
+    &lt;input type=&quot;checkbox&quot; name = &quot;interest&quot; value= &quot;basketball&quot;&gt;篮球
+    &lt;input type=&quot;checkbox&quot; name = &quot;interest&quot; value =&quot;tennis&quot;&gt;网球
+    &lt;form action=&quot;/login&quot; method=&quot;post&quot;&gt;
+        用户名:&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;
+        密码:&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;
+        &lt;input type = &quot;hidden&quot; name = &quot;token&quot; value = &quot;{{.}}&quot;&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;登陆&quot;&gt;
+    &lt;/form&gt;
+    &lt;select name = &quot;fruit&quot;&gt;
+    &lt;option value = &quot;apple&quot;&gt;apple&lt;/option&gt;
+    &lt;option value = &quot;pear&quot;pear&lt;/option&gt;
+    &lt;option value = &quot;banana&quot;&gt;banana&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</blockquote>
 <p>注意将保存文件的格式设为UTF-8无BOM格式，否则可能由于编码问题，导致出错（直接显示页面HTML文件的内容）。<br>编写服务器端登陆处理代码：<br>    func login(w http.ResponseWriter, r *http.Request) {<br>        fmt.Println(&quot;method:&quot;, r.Method) //获取请求的方法<br>        if r.Method == &quot;GET&quot; {<br>            crutime := time.Now().Unix()<br>            h := md5.New()<br>            io.WriteString(h,strconv.FormatInt(crutime,10))<br>            token := fmt.Sprintf(&quot;%x&quot;,h.Sum(nil))</p>
 <pre><code>        t, _ := template.ParseFiles(&quot;login.gtpl&quot;)
         w.Header().Set(&quot;Content-Type&quot;, &quot;text/html; charset=utf-8&quot;)// fix the the return html file
@@ -363,10 +381,34 @@ img {
         }
     }
 }</code></pre>
-<p>启动该页面的处理函数：<br>    func main() {<br>    .............<br>    http.HandleFunc(&quot;/login&quot;, login)         //设置访问的路由<br>    .............<br>    err := http.ListenAndServe(&quot;:9090&quot;, nil) //设置监听的端口<br>    if err != nil {<br>        log.Fatal(&quot;ListenAndServe: &quot;, err)<br>    }</p>
+<p>启动该页面的处理函数：</p>
+<pre><code>func main() {
+.............   
+http.HandleFunc(&quot;/login&quot;, login)         //设置访问的路由
+.............
+err := http.ListenAndServe(&quot;:9090&quot;, nil) //设置监听的端口
+if err != nil {
+    log.Fatal(&quot;ListenAndServe: &quot;, err)
+}</code></pre>
 <p>浏览器输入127.0.0.1:9090,查看结果：<br><img src="http://i.imgur.com/LFJRDb4.png" alt=""></p>
 <h2 id="-">文档上传</h2>
-<p>Notepad++ 编写html文件并保存问upload.gtpl(以下github自动将html转换为网页显示)<br>    <html><br>    <head><br>    <title>upload file</title><br>    </head><br>    <body><br>        <form enctype ="multipart/form-data" action ="http://127.0.0.1:9090/upload" method = "post"><br>            <input type = "file" name ="uploadfile"/><br>            <input type = "hidden" name = "token" value ="{{.}}"/><br>            <input type = "submit" value = "upload" /><br>            <input type = "hidden" name = "token" value = "{{.}}"><br>        </form><br>    </body><br>    </html><br>注意将保存文件的格式设为UTF-8无BOM格式，否则可能由于编码问题，导致出错（直接显示页面HTML文件的内容）。<br>编写服务器端登陆处理代码：</p>
+<p>Notepad++ 编写html文件并保存问upload.gtpl(以下github自动将html转换为网页显示)</p>
+<blockquote>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;upload file&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;    
+    &lt;form enctype =&quot;multipart/form-data&quot; action =&quot;http://127.0.0.1:9090/upload&quot; method = &quot;post&quot;&gt;
+        &lt;input type = &quot;file&quot; name =&quot;uploadfile&quot;/&gt;
+        &lt;input type = &quot;hidden&quot; name = &quot;token&quot; value =&quot;{{.}}&quot;/&gt;
+        &lt;input type = &quot;submit&quot; value = &quot;upload&quot; /&gt;
+        &lt;input type = &quot;hidden&quot; name = &quot;token&quot; value = &quot;{{.}}&quot;  
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</blockquote>
+<p>注意将保存文件的格式设为UTF-8无BOM格式，否则可能由于编码问题，导致出错（直接显示页面HTML文件的内容）。<br>编写服务器端登陆处理代码：</p>
 <pre><code>func upload (w http.ResponseWriter, r *http.Request) {//上传文件处理
     fmt.Println(&quot;method&quot;,r.Method)
     if r.Method == &quot;GET&quot; {
@@ -428,5 +470,6 @@ scheme
 []</code></pre>
 <p>源码获取：<img src="http://i.imgur.com/t4ps3Uh.png" alt=""><br><a href="https://github.com/swinghu/gowebserver.git" title="Go webserver"><a href="https://github.com/swinghu/gowebserver.git">https://github.com/swinghu/gowebserver.git</a></a></p>
 
-
+</body>
+</html>
 <!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
