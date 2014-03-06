@@ -5,7 +5,6 @@ description: 学习使用Go语言实现一个web服务器，编写登陆页面�
 category: blog
 ---
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -350,8 +349,16 @@ img {
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 </blockquote>
-<p>注意将保存文件的格式设为UTF-8无BOM格式，否则可能由于编码问题，导致出错（直接显示页面HTML文件的内容）。<br>编写服务器端登陆处理代码：<br>    func login(w http.ResponseWriter, r *http.Request) {<br>        fmt.Println(&quot;method:&quot;, r.Method) //获取请求的方法<br>        if r.Method == &quot;GET&quot; {<br>            crutime := time.Now().Unix()<br>            h := md5.New()<br>            io.WriteString(h,strconv.FormatInt(crutime,10))<br>            token := fmt.Sprintf(&quot;%x&quot;,h.Sum(nil))</p>
-<pre><code>        t, _ := template.ParseFiles(&quot;login.gtpl&quot;)
+<p>注意将保存文件的格式设为UTF-8无BOM格式，否则可能由于编码问题，导致出错（直接显示页面HTML文件的内容）。<br>编写服务器端登陆处理代码：</p>
+<pre><code>func login(w http.ResponseWriter, r *http.Request) {
+    fmt.Println(&quot;method:&quot;, r.Method) //获取请求的方法
+    if r.Method == &quot;GET&quot; {
+        crutime := time.Now().Unix()
+        h := md5.New()
+        io.WriteString(h,strconv.FormatInt(crutime,10))
+        token := fmt.Sprintf(&quot;%x&quot;,h.Sum(nil))
+
+        t, _ := template.ParseFiles(&quot;login.gtpl&quot;)
         w.Header().Set(&quot;Content-Type&quot;, &quot;text/html; charset=utf-8&quot;)// fix the the return html file
         t.Execute(w, token)//增加 token：将nil 改为token            
         } else {
