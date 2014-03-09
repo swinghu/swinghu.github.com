@@ -20,4 +20,8 @@ NotLoadComment: true
       <li itemscope itemtype="http://schema.org/Article">
         <h2><a href="http://swinghu.github.com/ST/NPWG-ZH/" itemprop="url">Network programming with Go中文版</a></h2>
     </li>
+         <li itemscope itemtype="http://schema.org/Article">
+        <h2><a href="http://swinghu.github.com/ST/KnownsecRDChecklist_v2.2/" itemprop="url">知道创宇研发技能提升手册</a></h2>
+    </li>
+    KnownsecRDChecklist_v2.2
 </ul>
