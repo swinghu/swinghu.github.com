@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>VIM: if_perl</title>
+<link rel="stylesheet" href="vim-stylesheet.css" type="text/css">
+</head>
+<body>
+<h2>IF_PERL</h2>
+<pre>
+<b class="vimtag">*<a name="if_perl.txt">if_perl.txt</a>*</b>   For Vim version 6.4.  最近更新: 2006年2月
+
+
+                  VIM REFERENCE MANUAL    by Sven Verdoolaege
+                                         and Matt Gerassimof
+                            <code class="vim">译者</code>: foolstone@ustc.edu, Willis
+                            http://vimcdoc.sf.net
+
+
+Perl 与 Vim                                             <b class="vimtag">*<a name="perl">perl</a>*</b> <b class="vimtag">*<a name="Perl">Perl</a>*</b>
+
+1. 编辑 Perl 文档               |<a href="if_perl.html#perl-editing">perl-editing</a>|
+2. 编译带 Perl 接口的 VIM       |<code class="badlink">perl-comiling</code>|
+3. Perl 接口的使用              |<a href="if_perl.html#perl-using">perl-using</a>|
+4. 动态调入                     |<a href="if_perl.html#perl-dynamic">perl-dynamic</a>|
+
+<code class="special">{Vi 没有上述这些功能}</code>
+Perl 接口只有在编译 Vim 时加入 |<a href="various.html#+perl">+perl</a>| 才能使用。
+
+</pre><hr class="doubleline" /><pre>
+<h4>1. 编辑 Perl 文件                                       <b class="vimtag">*<a name="perl-editing">perl-editing</a>*</b></h4>
+Vim 语法高亮显示支持 Perl和POD文件。Vim假设后缀为.pl和.pm的文件是Perl文件。Vim
+同时不管文件后缀而测试文件的首行来检查一个文件是否为Perl脚本(参见Vim的语法目录
+下的scripts.vim)。Vim假设带后缀.POD的文件是POD文本。
+
+要使用Perl标签，你需要Exuberant ctags的最新版本。在这里可以找到它:
+        http://ctags.sourceforge.net
+当然，作为选择你还可以用一个叫pltags.pl的Perl脚本，它是和Vim一起发行的，他的藏
+身之处位于$VIMRUNTIME/tools目录。现在这个脚本比Exuberant ctags的Perl支持具备更
+多的功能。
+
+</pre><hr class="doubleline" /><pre>
+<h4>2. 编译带Perl接口的VIM                                  <b class="vimtag">*<a name="perl-compiling">perl-compiling</a>*</b></h4>
+为了能编译带Perl接口的Vim，你需要Perl5.004(或者更新)的版本。Perl必须在你编译Vim
+前安装。Vim的Perl接口不能和官方发行的Perl5.003一起正常工作！它也许能和Perl5.003
+_05或者更新版本一起正常工作。_[<code class="vim">译者注</code>]到翻译的时候，这个问题已经不会是大问题了_
+
+Vim的Perl补丁由Sven Verdoolaege<code class="special">&lt;skimo@breughel.ufsia.ac.be&gt;</code>和Matt Gerassimof制
+作。
+
+Perl的 MS-Windows 版本可以在下面这个网址找到:
+http://www.perl.com/CPAN/ports/nt/Standard/x86/
+
+</pre><hr class="doubleline" /><pre>
+<h4>3. Perl接口的使用                                       <b class="vimtag">*<a name="perl-using">perl-using</a>*</b></h4>
+                                                        <b class="vimtag">*<a name=":perl">:perl</a>*</b> <b class="vimtag">*<a name=":pe">:pe</a>*</b>
+:pe[rl] <code class="special">{cmd}</code>           执行Perl命令<code class="special">{cmd}</code>。当前包是"main"。
+
+:pe[rl] &lt;&lt; <code class="special">{endpattern}</code>
+<code class="special">{script}</code>
+<code class="special">{endpattern}</code>
+                        执行Perl脚本<code class="special">{script}</code>。
+                        <code class="special">{endpattern}</code>不能有任何前导空格。如果忽略了<code class="special">{endpattern}</code>，
+                        就会像|<a href="insert.html#:append">:append</a>|和|<a href="insert.html#:insert">:insert</a>|命令那样默认到达一个点'.'。
+                        |<a href="if_perl.html#:perl">:perl</a>|命令的这种形式主要是用来在vim脚本里面包含perl代
+                        码。
+                        <code class="note">备注</code>:当Perl没有被编译进vim时这条命令不能工作。为了避
+                        免出错请参考|<a href="if_perl.html#script-here">script-here</a>|。
+vim脚本示例:
+<code class="example"></code>
+<code class="example">        function! WhitePearl()</code>
+<code class="example">        perl &lt;&lt; EOF</code>
+<code class="example">                VIM::Msg("pearls are nice for necklaces");</code>
+<code class="example">                VIM::Msg("rubys for rings");</code>
+<code class="example">                VIM::Msg("pythons for bags");</code>
+<code class="example">                VIM::Msg("tcls????");</code>
+<code class="example">        EOF</code>
+<code class="example">        endfunction</code>
+
+
+                                                        <b class="vimtag">*<a name=":perldo">:perldo</a>*</b> <b class="vimtag">*<a name=":perld">:perld</a>*</b>
+:<code class="special">[range]</code>perld[o] <code class="special">{cmd}</code>  对<code class="special">[range]</code>中的每行执行Perl命令<code class="special">{cmd}</code>,同时$_依次被赋值
+                        为每行的文本，但不包括行尾的<code class="special">&lt;EOL&gt;</code>。改变$_会改变每行
+                        的内容，但是用这个命令不能添加或者删除行。<code class="special">[range]</code>的
+                        缺省值是整个文件:"1，$"。
+
+可以试一下下面的代码:
+<code class="example"></code>
+<code class="example">  :perl $a=1</code>
+<code class="example">  :perldo $_ = reverse($_);1</code>
+<code class="example">  :perl VIM::Msg("hello")</code>
+<code class="example">  :perl $line = $curbuf-&gt;Get(42)</code>
+
+
+                                                        <b class="vimtag">*<a name="E299">E299</a>*</b>
+在|<a href="eval.html#sandbox">sandbox</a>|执行Perl命令是受限制的。":perldo"根本就不能执行。如果可能，":perl"
+会在安全环境下被执行。
+
+                                                        <b class="vimtag">*<a name="perl-overview">perl-overview</a>*</b>
+下面是在Perl下可用的函数概要:
+<code class="example"></code>
+<code class="example">  :perl VIM::Msg("Text")                # 显示信息</code>
+<code class="example">  :perl VIM::Msg("Error", "ErrorMsg")   # 显示错误信息</code>
+<code class="example">  :perl VIM::Msg("remark", "Comment")   # 显示突出的信息</code>
+<code class="example">  :perl VIM::SetOption("ai")            # 设定一个vim选项</code>
+<code class="example">  :perl $nbuf = VIM::Buffers()          # 返回缓冲区的个数</code>
+<code class="example">  :perl @buflist = VIM::Buffers()       # 返回所有缓冲区的数组</code>
+<code class="example">  :perl $mybuf = (VIM::Buffers('qq.c'))[0] # 返回一个'qq.c'的缓冲区对象</code>
+<code class="example">  :perl @winlist = VIM::Windows()       # 返回所有窗口的数组</code>
+<code class="example">  :perl $nwin = VIM::Windows()          # 返回窗口的个数</code>
+<code class="example">  :perl ($success, $v) = VIM::Eval('&amp;path') # $v: 'path' 选项值, $success: 1</code>
+<code class="example">  :perl ($success, $v) = VIM::Eval('&amp;xyz')  # $v: '' 而 $success: 0</code>
+<code class="example">  :perl $v = VIM::Eval('expand("<code class="special">&lt;cfile&gt;</code>")') # 展开文件<code class="special">&lt;cfile&gt;</code></code>
+<code class="example">  :perl $curwin-&gt;SetHeight(10)          # 设定窗口高度</code>
+<code class="example">  :perl @pos = $curwin-&gt;Cursor()        # 返回坐标(row, col)</code>
+<code class="example">  :perl @pos = (10, 10)</code>
+<code class="example">  :perl $curwin-&gt;Cursor(@pos)           # 把光标位置设为@pos</code>
+<code class="example">  :perl $curwin-&gt;Cursor(10,10)          # 把光标位置设为第10行第10列</code>
+<code class="example">  :perl $mybuf = $curwin-&gt;Buffer()      # 返回窗口的缓冲区对象</code>
+<code class="example">  :perl $curbuf-&gt;Name()                 # 返回缓冲区名字</code>
+<code class="example">  :perl $curbuf-&gt;Number()               # 返回缓冲区号码</code>
+<code class="example">  :perl $curbuf-&gt;Count()                # 返回行数</code>
+<code class="example">  :perl $l = $curbuf-&gt;Get(10)           # 返回第10行</code>
+<code class="example">  :perl @l = $curbuf-&gt;Get(1 .. 5)       # 返回第1到第5行</code>
+<code class="example">  :perl $curbuf-&gt;Delete(10)             # 删除第10行</code>
+<code class="example">  :perl $curbuf-&gt;Delete(10, 20)         # 删除第10－20行</code>
+<code class="example">  :perl $curbuf-&gt;Append(10, "Line")     # 在第10行后面添加一行</code>
+<code class="example">  :perl $curbuf-&gt;Append(10, "Line1", "Line2", "Line3") # 在第10行后面添加三行</code>
+<code class="example">  :perl @l = ("L1", "L2", "L3")</code>
+<code class="example">  :perl $curbuf-&gt;Append(10, @l)         # 添加 L1, L2 和 L3</code>
+<code class="example">  :perl $curbuf-&gt;Set(10, "Line")        # 替换第10行</code>
+<code class="example">  :perl $curbuf-&gt;Set(10, "Line1", "Line2")      # 替换第10行和第11行</code>
+<code class="example">  :perl $curbuf-&gt;Set(10, @l)            # 分别用L1，L2和L3替换10－12行</code>
+
+                                                        <b class="vimtag">*<a name="perl-Msg">perl-Msg</a>*</b>
+VIM::Msg(<code class="special">{msg}</code>, <code class="special">{group}</code>?)
+                        显示消息<code class="special">{msg}</code>。可选<code class="special">{group}</code>参数指定用来显示这个消息的
+                        突出方式。
+
+                                                        <b class="vimtag">*<a name="perl-SetOption">perl-SetOption</a>*</b>
+VIM::SetOption(<code class="special">{arg}</code>)
+                        设置一个vim选项。<code class="special">{arg}</code>可以是任何":set"命令能接受的参数。
+                        这就意味着参数里面不允许有空格！见|<a href="options.html#:set">:set</a>|。
+
+                                                        <b class="vimtag">*<a name="perl-Buffers">perl-Buffers</a>*</b>
+VIM::Buffers([<code class="special">{bn}</code>...]) 没有参数的时候，在列表上下文里面返回所有缓冲区的列表
+                        或者在标量上下文时返回缓冲区的个数。对于一个缓冲区名字
+                        列表或者数量<code class="special">{bn}</code>,返回匹配<code class="special">{bn}</code>的缓冲区列表，与Vim内部函
+                        数|<a href="eval.html#bufname()">bufname()</a>|使用同样的规则。
+                        警告: 使用 |<a href="windows.html#:bwipe">:bwipe</a>| 后，该列表就不合法了。如果要强行使
+                        用会使 Vim 崩溃。
+
+                                                        <b class="vimtag">*<a name="perl-Windows">perl-Windows</a>*</b>
+VIM::Windows([<code class="special">{wn}</code>...]) 没有参数的时候，在列表上下文里面返回所有窗口的列表或者在
+                        标量上下文时返回窗口的个数。对于一个窗口名字数量列表<code class="special">{wn}</code>,
+                        返回匹配<code class="special">{wn}</code>的窗口列表。
+                        警告: 窗口关闭后，该列表就不合法了。如果要强行使用会使
+                        Vim 崩溃。
+
+                                                        <b class="vimtag">*<a name="perl-DoCommand">perl-DoCommand</a>*</b>
+VIM::DoCommand(<code class="special">{cmd}</code>)   执行 Ex 命令 <code class="special">{cmd}</code>.
+
+                                                        <b class="vimtag">*<a name="perl-Eval">perl-Eval</a>*</b>
+VIM::Eval(<code class="special">{expr}</code>)       对<code class="special">{expr}</code>求值并返回(success,val)。success=1表示val包含<code class="special">{expr}</code>
+                        的值。success=0表示表达式求值失败。'@x'返回寄存器x的内容，
+                        '&amp;x'返回选项x的值，'x'返回内部变量x的值,'$x'等价于perl中的
+                        $ENV<code class="special">{x}</code>。所有在命令行可以访问的函数都对<code class="special">{expr}</code>有效。
+
+                                                        <b class="vimtag">*<a name="perl-SetHeight">perl-SetHeight</a>*</b>
+Window-&gt;SetHeight(<code class="special">{height}</code>)
+                        在屏幕允许的前提下把窗口的高度设定为<code class="special">{height}</code>。
+
+                                                        <b class="vimtag">*<a name="perl-GetCursor">perl-GetCursor</a>*</b>
+Window-&gt;Cursor(<code class="special">{row}</code>?, <code class="special">{col}</code>?)
+                        在没有参数的情况下，返回窗口光标所处位置的坐标(row,col)。
+                        当有参数<code class="special">{row}</code>和<code class="special">{col}</code>的情况下，把窗口光标的位置设为<code class="special">{row}</code>
+                        和<code class="special">{col}</code>。<code class="note">注意</code><code class="special">{col}</code>是Perl风格的，从0数起的，比Vim的尺度
+                        小1。
+
+Window-&gt;Buffer()                                        <b class="vimtag">*<a name="perl-Buffer">perl-Buffer</a>*</b>
+                        返回给定窗口的缓冲区对象。
+
+                                                        <b class="vimtag">*<a name="perl-Name">perl-Name</a>*</b>
+Buffer-&gt;Name()          返回缓冲区的文件名。
+
+                                                        <b class="vimtag">*<a name="perl-Number">perl-Number</a>*</b>
+Buffer-&gt;Number()        返回缓冲区的数量。
+
+                                                        <b class="vimtag">*<a name="perl-Count">perl-Count</a>*</b>
+Buffer-&gt;Count()         返回缓冲区中的行数。
+
+                                                        <b class="vimtag">*<a name="perl-Get">perl-Get</a>*</b>
+Buffer-&gt;Get(<code class="special">{lnum}</code>, <code class="special">{lnum}</code>?, ...)
+                        对每个指定的<code class="special">{lnum}</code>,返回缓冲区中第<code class="special">{lnum}</code>行的文本字符
+                        串。通过指定一个<code class="special">{lnum}</code>列表可以传递一个数组。
+
+                                                        <b class="vimtag">*<a name="perl-Delete">perl-Delete</a>*</b>
+Buffer-&gt;Delete(<code class="special">{lnum}</code>, <code class="special">{lnum}</code>?)
+                        删除缓冲区的第<code class="special">{lnum}</code>行。当有第二个参数<code class="special">{lnum}</code>时，删除
+                        由第一个<code class="special">{lnum}</code>到第二个<code class="special">{lnum}</code>指定的范围。
+
+                                                        <b class="vimtag">*<a name="perl-Append">perl-Append</a>*</b>
+Buffer-&gt;Append(<code class="special">{lnum}</code>, <code class="special">{line}</code>, <code class="special">{line}</code>?, ...)
+                        把每个<code class="special">{line}</code>字符串添加到缓冲区的第<code class="special">{lnum}</code>行后面。<code class="special">{line}</code>
+                        列表可以是一个数组。
+
+                                                        <b class="vimtag">*<a name="perl-Set">perl-Set</a>*</b>
+Buffer-&gt;Set(<code class="special">{lnum}</code>, <code class="special">{line}</code>, <code class="special">{line}</code>?, ...)
+                        替代缓冲区从第<code class="special">{lnum}</code>行开始，由<code class="special">{lines}</code>指定的一行或者多行。
+                        <code class="special">{line}</code>列表可以是一个数组。如果参数无效，就不作替代。
+$main::curwin
+                        当前窗口对象。
+$main::curbuf
+                        当前缓冲区对象。
+
+                                                        <b class="vimtag">*<a name="script-here">script-here</a>*</b>
+当使用嵌入式脚本语言是，你可能想在语言不支持时跳过这些。但是这个机制不能工作:
+<code class="example">   if has('perl')</code>
+<code class="example">     perl &lt;&lt; EOF</code>
+<code class="example">       this will NOT work!</code>
+<code class="example">   EOF</code>
+<code class="example">   endif</code>
+取而代之，把Perl/Python/Ruby/等的命令放在一个函数里面并调用它:
+<code class="example">    if has('perl')</code>
+<code class="example">      function DefPerl()</code>
+<code class="example">        perl &lt;&lt; EOF</code>
+<code class="example">          this works</code>
+<code class="example">    EOF</code>
+<code class="example">      endfunction</code>
+<code class="example">      call DefPerl()</code>
+<code class="example">    endif</code>
+<code class="note">备注</code>: "EOF"必须在行首(前面不能有前导空格)。
+
+</pre><hr class="doubleline" /><pre>
+<h4>4. 动态调入                                             <b class="vimtag">*<a name="perl-dynamic">perl-dynamic</a>*</b></h4>
+MS-Windows 上，可以动态调入 Perl 库。|<a href="various.html#:version">:version</a>| 输出这时应包括 |<a href="various.html#+perl%2Fdyn">+perl/dyn</a>|。
+
+这意味着 Vim 只有在必要时才寻找 Perl DLL 文件。如果不使用 Perl 接口，你就不需
+要它。这样，即使没有该 DLL 文件，你也可使用 Vim。
+
+要使用 Perl 接口，Perl DLL 必须在搜索路径上。控制台窗口里输入 "path" 可以看到
+(搜索路径) 当前使用的目录。
+
+DLL 的名字必须匹配 Vim 编译时所使用的 Perl 版本。目前，该名字为 "perl58.dll"，
+也就是 Perl 5.8。要确信这一点，编辑 "gvim.exe" 文件并查找 "perl\d*.dll\c"。
+
+</pre><hr class="doubleline" /><pre>
+<h4> vim:tw=78:ts=8:ft=help:norl:</h4></pre>
+<p><i>Generated by vim2html on 2006年 06月 24日 星期六 00:27:59 UTC</i></p>
+</body>
+</html>

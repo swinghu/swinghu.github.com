@@ -23,4 +23,7 @@ NotLoadComment: true
          <li itemscope itemtype="http://schema.org/Article">
         <h2><a href="http://swinghu.github.com/ST/KnownsecRDChecklist_v2.2/" itemprop="url">知道创宇研发技能提升手册</a></h2>
     </li>
+     <li itemscope itemtype="http://schema.org/Article">
+        <h2><a href="http://swinghu.github.com/ST/vi-manul/" itemprop="url">VI命令手册</a></h2>
+    </li>
 </ul>
