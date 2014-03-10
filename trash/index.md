@@ -43,6 +43,11 @@ layout: home
                 <div class="title-desc" itemprop="description">
                     技术规范文档清单
                 </div>
+  		<li itemtype="http://schema.org/Article">
+                <h2><a href="http://swinghu.github.com/resume.html" itemprop="url">个人简历</a></h2>
+                <div class="title-desc" itemprop="description">
+                  个人简历以及擅长技能，知识列表
+                </div>
         </li>
 		
 		<li itemtype="http://schema.org/Article">
