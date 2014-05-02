@@ -65,14 +65,14 @@ Then run javac `HelloWorld.java`. The resulting `HelloWorld.class` can be run on
 In Docker, you write a `Dockerfile`:
 
 	
->	FROM ubuntu:13.10
+	FROM ubuntu:13.10
 	
->	ENV DEBIAN_FRONTEND noninteractive
+	ENV DEBIAN_FRONTEND noninteractive
 	RUN apt-get update -qq -y && \
 	    apt-get install curl -qq -y && \
 	    apt-get clean
 	
->	RUN curl -sSL https://get.rvm.io | bash -s stable --ruby=2.1.1
+	RUN curl -sSL https://get.rvm.io | bash -s stable --ruby=2.1.1
 
 Then run `docker build -t my/ruby `. and the resulting container, `my/ruby `can be run on any machine with a Docker server.
 
