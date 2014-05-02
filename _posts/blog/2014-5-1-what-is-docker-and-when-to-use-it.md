@@ -6,8 +6,8 @@ category: blog
 ---
 
 
-WHAT IS DOCKER AND WHEN TO USE IT
-=================================
+### WHAT IS DOCKER AND WHEN TO USE IT ###
+
 
 ![](http://i.imgur.com/dAuXOTh.png)
 Heard of Docker, but still having trouble understanding it? Don’t worry, you are not alone. Today, I want to try to explain Docker in a few different ways.
