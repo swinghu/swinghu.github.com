@@ -243,7 +243,4 @@ category: blog
 
 　　本文来源于 《[Visaul Studio 常用快捷键的动画演示](http://blog.chenxu.me/post/detail?id=0543017f-1c98-4bd6-b87c-8bd19b4d752c)》
 
-  作者：stg609
-
-  本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。
-  本人博客已经转移到[Charley Blog](http://blog.chenxu.me/)
+  作者：[stg609](http://blog.chenxu.me/)
