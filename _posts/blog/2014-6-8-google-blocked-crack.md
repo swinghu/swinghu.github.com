@@ -13,8 +13,10 @@ google block  之终极解决方式
 方法1：
 ----
 将
-203.208.41.144 www.google.com.hk
-203.208.41.145 www.google.com.hk
+
+    203.208.41.144 www.google.com.hk
+    203.208.41.145 www.google.com.hk
+
 添加至： C:\Windows\System32\drivers\etc\hosts文件中
 
 
