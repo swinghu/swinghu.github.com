@@ -36,7 +36,7 @@ google block  之终极解决方式
 
 解决办法是只要修改用户本地计算机hosts文件就可以了。
 
-一、Windows系统修改hosts文件的方法
+###一、Windows系统修改hosts文件的方法
 
 windows系统hosts文件在本地电脑C盘，路径是：*C:\Windows\System32\drivers\etc *
 
@@ -498,7 +498,7 @@ windows系统hosts文件在本地电脑C盘，路径是：*C:\Windows\System32\d
 使用goagent翻墙的同学，建议下载最新版goagent3.1.17，把203.208.46.176 添加到Goagent/Local/proxy.ini 文件里面的 iplist 列表里“google_cn = ”后面，并修改proxy.ini 里的appid，再上传*goagent/server/uploader.bat*，上传完毕就ok了。
 
 
-二、苹果Mac系统修改hosts文件的方法
+###二、苹果Mac系统修改hosts文件的方法
 
 第一种方法：在应用程序里面打开终端（terminal），输入 sudo vi /etc/hosts 回车进入。如果提示输入密码，就输入锁屏密码。hosts文件就自动打开了。
 接着输入英文状态下的“ i ”，进入编辑模式，将上面的代码（和上面Windows系统的代码一样）拷贝进去，编辑完成之后，按 esc退出，输入 :wq 保存。
@@ -506,7 +506,7 @@ windows系统hosts文件在本地电脑C盘，路径是：*C:\Windows\System32\d
 第二种方法：启动root帐户直接改。打开终端，输入: sudo open /Applications/TextEdit.app/Contents/MacOS/TextEdit /etc/hosts  就可以用文本编辑来直观修改hosts了。 
 
 
-三、Android手机手动修改HOSTS文件的方法
+###三、Android手机手动修改HOSTS文件的方法
 
 　　Android手机是和Google帐号紧密联系的，很多时候Google帐号无法登录，导致Android无法使用。
 
