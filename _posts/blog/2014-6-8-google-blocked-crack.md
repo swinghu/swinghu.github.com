@@ -1,7 +1,7 @@
 ---
 layout: post
 title: google block  之终极解决方式
-description: google blocked 解决方案
+description: google blocked 解决方案(本文章持续更新，如果有新的解决方案，请对此博文进行评论留言。)
 category: blog
 ---
 
