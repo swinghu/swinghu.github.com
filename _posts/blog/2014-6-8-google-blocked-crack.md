@@ -10,23 +10,23 @@ google block  之终极解决方式
 
 首先声明 该方法来自互联网，方法1，方法2简单，用户可以尝试，我亲测第一种方法可以用，方法2，3没有	亲测。
 
-方法1：
+方法1 修改hosts文件
 ----
 将
 
     203.208.41.144 www.google.com.hk
     203.208.41.145 www.google.com.hk
 
-添加至： C:\Windows\System32\drivers\etc\hosts文件中
+添加至：* C:\Windows\System32\drivers\etc\hosts*文件中
 
 
 
-方法2：
+方法2 修改Chrome 浏览器
 ----
 在 Chrome 浏览器中打开「实验性功能」页面（chrome://flags/），启用「实验性 QUIC 协议」和「经由实验性 QUIC 协议发出的 HTTPS 请求」，重启浏览器后可以正常登陆 Google 相关服务。// 我就是手抖
 
 
-方法3（请保持耐心看完）：
+方法3 修改host （请保持耐心看完）
 ----
 谷歌google搜索打不开、谷歌gmail邮箱及相关服务无法登录的解决办法
 
@@ -38,13 +38,13 @@ google block  之终极解决方式
 
 一、Windows系统修改hosts文件的方法
 
-windows系统hosts文件在本地电脑C盘，路径是：C:\Windows\System32\drivers\etc 
+windows系统hosts文件在本地电脑C盘，路径是：*C:\Windows\System32\drivers\etc *
 
 用记事本txt文件打开hosts文件。
 
-（如果提示没有管理权限的话，可把hosts文件复制，粘贴到电脑的桌面。在电脑桌面上双击hosts文件，用记事本打开，添加代码修改，保存，再把桌面上这个hosts文件复制，粘贴到C:\Windows\System32\Drivers\etc 文件夹里，电脑提示“是否替换”，点击“是”，替换原来的hosts文件。)
+（如果提示没有管理权限的话，可把hosts文件复制，粘贴到电脑的桌面。在电脑桌面上双击hosts文件，用记事本打开，添加代码修改，保存，再把桌面上这个hosts文件复制，粘贴到*C:\Windows\System32\Drivers\etc* 文件夹里，电脑提示“是否替换”，点击“是”，替换原来的hosts文件。)
 
-（如果没找到hosts文件，可在本帖末尾下载一个新hosts，复制到C:\Windows\System32\Drivers\etc 文件夹里。）
+（如果没找到hosts文件，可在本帖末尾下载一个新hosts，复制到*C:\Windows\System32\Drivers\etc* 文件夹里。）
 
 
 在hosts文件中把鼠标光标移到最下面那行代码末尾，回车换行，再添加进如下代码（代码前面不加 # ）：
@@ -495,7 +495,7 @@ windows系统hosts文件在本地电脑C盘，路径是：C:\Windows\System32\dr
 
 代码有点长，直接复制就可以。然后重新打开谷歌google搜索、Gmail邮箱或谷歌相关服务，看看是不是速度飞快呢？！
 
-使用goagent翻墙的同学，建议下载最新版goagent3.1.17，把203.208.46.176 添加到Goagent/Local/proxy.ini 文件里面的 iplist 列表里“google_cn = ”后面，并修改proxy.ini 里的appid，再上传goagent/server/uploader.bat，上传完毕就ok了。
+使用goagent翻墙的同学，建议下载最新版goagent3.1.17，把203.208.46.176 添加到Goagent/Local/proxy.ini 文件里面的 iplist 列表里“google_cn = ”后面，并修改proxy.ini 里的appid，再上传*goagent/server/uploader.bat*，上传完毕就ok了。
 
 
 二、苹果Mac系统修改hosts文件的方法
