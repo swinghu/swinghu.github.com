@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu 安装Go-lang
-description: Docker科普，详细介绍Docker
+description: Ubuntu 安装Go-lang,以及配置相关文件
 category: blog
 ---
 
@@ -24,16 +24,14 @@ ubuntu下安装go-lang
 1. 验证配置是否成功，测试代码
 
 
-	package main
-	
-	import "fmt"
-	
-	func main(){
-
-		fmt.Printf("Hello World! \n")
-	
-	}
-
+    	package mainEEEEE
+    	import "fmt"
+    	func main(){
+    
+    		fmt.Printf("Hello World! \n")
+    	
+    	}
+    
 
 5.运行命令：go run hello.go
 	
