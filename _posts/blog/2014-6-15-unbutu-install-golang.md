@@ -6,9 +6,7 @@ category: blog
 ---
 
 
-ubuntu下安装go-lang
-================
-
+#ubuntu下安装go-lang
 
 
 1. 下载go-lang安装包
