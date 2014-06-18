@@ -1,0 +1,361 @@
+---
+layout: post
+title: windows phone 8.1一次模拟器无法开启,提示Exception：0x80131500问题的解决
+description: 一次windows phone 8.1 模拟器无法开启，部署提示错误 : DEP6100 : 引导阶段“正在连接到设备”出现以下意外错误: Exception 0x80131500问题的解决
+category: blog
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>2014-6-18-crack-vs2013-windowsphone8.1-error</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p>突然没有一天vs2013提示你模拟器打不开了，并提示你：Exception - 0x80131500，顿时心凉半截。</p>
+<p>首先看看电脑开发平台的配置，如果你遇到的问题和我一致，那么就不妨看看，如果不一致请绕行。</p>
+<p>本人机器以及开发环境配置如下：</p>
+<ul>
+<li>OS配置：Windows 8.1 </li>
+<li>Vs版本：vs2013 ,安装update 2</li>
+</ul>
+<p>出现问题的可能原因：</p>
+<ul>
+<li><p>之前在vs ,windows phone 8.1 运行时，进行过非正常关机；</p>
+</li>
+<li><p>系统进行过更新，在更新设置时，错误勾选了安装推荐更新；</p>
+</li>
+</ul>
+<p>突然某天打开vs 2013 运行以前编写的windows phone 8.1 demo，无法运行：<br>提示以下错误：</p>
+<p>windows 8 在开启Hyper-v的时候 Hyper-v平台无法启动，而且报错。</p>
+<p>错误为：</p>
+<ul>
+<li>1&gt;Exception 0x80131500</li>
+<li>1&gt;错误 : DEP6100 : 引导阶段“正在连接到设备”出现以下意外错误: </li>
+<li>1&gt;Exception 0x80131500</li>
+</ul>
+<p>通过仔细观察系统发现以下问题：</p>
+<p>(1)vs 2013 启动windows phone 8.1 模拟器出现0x80131500，查看Hyper-V 发现无法连接本地服务器。</p>
+<p>(2)发现查看系统信息时，出现处理器和安装内存（RAM）为当前不可用（下图为问题解决后视图）</p>
+<p><img src="http://i.imgur.com/6HUSLEW.png" alt=""></p>
+<p>于是问题来了，可谓经过一番费力解决，问题才得以解决</p>
+<p><strong>先解决问题（2）</strong></p>
+<p>经过一番google后，得知是Windows Management Instrumentation (WMI)信息可能损坏错误修复引起的。解决方案具体操作如下:</p>
+<p>1.<em>第一步</em>:右击“我的电脑”，选择“管理”菜单，依次定位到“计算机管理(本地)→服务和应用程序→服务”项，在右边窗口中找到“Windows Management Instrumentation”一项，双击打开，在弹出的窗口中单击“停止”按钮。</p>
+<p>2.<em>第二步</em>:进入本地磁盘的C:/Windows/System32/Wbem/Repository目录，删除该目录下的所有文件</p>
+<p>3.<em>第三步</em>:重新启动计算机。登录后，系统会重新在该目录拷贝建立所需要的文件，并且自动启动刚才停止的WMI服务。</p>
+<p>该故障是由于C:/Windows/System32/Wbem/Repository目录下的文件损坏引起的，WMI会在每30～60秒之间调用该目录 下的文件，所以会收到上述错误提示信息。</p>
+<p>同时该故障还能引起的其他连锁反应有:无法查看“本地连接”的属性、运行msinfo32(查看系统信息)命令时系统 无响应、运行wmimgmt.msc命令打开WMI管理单元时系统提示“Failed to connect to local computer due to WMI:Generic failure”错误，无法查看网络Internet连接中的共享。</p>
+<p><strong>问题（1）解决</strong></p>
+<p>本人开发电脑为 Intel i5 cpu ，照理来说应该支持windows phone 8.1 模拟器的要求的，但是出现了问题，就一步一步的解决。</p>
+<p> 下载Coreinfo.exe windows测试程序，进行检测。将下载好的软件拷贝到C:\Windows\System32,目录下，并以系统管理员权限打开cmd控制台命令窗口，运行结果如下：<br> <img src="http://i.imgur.com/fyHwsbC.png" alt=""></p>
+<p> 分析得知，此配置是支持windows phone 8.1 开发的。</p>
+<p> 运行CheckSLATStatusOfMachine.exe 测试工具查看是否支持SLAT。运行结果如下：<br><img src="http://i.imgur.com/kAKNWz8.png" alt=""></p>
+<p>分析得知硬件条件也符合要求，那为什么不符合要求呢？，发现要更改bios设置，具体的唯一有个要注意的就是要enable选项 “intel virtual tech…“选项。</p>
+<p>开启windows Hyper –V 功能服务。快捷键：windows+x 选项，并选择”程序和功能”，同时在右侧你会看到“启用或关闭windows功能”，打开后，选择Hyper-V并勾选。<br><img src="http://i.imgur.com/SDXp5NZ.png" alt=""></p>
+<p>勾选后，这时候会根据系统的不同，有可能要求你进行电脑重启（本人在解决该问题是不知重启了多少次电脑），重启后系统会自动进行配置。配置好之后，再次打开就会发现前面已经勾选。这时候，hyper-v 环境基本已经配置好。然后进入hyper-v 管理器，按下windows键选择搜索：hyper<br><img src="http://i.imgur.com/ZBnt8E4.png" alt=""></p>
+<p>这时候你可以看到hyper-v 相关的磁贴。选择管理器，你会看到此时候，已经连接了一台默认名称为你的电脑名的虚拟机。此时，根据网友的提示，我删除了以前的所有windows　phone的虚拟机。<br><img src="http://i.imgur.com/0T5gynI.png" alt=""></p>
+<p>但是就是在这一步无论我如何的从vs启动模拟器，总是提示如下错误” 无法启动windows phone emulator ，由于虚拟机监控程序未运行，无法启动。“但是我的BIOS设置已经没问题了，那么问题在哪呢？仔细排查，发现我的第三个要求还没进行设置（<a href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj863509(v=vs.105).aspx）：">http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj863509(v=vs.105).aspx）：</a></p>
+<p><img src="http://i.imgur.com/bRjL1fn.png" alt=""></p>
+<p>还没有进行DEP设置，继续crack问题。</p>
+<p><strong>问题（1）解决</strong></p>
+<p>使用快捷键windows+x 键，并选择”系统“</p>
+<p><img src="http://i.imgur.com/PMWx4v5.png" alt=""></p>
+<p>打开系统选项后，选择左边的”高级系统设置“选择”高级“页面。你会看到”性能“，”用户配置文件“，”启动和故障恢复“，我们选择第一项，点击”设置“</p>
+<p><img src="http://i.imgur.com/eUSAPiV.png" alt=""></p>
+<p>点击设置后，选择数据执行保护，发现选择了&quot;仅为基本Windows程序和服务启用DEP（T）&quot;<br><img src="http://i.imgur.com/EhK4ZXO.png" alt=""></p>
+<p>我们进行更改，选择下面一项”为除下列选定程序之外的所有程序和服务启用DEP（U）“并在下面的”添加“处不添加任何选项，这样就为所有的程序启用DEP。<br><img src="http://i.imgur.com/bjDt0qp.png" alt=""></p>
+<p>点击确认，ok.至此问题解决。Windows phone 8.1 模拟器重新运行了，由于我在排错hyper-v 的时候，我删除了所有的虚拟机，所以在第一次启动模拟器的时候，要有段时间的等待。最后成功启动了模拟器</p>
+<p><img src="http://i.imgur.com/I2Q1qaU.png" alt=""></p>
+<p><strong>总结</strong></p>
+<p>通过分析，可以很确定的知道，这次问题是由于安装更新，以及系统WMI文件破损引起的（这次WMI文件破损，我觉得是我强制关机引起的）。 WMI 文件破损导致的问题可谓真多。网上提供的说可以通过重新安装windows phone 8.1 模拟器，我没有试过。如果你遇到同样的问题，可以进行以上排错。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
