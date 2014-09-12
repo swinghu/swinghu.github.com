@@ -1,0 +1,264 @@
+---
+layout: post
+title: git中的merge命令式如何实现和工作的？
+description: visual studio 快捷键 shortcut key
+category: blog
+---
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>2014-09-03-How-does-Git-merge-work</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* Solarized (Light) */
+/* Authors: Ethan Schoonover: http://ethanschoonover.com/solarized, CodeCatalyst: http://codecatalyst.com/ */
+/* Version: d9a83f4e7a47432baff86e1e7946d9e066cf3d1b (modified) */
+/* https://github.com/CodeCatalyst/mou-theme-solarized */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ol,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html * {
+  font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  color-profile: sRGB;
+}
+body {
+  min-width: 32em;
+  max-width: 52em;
+  margin: 10px;
+}
+p {
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  margin-left: 2em;
+  margin-bottom: 20px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 10px;
+}
+li {
+  margin-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 24.624px;
+  line-height: 29.548799999999996px;
+}
+h2 {
+  font-size: 24.624px;
+  line-height: 29.548799999999996px;
+}
+h3 {
+  font-size: 23.44px;
+  line-height: 28.128px;
+}
+h4 {
+  font-size: 22.16px;
+  line-height: 26.592px;
+}
+h5 {
+  font-size: 22.16px;
+  line-height: 26.592px;
+}
+h6 {
+  font-size: 22.16px;
+  line-height: 26.592px;
+}
+img {
+  margin-bottom: 20px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img,
+p img {
+  margin-bottom: 0;
+}
+pre {
+  margin-bottom: 20px;
+}
+pre,
+code {
+  font-family: monospace;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+h2 {
+  border-bottom: 1px solid;
+}
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: none;
+}
+html * {
+  color: #657b83;
+}
+html body {
+  background-color: #fdf6e3;
+}
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  color: #586e75;
+  border-color: #657b83;
+}
+html a,
+html a:active,
+html a:visited {
+  color: #586e75;
+}
+html a:hover {
+  background-color: #eee8d5;
+}
+html pre {
+  color: #586e75;
+  background-color: #eee8d5;
+}
+html a,
+html a:active,
+html a:visited,
+html code.url {
+  color: #b58900;
+}
+html h1 {
+  color: #b58900;
+}
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  color: #b58900;
+}
+
+/*
+LICENSE
+
+Solarized Theme for Mou
+
+Copyright (c) 2012 CodeCatalyst, LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Solarized
+
+Copyright (c) 2011 Ethan Schoonover
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+</style>
+</head>
+<body>
+<hr>
+<p>layout: post<br>title: git中的merge命令式如何实现和工作的？<br>description: visual studio 快捷键 shortcut key</p>
+<h2 id="category-blog">category: blog</h2>
+<p>How does Git merge work?<br>Git的merge操作是如何实现的？</p>
+<p>想象一下有如下情形：代码库中存在两个分支，并且每个分支都进行了修改，最后你想要将其中的一个分支合并到其他的分支中。</p>
+<p>那么要问合并的处理过程是怎么样的呢？<code>Git</code>是对每个分支，依据分支的历史数据按照序列化操作，还是它只是合并每个分支里文件的最后版本？这是一个问题，我想对<code>git</code>的<code>merge</code>操作有必要进行分析一下。</p>
+<p>回忆一下，我们知道<code>Git</code>的版本库内部结构是以有向无环图（<code>directed acyclic graph</code>）组织起来的：每一次<code>commit</code>都会生成一个版本树的快照（<code>snapshot</code>），并且该快照保存了一个指向其父节点（该分支的最近上一次的提交快照）的引用（通常当前提交只有一个父节点，但是初试提交快照没有父节点，而一次合并（<code>merge</code>）操作有2个或多个父节点）。就像这样，每次提交都递归的建立某些节点集指向父节点的引用。有时候，当我们考虑提交的父节点提交树和当前节提交节点树做差异比较时（<code>diff</code>），将一次提交想象成一次修补补丁（<code>patch</code>）是有助于我们理解<code>git</code> 的工作机理。按照这种方式，我们可以这样认为，提交树就是集成应用了所有父节点的补丁修补。一颗在两个分支上做merge操作的树，因此就可以认为是两个分支应用了其各自所有的父节点修补补丁程序，然后做一次联合操作Union。</p>
+<p>但是那不是<code>git merge</code> 的真正执行方式，原因是，首先，如果以那样工作的话，执行会非常的慢！，并且在执行过程中它要再一次重新处理所有的之前合并时造成的冲突。如此，<code>git merge</code> 真正是如何操作的呢？</p>
+<p>我喜欢用数学的思维方式思考：给定两个提交 \(A\)和 \(B\)，合并提交（commit）操作 \(A\vee B\)  就可以描述为：<br>$$<br>\begin{bmatrix}<br>A\vee B \<br>\end{bmatrix}= \begin{bmatrix} \<br>A \<br>\end{bmatrix}+\begin{bmatrix} \<br>B \<br>\end{bmatrix}-\begin{bmatrix} \<br>C \<br>\end{bmatrix}<br>$$<br>这里的 \(C\)是\(A\) 和 \(B\)的合并共有项(最近提交树祖先共同含有的部分)，我们必须要“减去” \(C\)，因为如果不这样的话，我们就会有两个\(A\wedge B\)。这个操作\(x+y+z\) 被叫做三向合并。你可以认为执行路径为将\(x-z\) 应用到\(x\) 上，或者将 \(x-z\)应用到\(y\) 上。</p>
+<p>事实上diff和patch操作并没有字面上按照上面的的操作行事，相反而是使用了：最长公共子序列算法来实现。\(x-w\)和序列\(x\),序列w的差异就是我们知道的在求最长公共子序列时的赋值（中间可能要去除到两个序列的公共部分）。为了构造三向合并\(x+y-w\),我们对\(x\)和\(w\)在求公共子序列的时候进行赋值，对\(y\)和\(w\)在求公共子序列的时候赋值，然后输出每个要么：<br>三个序列的共有部分，或者</p>
+<p>在\(x\)  中出现，但是在\(y\)  和 \(w\) 中不存在的部分，或者<br>在\(y\) 中出现，但是在\(x\) 和\(w\) 中没有出现的部分</p>
+<p>同时我们要删除那些序列，要么：</p>
+<p>出现在\(y\) 和 \(w\)但是在\(x\)中没有出现，或者<br>出现在\(x\)和\(w\)中但是在\(y\)中没有出现。</p>
+<p>举个栗子：</p>
+<pre><code>1    x:      w:      y:      ↦ merged:
+2    milk    milk    milk      milk
+3    juice                     juice
+4    flour   flour   flour     flour
+5                    sausage   sausagegit
+6    eggs    eggs    eggs      eggs
+7            butter  butter        </code></pre>
+<p>在\(x\),\(y\)与\(w\)的行序可能仅仅说明了一种在三向合并的输出行上的一种偏序关系，如果是这样的话，由于同样的块\(w\),在\(x\),\(y\) 之间以不同的方式被编辑-因此我们说那就是一个合并冲突，将会输出该信息，让用户手动解决。<br>当<code>git</code> 向你显示合并冲突的时候，默认情况下，你将会看到x和的冲突块：</p>
+<p><img src="http://i.imgur.com/XPE0L9G.png" alt=""></p>
+<p>然而，冲突块会变得更容易解决，当你能够看到合并基准w的时候。我建议打开开关：</p>
+<pre><code>~/.gitconfig</code></pre>
+<p>通过设置<code>merge.conflictstyle</code> 为<code>diff3</code>，则</p>
+<pre><code>git config --global merge.conflictstyle diff3</code></pre>
+<p><img src="http://i.imgur.com/XhKllHf.png" alt=""></p>
+<p>现在你可以看到解决方式为：</p>
+<pre><code>I had two eggs and three sausages for breakfast.</code></pre>
+<p>（注意，这个操作会对称性的（with regard to with reference to0 关于w和结果进行交换，因此你真正需要的是查看w）<br>这里有另外两种其他的案例需要考虑：可能行为：<br>出现在\(x\)和\(y\)中，但是在\(w\)中没有出现<br>    出现在\(w\)中，但是没有在\(x\) 和\(y\) 中出现</p>
+<p>某些三向合并算法经常将这样的行标记为冲突行。然而<code>Git</code>,将会优雅的输出或者直接删除该行，依次，假定该行没有改变。这种效果叫做意外清理合并。偶尔某些情形在实际应用中很有用，尤其是用户把版本搞砸了，各自合并同一个补丁的两个不同的版本。但是我认为掩盖这种错误不是一种好的行事方式，我希望这种行为可以并关闭。尽量避免因为他所能带来的这种优点而使用它吧。</p>
+<p>如果你仔细，很有观察力，你可能已经发现我在上述说明中存在的一个漏洞了：由于<code>commit</code> \(A\)和\(B\)可能各自又包含<code>commit</code>,他们最近的共同祖先可能不是唯一的！一般，他们最有可能的情形是，最近的共同祖先是 ，在这种情况下，<code>git merge</code> 操作将会递归的执行：它首先构造合并 ，并以此作为三向合并 的基础（<code>base</code>）。这就是为什么<code>Git</code>的默认合并策略并称为递归的。</p>
+<p>假定两个分支如下图所示，\(A,B,C,D,E\)是<code>master</code>分支的历史快照（<code>snapshot</code>）;\(A,B,X,Y,Z\)是<code>feature</code>分子的历史快照。<br><img src="http://i.imgur.com/LffP9wp.png" alt=""></p>
+<p>命令    </p>
+<pre><code>git merge feature</code></pre>
+<p>首先查找“<code>master</code>”（当前分支）和“<code>feature</code>”的共同祖先。它或多或少的等价于以下命令：</p>
+<pre><code>git merge-base master feature</code></pre>
+<p>在我们的举的例子里，他们的共同祖先是B。<br>如果在\(C,D,E\)和\(X,Y,Z\)提交中没有冲突，<code>git</code> 将会创建一次“<code>merge commit</code>” <code>merge commit</code>会有两到多个父亲。<br>新的图将会是下面这个样子。<br><img src="http://i.imgur.com/7tIJsg1.png" alt=""></p>
+<p>每一次<code>git commit</code> 提交都会生成一棵树，一到多个“父亲节点”，作者的名字，<code>email</code>,日期和提交者的姓名，<code>email</code>,日期。</p>
+<p><code>merge</code>提交和普通的提交的唯一区别就是祖先的数量。</p>
+<p>在第二幅图中，<code>merge commit</code>提交被以“M”标注出来了。</p>
+<p>如果提交存在冲突，用户就会被要求解决冲突，并手动创建合并提交，在冲突解决后</p>
+<pre><code>git commit -a</code></pre>
+<p>将会创建合并提交。这条命令没什么特殊的语法。<code>Git</code> 已经知道了用户已经在进行合并了（已经在尝试合并）。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
