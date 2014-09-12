@@ -56,24 +56,26 @@ $$
 
 当git 向你显示合并冲突的时候，默认情况下，你将会看到x和的冲突块：
 
-1. <<<<<<< x
-1. I had one egg and three sausages for breakfast.
-1. =======
-1. I had two eggs and two sausages for breakfast.
-1. >>>>>>> y
+	1. <<<<<<< x
+	1. I had one egg and three sausages for breakfast.
+	1. =======
+	1. I had two eggs and two sausages for breakfast.
+	1. >>>>>>> y
 
 然而，冲突块会变得更容易解决，当你能够看到合并基准w的时候。我建议打开开关：
-~/.gitconfig
+
+	~/.gitconfig
+
 通过设置merge.conflictstyle 为diff3，则
-1. git config --global merge.conflictstyle diff3
-1. <<<<<<< x
-1. I had one egg and three sausages for breakfast.
-1. ||||||| w
-1. I had one egg and two sausages for breakfast.
-1. =======
-1. I had two eggs and two sausages for breakfast.
-1. >>>>>>> y
-1. 
+	1. git config --global merge.conflictstyle diff3
+	1. <<<<<<< x
+	1. I had one egg and three sausages for breakfast.
+	1. ||||||| w
+	1. I had one egg and two sausages for breakfast.
+	1. =======
+	1. I had two eggs and two sausages for breakfast.
+	1. >>>>>>> y
+	1. 
 现在你可以看到解决方式为：
 I had two eggs and three sausages for breakfast.
 
