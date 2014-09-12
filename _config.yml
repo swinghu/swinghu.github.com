@@ -1,6 +1,6 @@
 auto: true
 
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 paginate: 5
 paginate_path: /blog/page:num
