@@ -67,6 +67,7 @@ $$
 	~/.gitconfig
 
 通过设置merge.conflictstyle 为diff3，则
+
 	1. git config --global merge.conflictstyle diff3
 	1. <<<<<<< x
 	1. I had one egg and three sausages for breakfast.
@@ -75,7 +76,7 @@ $$
 	1. =======
 	1. I had two eggs and two sausages for breakfast.
 	1. >>>>>>> y
-	1. 
+	
 现在你可以看到解决方式为：
 I had two eggs and three sausages for breakfast.
 
