@@ -53,7 +53,6 @@ $$
 当`git` 向你显示合并冲突的时候，默认情况下，你将会看到x和的冲突块：
 
 ![](http://i.imgur.com/XPE0L9G.png)
-
 然而，冲突块会变得更容易解决，当你能够看到合并基准w的时候。我建议打开开关：
 
 	~/.gitconfig
@@ -63,7 +62,6 @@ $$
 	git config --global merge.conflictstyle diff3
 	
 ![](http://i.imgur.com/XhKllHf.png)
-
 现在你可以看到解决方式为：
 
 	I had two eggs and three sausages for breakfast.
@@ -79,7 +77,6 @@ $$
 
 假定两个分支如下图所示，\\(A,B,C,D,E\\)是`master`分支的历史快照（`snapshot`）;\\(A,B,X,Y,Z\\)是`feature`分子的历史快照。
 ![](http://i.imgur.com/LffP9wp.png)
-
 命令	
 	
 	git merge feature
@@ -92,7 +89,6 @@ $$
 如果在\\(C,D,E\\)和\\(X,Y,Z\\)提交中没有冲突，`git` 将会创建一次“`merge commit `” `merge commit`会有两到多个父亲。
 新的图将会是下面这个样子。
 ![](http://i.imgur.com/7tIJsg1.png)
-
 每一次`git commit` 提交都会生成一棵树，一到多个“父亲节点”，作者的名字，`email`,日期和提交者的姓名，`email`,日期。
 
 `merge`提交和普通的提交的唯一区别就是祖先的数量。
