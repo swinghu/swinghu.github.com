@@ -87,7 +87,7 @@ $$
 	
 	git merge feature
 
-首先查找“master”（当前分支）和“feature”的共同祖先。它或多或少的等价于以下命令：
+首先查找“`master`”（当前分支）和“`feature`”的共同祖先。它或多或少的等价于以下命令：
 
 	git merge-base master feature
 
@@ -104,7 +104,7 @@ $$
 
 如果提交存在冲突，用户就会被要求解决冲突，并手动创建合并提交，在冲突解决后
 
-git commit -a
+	git commit -a
 
 将会创建合并提交。这条命令没什么特殊的语法。`Git` 已经知道了用户已经在进行合并了（已经在尝试合并）。
 
