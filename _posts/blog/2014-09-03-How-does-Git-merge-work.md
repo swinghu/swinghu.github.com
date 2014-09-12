@@ -20,13 +20,13 @@ Git的merge操作是如何实现的？
 我喜欢用数学的思维方式思考：给定两个提交 \\(A\\)和 \\(B\\)，合并提交（commit）操作 \\(A\\vee B\\)  就可以描述为：
 $$
 \begin{bmatrix}
-A\vee B \\
-\end{bmatrix}= \begin{bmatrix} \\
+A\vee B \
+\end{bmatrix}= \begin{bmatrix} \
 A \\
-\end{bmatrix}+\begin{bmatrix} \\
+\end{bmatrix}+\begin{bmatrix} \
 B \\
-\end{bmatrix}-\begin{bmatrix} \\
-C \\
+\end{bmatrix}-\begin{bmatrix} \
+C \
 \end{bmatrix} 
 $$
 这里的 是 和 的合并共有项(最近提交树祖先共同含有的部分)，我们必须要“减去” ，因为如果不这样的话，我们就会有两个 。这个操作 被叫做三向合并。你可以认为执行路径为将 应用到 上，或者s 应用到 上。
