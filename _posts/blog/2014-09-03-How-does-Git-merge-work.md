@@ -1,13 +1,10 @@
 ---
 layout: post
 title: git中的merge命令式如何实现和工作的？
-description: visual studio 快捷键 shortcut key
+description: git,github,三向合并，最长公共子序列，merge工作方式
 category: blog
 ---
 
-
-How does Git merge work?
-Git的merge操作是如何实现的？
 
 想象一下有如下情形：代码库中存在两个分支，并且每个分支都进行了修改，最后你想要将其中的一个分支合并到其他的分支中。
 
