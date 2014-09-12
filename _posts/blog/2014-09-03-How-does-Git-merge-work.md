@@ -43,7 +43,7 @@ $$
 出现在\\(x\\)和\\(w\\)中但是在\\(y\\)中没有出现。
 
 举个栗子：
-
+`
 1	x:      w:      y:      ↦ merged:
 2	milk    milk    milk      milk
 3	juice                     juice
@@ -51,7 +51,7 @@ $$
 5	                sausage   sausage
 6	eggs    eggs    eggs      eggs
 7	        butter  butter
-
+`
 在\\(x\\),\\(y\\)与\\(w\\)的行序可能仅仅说明了一种在三向合并的输出行上的一种偏序关系，如果是这样的话，由于同样的块\\(w\\),在\\(x\\),\\(y\\) 之间以不同的方式被编辑-因此我们说那就是一个合并冲突，将会输出该信息，让用户手动解决。
 
 当git 向你显示合并冲突的时候，默认情况下，你将会看到x和的冲突块：
@@ -66,7 +66,7 @@ $$
 
 	~/.gitconfig
 
-通过设置merge.conflictstyle 为diff3，则
+通过设置`merge.conflictstyle` 为`diff3`，则
 
 	1. git config --global merge.conflictstyle diff3
 	1. <<<<<<< x
