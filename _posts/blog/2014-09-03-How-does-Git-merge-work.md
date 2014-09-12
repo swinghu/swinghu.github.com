@@ -51,14 +51,11 @@ $$
 	5	                sausage   sausagegit
 	6	eggs    eggs    eggs      eggs
 	7	        butter  butter		
+
 在\\(x\\),\\(y\\)与\\(w\\)的行序可能仅仅说明了一种在三向合并的输出行上的一种偏序关系，如果是这样的话，由于同样的块\\(w\\),在\\(x\\),\\(y\\) 之间以不同的方式被编辑-因此我们说那就是一个合并冲突，将会输出该信息，让用户手动解决。
 当`git` 向你显示合并冲突的时候，默认情况下，你将会看到x和的冲突块：
 
-	1. <<<<<<< x
-	1. I had one egg and three sausages for breakfast.
-	1. =======
-	1. I had two eggs and two sausages for breakfast.
-	1. >>>>>>> y
+![](http://i.imgur.com/XPE0L9G.png)
 
 然而，冲突块会变得更容易解决，当你能够看到合并基准w的时候。我建议打开开关：
 
@@ -66,15 +63,10 @@ $$
 
 通过设置`merge.conflictstyle` 为`diff3`，则
 
-	1. git config --global merge.conflictstyle diff3
-	1. <<<<<<< x
-	1. I had one egg and three sausages for breakfast.
-	1. ||||||| w
-	1. I had one egg and two sausages for breakfast.
-	1. =======
-	1. I had two eggs and two sausages for breakfast.
-	1. >>>>>>> y
+	git config --global merge.conflictstyle diff3
 	
+![](http://i.imgur.com/XhKllHf.png)
+
 现在你可以看到解决方式为：
 
 	I had two eggs and three sausages for breakfast.
@@ -86,31 +78,23 @@ $$
 
 某些三向合并算法经常将这样的行标记为冲突行。然而`Git`,将会优雅的输出或者直接删除该行，依次，假定该行没有改变。这种效果叫做意外清理合并。偶尔某些情形在实际应用中很有用，尤其是用户把版本搞砸了，各自合并同一个补丁的两个不同的版本。但是我认为掩盖这种错误不是一种好的行事方式，我希望这种行为可以并关闭。尽量避免因为他所能带来的这种优点而使用它吧。
 
-如果你仔细，很有观察力，你可能已经发现我在上述说明中存在的一个漏洞了：由于commit A和B可能各自又包含commit,他们最近的共同祖先可能不是唯一的！一般，他们最有可能的情形是，最近的共同祖先是 ，在这种情况下，`git merge` 操作将会递归的执行：它首先构造合并 ，并以此作为三向合并 的基础（`base`）。这就是为什么`Git`的默认合并策略并称为递归的。
+如果你仔细，很有观察力，你可能已经发现我在上述说明中存在的一个漏洞了：由于`commit` \\(A\\)和\\(B\\)可能各自又包含`commit`,他们最近的共同祖先可能不是唯一的！一般，他们最有可能的情形是，最近的共同祖先是 ，在这种情况下，`git merge` 操作将会递归的执行：它首先构造合并 ，并以此作为三向合并 的基础（`base`）。这就是为什么`Git`的默认合并策略并称为递归的。
 
-假定两个分支如下图所示，\\(A,B,C,D,E\\)是master分支的历史快照（`snapshot`）;\\(A,B,X,Y,Z\\)是`feature`分子的历史快照。
-
-
-1 A -- B -- C -- D -- E
-2	\                  
-3          -- X -- Y -- Z
-
+假定两个分支如下图所示，\\(A,B,C,D,E\\)是`master`分支的历史快照（`snapshot`）;\\(A,B,X,Y,Z\\)是`feature`分子的历史快照。
+![](http://i.imgur.com/LffP9wp.png)
 
 命令	
-git merge feature
+	
+	git merge feature
+
 首先查找“master”（当前分支）和“feature”的共同祖先。它或多或少的等价于以下命令：
-git merge-base master feature
+
+	git merge-base master feature
+
 在我们的举的例子里，他们的共同祖先是B。
 如果在\\(C,D,E\\)和\\(X,Y,Z\\)提交中没有冲突，`git` 将会创建一次“`merge commit `” `merge commit`会有两到多个父亲。
 新的图将会是下面这个样子。
-
-
-
-
-A -- B -- C -- D -- E -------- M
-      \                        /
-        -- X -- Y -- Z -------
-
+![](http://i.imgur.com/7tIJsg1.png)
 
 每一次`git commit` 提交都会生成一棵树，一到多个“父亲节点”，作者的名字，`email`,日期和提交者的姓名，`email`,日期。
 
