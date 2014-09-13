@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git中的merge命令式如何实现和工作的？
+title: git中的merge命令实现和工作方式
 description: git,github,三向合并，最长公共子序列，merge工作方式
 category: blog
 ---
