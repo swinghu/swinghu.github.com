@@ -45,13 +45,13 @@ $$
 
 举个栗子，以下是\\(x\\) \\(y\\) \\(w\\) 执行merge操作后的结果：
 		
-	1	x:      w:      y:      ↦ merged:
-	2	milk    milk    milk      milk
-	3	juice                     juice
-	4	flour   flour   flour     flour
-	5	                sausage   sausagegit
-	6	eggs    eggs    eggs      eggs
-	7	        butter  butter		
+		x:      w:      y:      ↦ merged:
+		milk    milk    milk      milk
+		juice                     juice
+		flour   flour   flour     flour
+		                sausage   sausagegit
+		eggs    eggs    eggs      eggs
+		        butter  butter		
 
 在\\(x\\),\\(y\\)与\\(w\\)的行序可能仅仅说明了一种在三向合并的输出行上的一种偏序关系，如果是这样的话，由于同样的块\\(w\\),在\\(x\\),\\(y\\) 之间以不同的方式被编辑-因此我们说那就是一个合并冲突，将会输出该信息，让用户手动解决。
 当`git` 向你显示合并冲突的时候，默认情况下，你将会看到x和的冲突块：
@@ -100,12 +100,9 @@ $$ 的基础（`base`）。这就是为什么`Git`的默认合并策略并称为
 如果在\\(C,D,E\\)和\\(X,Y,Z\\)提交中没有冲突，`git` 将会创建一次“`merge commit `” `merge commit`会有两到多个父亲。
 新的图将会是下面这个样子。
 ![](http://i.imgur.com/7tIJsg1.png)
-每一次`git commit` 提交都会生成一棵树，一到多个“父亲节点”，作者的名字，`email`,日期和提交者的姓名，`email`,日期。
-
-`merge`提交和普通的提交的唯一区别就是祖先的数量。
+每一次`git commit` 提交都会生成一棵树，一到多个“父亲节点”，作者的名字，`email`,日期和提交者的姓名，`email`,日期。`merge`提交和普通的提交的唯一区别就是祖先的数量。
  
 在第二幅图中，`merge commit`提交被以\\(M\\)标注出来了。
-
 如果提交存在冲突，用户就会被要求解决冲突，并手动创建合并提交，在冲突解决后
 
 	git commit -a
