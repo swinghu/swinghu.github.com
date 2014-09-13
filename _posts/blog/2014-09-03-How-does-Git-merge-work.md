@@ -89,8 +89,7 @@ $$
 \[C=C_{1}\vee C_{2} \vee C_{3} \cdots C_{k-1}\vee C_{k}\]
 $$
 
- ，并以此作为三向合并
-$$
+ ，并以此作为三向合并$$
 \begin{bmatrix} \
 A \
 \end{bmatrix}+\begin{bmatrix} \
