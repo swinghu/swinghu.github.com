@@ -85,10 +85,7 @@ B \
 \end{bmatrix}-\begin{bmatrix} \
 C \
 \end{bmatrix}
-$$
-
- 的基础（`base`）。这就是为什么`Git`的默认合并策略并称为递归的。
-
+$$ 的基础（`base`）。这就是为什么`Git`的默认合并策略并称为递归的。
 假定两个分支如下图所示，\\(A,B,C,D,E\\)是`master`分支的历史快照（`snapshot`）;\\(A,B,X,Y,Z\\)是`feature`分子的历史快照。
 ![](http://i.imgur.com/LffP9wp.png)
 命令	
