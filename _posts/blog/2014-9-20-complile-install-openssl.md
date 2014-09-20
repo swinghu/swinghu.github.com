@@ -83,6 +83,7 @@ cd到解压目录`C:\openssl-1.0.1`，运行：
  选择[开始]->[microsoft visual studio 2013]选择`visual studio tools`,选择后将会打开发者工具开文件夹，选择：`VS2013 x86 本机工具命令提示`。点击进入命令提示行dos界面。进入vc/bin 目录中运行命令，设置环境变量：
 
 	vcvars32.bat
+
 控制台出现停顿一会，进入下一行，标识已经配置好。
 通过`VS2013 x86 本机工具命令提示 的命令工具 `cd到OpenSSL目录中，创建makefile文件，输入命令：
 
