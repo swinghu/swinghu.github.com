@@ -4,8 +4,8 @@ title: 编译安装OpenSSL
 description: OpenSSL安装，perl
 category: blog
 ---
-# 编译安装OpenSSL#
-**（1）下载 ActivePerl。**选择版本5.18.2.1802-MSWin32-x86-64int-298023 地址[ActivePerl-5.18.2.1802-MSWin32-x86-64int-298023](ActivePerl-5.18.2.1802-MSWin32-x86-64int-298023)，安装时，一路点击下一步就行，注意选择勾选将其添加到系统环境变量path中。验证是否安装成功，并且bin目录已经在path环境变量中。perl -v 测试一下,如出现以下结果表明现在已经安装配置好。
+
+**（1）下载 ActivePerl。**选择版本`5.18.2.1802-MSWin32-x86-64int-298023` 地址[ActivePerl-5.18.2.1802-MSWin32-x86-64int-298023](ActivePerl-5.18.2.1802-MSWin32-x86-64int-298023)，安装时，一路点击下一步就行，注意选择勾选将其添加到系统环境变量path中。验证是否安装成功，并且bin目录已经在path环境变量中。`perl -v `测试一下,如出现以下结果表明现在已经安装配置好。
 
 	C:\openssl-1.0.1>perl -v
 	This is perl 5, version 18, subversion 2 (v5.18.2) built for MSWin32-x86-multi-t
@@ -24,7 +24,7 @@ category: blog
 	this system using "man perl" or "perldoc perl".  If you have access to the
 	Internet, point your browser at http://www.perl.org/, the Perl Home Page.
 
-**（2）下载OpenSSL。**选择版本 openssl-1.0.1i.tar.gz [下载地址](ftp://ftp.openssl.org/source/openssl-1.0.1i.tar.gz)。这里在选择版本的时候要注意，版本尽量选择最新版本（最新版为1.0.2 处于beta阶段）初学不要选用snapshot版本的。要不然和我一样会出现很多诡异的问题，如。
+**（2）下载OpenSSL。**选择版本 `openssl-1.0.1i.tar.gz` [下载地址](ftp://ftp.openssl.org/source/openssl-1.0.1i.tar.gz)。这里在选择版本的时候要注意，版本尽量选择最新版本（最新版为1.0.2 处于beta阶段）初学不要选用snapshot版本的。要不然和我一样会出现很多诡异的问题，如。
 
 	tmp32dll/sha512-586.asm(288) : error A2008:  : mm
 	tmp32dll/sha512-586.asm(289) : error A2008:  : mm
@@ -37,10 +37,13 @@ category: blog
 	NMAKE : fatal error U1077: 'ml' : return code '0x1'
 	Stop.
 
-遇到"NMAKE : fatal error U1077: 'ml' : return code '0x1'
-Stop." 问题后，不管怎么搜教程，我都都没有解决掉。最后选择了其他版本。下载后解压（7zip）,解压到：C:\openssl-1.0.1。
+遇到
+`"NMAKE : fatal error U1077: 'ml' : return code '0x1'
+Stop."`
+问题后，不管怎么搜教程，我都都没有解决掉。最后选择了其他版本。下载后解压（7zip）,解压到：`C:\openssl-1.0.1`。
+
 **（3）编译OpenSSL。**
-cd到解压目录C:\openssl-1.0.1，运行：
+cd到解压目录`C:\openssl-1.0.1`，运行：
 
 	per Configure VC-WIN32
 显示配置信息：
@@ -77,11 +80,11 @@ cd到解压目录C:\openssl-1.0.1，运行：
 	Configured for VC-WIN32.x
 
 
- 选择[开始]->[microsoft visual studio 2013]选择visual studio tools,选择后将会打开发者工具开文件夹，选择：VS2013 x86 本机工具命令提示。点击进入命令提示行dos界面。进入vc/bin 目录中运行命令，设置环境变量：
+ 选择[开始]->[microsoft visual studio 2013]选择`visual studio tools`,选择后将会打开发者工具开文件夹，选择：`VS2013 x86 本机工具命令提示`。点击进入命令提示行dos界面。进入vc/bin 目录中运行命令，设置环境变量：
 
 	vcvars32.bat
 控制台出现停顿一会，进入下一行，标识已经配置好。
-通过VS2013 x86 本机工具命令提示 的命令工具 cd到OpenSSL目录中，创建makefile文件，输入命令：
+通过`VS2013 x86 本机工具命令提示 的命令工具 `cd到OpenSSL目录中，创建makefile文件，输入命令：
 
 	ms\do_ms
 虽然有其他命令，例如，如果使用MASM，接着输入：ms\do_masm
