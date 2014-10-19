@@ -26,7 +26,9 @@ title: about
             <a href="http://winares.github.io/" title="http://winares.github.io/" target="_blank">刘晓的Blog||  </a>
             <a href="http://ilovers.sinaapp.com/" title="http://ilovers.sinaapp.com/" target="_blank">李文琼的Blog|| </a>
 			<a href="http://blog.sina.com.cn/drpickup" title="http://blog.sina.com.cn/drpickup" target="_blank">郑匡宇-台湾型男|| </a>
-			<a href="http://www.yangzhiping.com/" title="http://www.yangzhiping.com/" target="_blank"> 阳志平-心智实验室 </a>
+			<a href="http://www.yangzhiping.com/" title="http://www.yangzhiping.com/" target="_blank"> 阳志平-心智实验室 ||</a>
+			<a href="http://joegaotao.github.io/" title="http://joegaotao.github.io/" target="_blank"> 统计边，生活处 || </a>
+			<a href="http://ycool.com/user/feizhihong" title="http://ycool.com/user/feizhihong" target="_blank"> 飞之鸿 </a>
         </div>
    </dd>
 </dl>
