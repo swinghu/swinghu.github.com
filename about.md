@@ -31,6 +31,7 @@ title: about
 			<a href="http://ycool.com/user/feizhihong" title="http://ycool.com/user/feizhihong" target="_blank"> 飞之鸿 ||</a>
 			<a href="http://wangsanmu.com/" title="http://wangsanmu.com/" target="_blank"> 王三目  ||</a>
 			<a href="http://tinsoldat.blog.163.com/" title="http://tinsoldat.blog.163.com/" target="_blank"> 万水千山，姹紫嫣红 --沈步渔 </a>
+			<a href="http://itindex.net/" title="http://itindex.net/" target="_blank"> IT瘾</a>
         </div>
    </dd>
 </dl>
