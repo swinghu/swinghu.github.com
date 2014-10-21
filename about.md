@@ -30,7 +30,7 @@ title: about
 			<a href="http://joegaotao.github.io/" title="http://joegaotao.github.io/" target="_blank"> 统计边，生活处 || </a>
 			<a href="http://ycool.com/user/feizhihong" title="http://ycool.com/user/feizhihong" target="_blank"> 飞之鸿 ||</a>
 			<a href="http://wangsanmu.com/" title="http://wangsanmu.com/" target="_blank"> 王三目  ||</a>
-			<a href="http://tinsoldat.blog.163.com/" title="http://tinsoldat.blog.163.com/" target="_blank"> 万水千山，姹紫嫣红 </a>
+			<a href="http://tinsoldat.blog.163.com/" title="http://tinsoldat.blog.163.com/" target="_blank"> 万水千山，姹紫嫣红 --沈步渔 </a>
         </div>
    </dd>
 </dl>
