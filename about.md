@@ -28,7 +28,9 @@ title: about
 			<a href="http://blog.sina.com.cn/drpickup" title="http://blog.sina.com.cn/drpickup" target="_blank">郑匡宇-台湾型男|| </a>
 			<a href="http://www.yangzhiping.com/" title="http://www.yangzhiping.com/" target="_blank"> 阳志平-心智实验室 ||</a>
 			<a href="http://joegaotao.github.io/" title="http://joegaotao.github.io/" target="_blank"> 统计边，生活处 || </a>
-			<a href="http://ycool.com/user/feizhihong" title="http://ycool.com/user/feizhihong" target="_blank"> 飞之鸿 </a>
+			<a href="http://ycool.com/user/feizhihong" title="http://ycool.com/user/feizhihong" target="_blank"> 飞之鸿 ||</a>
+			<a href="http://wangsanmu.com/" title="http://wangsanmu.com/" target="_blank"> 王三目  ||</a>
+			<a href="http://tinsoldat.blog.163.com/" title="http://tinsoldat.blog.163.com/" target="_blank"> 万水千山，姹紫嫣红 </a>
         </div>
    </dd>
 </dl>
