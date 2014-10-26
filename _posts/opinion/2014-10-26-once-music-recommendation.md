@@ -94,16 +94,28 @@ description: 生活，爱情，唯美，伤感，现实，音乐
 电影中音乐：
 
 *1. Falling Slowly*
+
 *2. If You Want Me*
+
 *3. Broken Hearted Hoover Fixer Sucker Guy*
+
 *4. When Your Minds Made Up*
+
 *5. Lies*
+
 *6. Gold*
+
 *7. The Hill*
+
 *8. Fallen from the Sky*
+
 *9. Leave*
+
 *10. Trying to Pull Myself Away*
+
 *11. All the Way Down*
+
 *12. Once*
+
 *13. Say It to Me Now*
 
