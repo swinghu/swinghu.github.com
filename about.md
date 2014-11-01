@@ -35,6 +35,7 @@ title: about
 			<a href="http://littlewitchboudoir.blog.163.com/" title="http://littlewitchboudoir.blog.163.com/" target="_blank"> 慢慢回府</a>			
 			<a href="http://ralral.net/" title="http://ralral.net/" target="_blank"> Kill Tomorrow</a>
 			<a href="http://snowxh.in/" title="http://snowxh.in/" target="_blank"> 初雪の恋</a>
+			<a href="http://miaotown.com/" title="http://miaotown.com/" target="_blank"> 薛定谔的喵 </a>
         </div>
    </dd>
 </dl>
