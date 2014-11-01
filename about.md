@@ -30,12 +30,13 @@ title: about
 			<a href="http://joegaotao.github.io/" title="http://joegaotao.github.io/" target="_blank"> 统计边，生活处 || </a>
 			<a href="http://ycool.com/user/feizhihong" title="http://ycool.com/user/feizhihong" target="_blank"> 飞之鸿 ||</a>
 			<a href="http://wangsanmu.com/" title="http://wangsanmu.com/" target="_blank"> 王三目  ||</a>
-			<a href="http://tinsoldat.blog.163.com/" title="http://tinsoldat.blog.163.com/" target="_blank"> 万水千山，姹紫嫣红 --沈步渔 </a>
-			<a href="http://itindex.net/" title="http://itindex.net/" target="_blank"> IT瘾</a>
-			<a href="http://littlewitchboudoir.blog.163.com/" title="http://littlewitchboudoir.blog.163.com/" target="_blank"> 慢慢回府</a>			
-			<a href="http://ralral.net/" title="http://ralral.net/" target="_blank"> Kill Tomorrow</a>
-			<a href="http://snowxh.in/" title="http://snowxh.in/" target="_blank"> 初雪の恋</a>
-			<a href="http://miaotown.com/" title="http://miaotown.com/" target="_blank"> 薛定谔的喵 </a>
+			<a href="http://tinsoldat.blog.163.com/" title="http://tinsoldat.blog.163.com/" target="_blank"> 万水千山，姹紫嫣红 --沈步渔 ||</a>
+			<a href="http://itindex.net/" title="http://itindex.net/" target="_blank"> IT瘾 ||</a>
+			<a href="http://littlewitchboudoir.blog.163.com/" title="http://littlewitchboudoir.blog.163.com/" target="_blank"> 慢慢回府 ||</a>			
+			<a href="http://ralral.net/" title="http://ralral.net/" target="_blank"> Kill Tomorrow ||</a>
+			<a href="http://snowxh.in/" title="http://snowxh.in/" target="_blank"> 初雪の恋 ||</a>
+			<a href="http://miaotown.com/" title="http://miaotown.com/" target="_blank"> 薛定谔的喵 ||</a>
+			<a href="http://irising.me/" title="http://irising.me/" target="_blank"> Page to Page 由此及彼：分享数字生活感悟和软件应用技巧 || </a>
         </div>
    </dd>
 </dl>
