@@ -37,6 +37,7 @@ title: about
 			<a href="http://snowxh.in/" title="http://snowxh.in/" target="_blank"> 初雪の恋 ||</a>
 			<a href="http://miaotown.com/" title="http://miaotown.com/" target="_blank"> 薛定谔的喵 ||</a>
 			<a href="http://irising.me/" title="http://irising.me/" target="_blank"> Page to Page 由此及彼：分享数字生活感悟和软件应用技巧 || </a>
+			<a href="http://gao.bo/" title="http://gao.bo/" target="_blank"> 高博[的世界] </a>
         </div>
    </dd>
 </dl>
