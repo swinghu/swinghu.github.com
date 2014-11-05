@@ -40,6 +40,7 @@ title: about
 			<a href="http://gao.bo/" title="http://gao.bo/" target="_blank"> 高博[的世界] </a>
 			<a href="http://www.fulongmei.com/" title="http://www.fulongmei.com/" target="_blank"> F&R 符隆美的博客 </a>
 			<a href="http://xumingming.sinaapp.com/" title="http://xumingming.sinaapp.com/" target="_blank"> 徐明明【apaceh storm】 </a>
+			<a href="http://tianchunbinghe.blog.163.com/" title="http://tianchunbinghe.blog.163.com/" target="_blank">  冰河【田春冰河】 </a>
 
         </div>
    </dd>
