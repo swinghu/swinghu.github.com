@@ -9,7 +9,7 @@ category: blog
 
 原作者的库：https://github.com/h2o/h2o.git
 我从kazuho处fork的项目：https://github.com/swinghu/h2o.git
-我git clone 原作者的库后，原作者是一个非常勤快的人，通常一天有几十个commit，导致不同于原作者的库及时更新，所以要定时与原作者的库进行asyn。
+我git clone 原作者的库后，原作者是一个非常勤快的人，通常一天有几十个commit，导致不能与原作者的库及时更新，所以要定时与原作者的库进行asyn。
 
 那么git如何对forked 后的库，与原作者进行库的更新，以获取原作者的最新代码？
 
