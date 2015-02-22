@@ -5,8 +5,6 @@ description: github fork原作者的项目后，github不会自动更新同步�
 category: blog
 ---
 
-# git如何merge forked repository里的代码更新? #
-
 原作者的库：https://github.com/h2o/h2o.git
 我从kazuho处fork的项目：https://github.com/swinghu/h2o.git
 我git clone 原作者的库后，原作者是一个非常勤快的人，通常一天有几十个commit，导致不能与原作者的库及时更新，所以要定时与原作者的库进行asyn。
