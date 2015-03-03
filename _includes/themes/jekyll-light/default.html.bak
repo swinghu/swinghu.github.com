@@ -63,6 +63,11 @@
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"1680100140","tqq":"847380407","t163":"1680100140","tsohu":"1680100140"},"bdText":"Qing","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"24"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
   <!--百度统计代码-->
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F538f8113746a3d3f30de4dbb94ef65c9' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <div id="qr">跟风的二维码<i class="fa fa-qrcode"></i><img src="http://qr.liantu.com/api.php?&bg=ffffff&fg=33cccc&gc=cc00cc&text={{ site.blog.url }}/{{ page.url }}" /></div>
   <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
 </body>
 </html>
