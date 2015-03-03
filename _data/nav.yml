@@ -1,0 +1,15 @@
+- href: /timing.html
+  icon: fa fa-clock-o
+  title: 时间轴
+
+- href: /archive.html
+  icon: fa fa-book
+  title: 所有文章
+
+- href: /categories.html
+  icon: fa fa-tags
+  title: 分类
+
+- href: /tags.html
+  icon: fa fa-paperclip
+  title: 标签

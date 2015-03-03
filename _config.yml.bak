@@ -1,0 +1,15 @@
+markdown: kramdown
+highlighter: pygments
+permalink: /:categories/:year-:month-:day/:title.html
+paginate_path: page/:num
+
+blog:
+    name : swinghu' blog
+    description : 温暖岁月,惊艳时光
+    title : swinghu' blog - 胡思文的个人博客
+    url : http://dongyuxi.github.io
+author:
+    name : 胡思文
+    email : ogrecpp@gmail.com
+    weibo : http://weibo.com/u/1680100140
+    github : https://github.com/swinghu
