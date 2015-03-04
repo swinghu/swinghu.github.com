@@ -1,9 +1,14 @@
 ---
 layout: post
 title: 只有好的棋手才会走运
-category: opinion
-description: 《打造Facebook》读后感
+category: life
+tags:《打造Facebook》读后感
+keywords:《打造Facebook》读后感
+tagline: Supporting tagline
 ---
+
+
+
 ##来自douban书评：
 >	"这本书的书名——《打造Facebook：亲历Facebook爆发的5年》很嚣张，谁有资格可以说这句话呢，当然，扎克伯格最有资格，但他不会亲自来告诉你，至少从目前的情况来看，近几年都不
 >大可能。而且，这不是一个人的公司。里面的每一人，尤其是工程师，既是公司文化的承受者，同时也在不断的改造着公司的文化。我想强调的是团队，是团队的力量打造了Facebook。

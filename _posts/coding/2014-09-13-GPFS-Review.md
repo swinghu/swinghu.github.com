@@ -1,8 +1,10 @@
 ---
 layout: post
 title: GPFS文件系统
-description: 理解GPFS文件系统工作原理，设计理念，如何容错，同步？
-category: blog
+category: life
+tags: GPFS 文件系统  工作原理 设计理念 容错 同步
+keywords: GPFS 文件系统  工作原理 设计理念 容错 同步
+tagline: Supporting tagline
 ---
 
 
