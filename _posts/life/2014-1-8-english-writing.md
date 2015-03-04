@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 英文学习网站推荐
-category: opinion
+category: life
 tags:英文学习网站推荐 语法 段落写作 introduction facebook Maggie
 keywords:英文学习网站推荐 语法 段落写作 introduction facebook Maggie
 tagline: Supporting tagline
