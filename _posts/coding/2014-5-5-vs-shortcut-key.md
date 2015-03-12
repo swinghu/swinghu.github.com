@@ -1,10 +1,11 @@
 ---
 layout: post
 title: vs 快捷键(转)
-description: visual studio 快捷键 shortcut key
-category: blog
+category: coding
+tags:vs 快捷键
+keywords:vs 快捷键
+tagline: Supporting tagline
 ---
-
 
 # vs 快捷键(转) #
 
