@@ -1,8 +1,10 @@
 ---
 layout: post
 title: CEGUI + Ogre 安装设置详解
-description: 将《OGRE 3D 1.7 Beginner's Guide》的读书笔记和一点自己的认识总结起来写就这么一篇安装手记，强烈推荐此书。
-category: blog
+category: coding
+tags:netstat CEGUI Ogre
+keywords:
+tagline: Supporting tagline
 ---
 
 这是《OGRE 3D 1.7 Beginner's Guide》学习笔记，再加一点自己的认识。推荐学习ogre的新手此书

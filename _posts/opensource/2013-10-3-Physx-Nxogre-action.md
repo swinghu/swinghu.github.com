@@ -1,8 +1,10 @@
 ---
 layout: post
 title: 编译安装Physx + NxOgre 遇到的问题
-description: 编译安装Physx + NxOgre 
-category: blog
+category: coding
+tags:physx NxOgre
+keywords:
+tagline: Supporting tagline
 ---
 
 ##（一）Setting the environmental variable for PhysX

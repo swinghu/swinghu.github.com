@@ -1,9 +1,12 @@
 ---
 layout: post
 title: github 个人网站搭建
-description: 使用github搭建个人主页,GitExtensions,RailInstaller。
-category: blog
+category: coding
+tags:github
+keywords:github
+tagline: Supporting tagline
 ---
+
 写这篇文章主要是总结自己学习搭建web page的过程，以免下次，总结搭建过程中遇到的问题，
 也是帮助没有使用过github和Jekyll的童鞋可以快速掌握搭建过程，快速体验。
 
