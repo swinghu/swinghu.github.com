@@ -7,16 +7,6 @@ keywords: GPFS,文件系统,工作原理,设计理念,容错,同步
 tagline: Supporting tagline
 ---
 
----
-layout: post
-title: Vim强制保存文件 
-categories: linux
-tags: linux tee sudo
-keywords: linux,tee,sudo,命令
-tagline: Supporting tagline
----
-
-
 # GPFS: A Shared-Disk File System for Large Computing Clusters #
 
 
