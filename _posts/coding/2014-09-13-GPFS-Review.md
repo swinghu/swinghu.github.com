@@ -1,11 +1,12 @@
 ---
 layout: post
 title: GPFS文件系统
-category: life
-tags: GPFS 文件系统  工作原理 设计理念 容错 同步
-keywords: GPFS,文件系统,工作原理,设计理念,容错,同步
+category: coding
+tags: GPFS 文件系统 工作原理 设计理念 容错 同步
+keywords: GPFS,文件系统,容错,同步
 tagline: Supporting tagline
 ---
+
 
 # GPFS: A Shared-Disk File System for Large Computing Clusters #
 
