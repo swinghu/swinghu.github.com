@@ -3,7 +3,16 @@ layout: post
 title: GPFS文件系统
 category: life
 tags: GPFS 文件系统  工作原理 设计理念 容错 同步
-keywords: GPFS 文件系统  工作原理 设计理念 容错 同步
+keywords: GPFS,文件系统,工作原理,设计理念,容错,同步
+tagline: Supporting tagline
+---
+
+---
+layout: post
+title: Vim强制保存文件 
+categories: linux
+tags: linux tee sudo
+keywords: linux,tee,sudo,命令
 tagline: Supporting tagline
 ---
 
