@@ -1,12 +1,12 @@
-
 ---
 layout: post
 title: 查看windows端口占用信息
 category: life
 tags:netstat windows 端口
-keywords:
+keywords:windows port
 tagline: Supporting tagline
 ---
+
 
 netstat命令来自linux定义：
 > netstat - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
