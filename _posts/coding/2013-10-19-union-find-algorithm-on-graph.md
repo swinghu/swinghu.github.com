@@ -1,9 +1,13 @@
 ---
 layout: post
 title: 并查集在求解子图中的应用--union find algorithm
-category: blog
-description: 利用并查集求解graph中的子图以及连通性问题
+category: coding
+tags:  union find algorithm
+keywords: union
+tagline: Supporting tagline
 ---
+
+
 
 ##1.并查集
 

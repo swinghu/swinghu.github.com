@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Nginx学习手记（一）
-description: http method，nginx特性，反向代理，邮件代理，mmap，IO模型，nginx与PHP通信，fastcgi。
-category: blog
+category: coding
+tags:  nginx
+keywords: nginx
+tagline: Supporting tagline
 ---
+
+
 
 ##(1)Http相关知识：http  method ，请求报文，响应报文格式，状态码
 ![synchronizes-with](/images/githubpages/1http_method.png)

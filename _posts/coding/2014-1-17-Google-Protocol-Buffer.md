@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Google Protocol Buffer Java学习
-description: Google Protocol Buffer,Java
-category: blog
+category: coding
+tags: google protobuffer
+keywords:protobuffer thrift
+tagline: Supporting tagline
 ---
+
+
 
 ##Google Protocol Buffer 
 

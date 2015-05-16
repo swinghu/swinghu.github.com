@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Nginx学习手记（二）
-description: ubuntu下安装Tengine
-category: blog
+category: coding
+tags:  nginx
+keywords: nginx
+tagline: Supporting tagline
 ---
 
 ubuntu下安装Tengine

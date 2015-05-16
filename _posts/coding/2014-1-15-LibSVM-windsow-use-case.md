@@ -1,9 +1,15 @@
 ---
 layout: post
 title: 利用libsvm使用简单数据跑支持向量机
-description: windows libsvm python 支持向量机svm
-category: blog
+category: coding
+tags:  windows libsvm python 支持向量机svm
+keywords: windows libsvm python 支持向量机svm
+tagline: Supporting tagline
 ---
+
+
+
+
 
 ##libsvm介绍
 
