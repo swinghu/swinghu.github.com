@@ -2,7 +2,7 @@
 layout: post
 category: reading_and_thoughts
 title: Collections About HackNews
-date: 2015-08-29
+date: date: 2016-04-07
 ---
 
 There are some collections about HackNews,which I think very usefullness.
