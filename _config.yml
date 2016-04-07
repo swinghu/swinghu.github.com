@@ -1,15 +1,132 @@
-markdown: kramdown
-highlighter: pygments
-permalink: /:categories/:year-:month-:day/:title.html
-paginate_path: page/:num
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+paginate:     8
 
-blog:
-    name : swinghu' blog
-    description : 温暖岁月,惊艳时光
-    title : swinghu' blog - 胡思文的个人博客
-    url : http://swinghu.github.io
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+gems:         [jekyll-paginate]
+
+# Filtering Content
+show_drafts:  null
+limit_posts:  0
+future:       true
+unpublished:  false
+
+# Conversion
+markdown:     kramdown
+#highlighter:  pygments # currently unsupported on GitHub Pages 2016/02/17
+highlighter:  rouge
+lsi:          false
+excerpt_separator: "\n\n"
+toc_levels:   1..3 # TOC # 2015/11/29
+
+# Serving
+detach:       false
+port:         4000
+host:         127.0.0.1
+baseurl:      "" # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+
+#Site config
+title: handong1587
+description: handong1587's blog
+keywords: Deep Learning
+url: http://handong1587.github.io
+feed: /atom.xml
+favicon: /images/shortcut.jpg
+
+#Nav config
+nav:
+  - text: HOME
+    url: /index.html
+  - text: CATEGORIES
+    url: /categories.html
+  - text: ARCHIVES
+    url: /archives.html
+  - text: ABOUT ME
+    url: /about.html
+  - text: LINKS
+    url: /links.html
+
+#Author config
 author:
-    name : 胡思文
-    email : ogrecpp@gmail.com
-    weibo : http://weibo.com/u/1680100140
-    github : https://github.com/swinghu
+    name: handong1587
+    email: handong1587@gmail.com
+    imageLink: /images/header.jpg
+    simpleIntro: Hi world~
+    detailIntro:
+      <p>I am working as machine learning/deep learning engineer.</p>
+      <p>This blog is used to organise interesting papers, projects, websites, blogs and my reading/study notes.</p>
+      <p></p>
+
+#You can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
+follow:
+  - class: icon-rss
+    url: /atom.xml
+  - class: icon-weibo
+    url: http://weibo.com/
+  - class: icon-facebook
+    url: https://www.facebook.com/
+  - class: icon-github-alt
+    url: https://github.com/handong1587/
+  - class: icon-twitter
+    url: https://www.twitter.com/
+  - class: icon-google-plus
+    url: https://plus.google.com/116595571760191938657/about
+
+#Links
+customLinks:
+  - item:
+    - text: EnSharing
+      url: http://ensharing.com/
+    - text: JOSHUA's BLOG
+      url: http://joshua881228.webfactional.com/
+    message: Friends    
+  - item:
+    - text: Caffe on github
+      url: https://github.com/BVLC/caffe
+    - text: Deep Learning Tutorials
+      url: http://deeplearning.net/tutorial/
+    - text: Deep Learning Reading List
+      url: http://deeplearning.net/reading-list/
+    message: About Deep Learning
+
+#googleAnaly, your id link UA-12345678-X
+googleAnaly:
+  config: false
+  id: UA-58146229-1
+
+#baidu tongji
+baiduTongji:
+  config: true
+  #id: c12b560f0372d5995701449b9eac606c
+  id:  9144251ce5a4f4019de4bc601b9b490b
+
+#comment config
+disqus:
+  config: true
+  id: handong1587
+
+duoshuo:
+  config: false
+  id: null
+
+#baidu share config
+baiduShare:
+  config: false
+  

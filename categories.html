@@ -1,26 +1,33 @@
 ---
 layout: default
-title: 文章分类
+title: Categories
+keywords: Categories
 ---
+<div class="article">
+    <h3 class="title">{{ page.title }}</h3>
+    <ul class="categories">
+    {% assign categories_list = site.categories %}
+    {% for category in categories_list %}
+        <li class="categories-item"><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
+            {{ category[0] | join: "/" }}
+        </a></li>
+    {% endfor %}
+    </ul>
 
-<link rel="stylesheet" href="/res/css/page.css">
-{% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign category = categories | split:',' | sort %}
-<h2 class="category">分类</h2>
-<div class="category-box">
-  <ul>
-    {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-    {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-    <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ site.categories[word].size }}</sup></a></li>
-    {% endunless %}{% endfor %}
+<div class="article">
+{% for category in site.categories %} 
+  <h2  class="article-year" id="{{ category[0] }}-ref" data-year="&diams;">{{ category[0] | join: "/" }}</h2>
+  <ul style="list-style: none">
+    {% assign pages_list = category[1] %}  
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if group == null or group == node.group %}
+            <li style="background:#F2EEEC; padding:5px; margin:3px 0"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+   
   </ul>
+{% endfor %}
 </div>
-<hr id="line"/>
-{% for item in (0..site.categories.size) %}{% unless forloop.last %}
-{% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-<h2 class="category" id="{{ word }}">{{ word }}</h2>
-{% for post in site.categories[word] %}{% if post.title != null %}
-<ul><li class="category-sub">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a class="category-sub-title" href="{{ post.url }}">{{ post.title }}</a></li></ul>
-{% endif %}{% endfor %}
-{% endunless %}{% endfor %}
-<br/><br/>
+</div>
