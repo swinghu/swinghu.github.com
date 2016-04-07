@@ -1,11 +1,11 @@
 ---
 layout: post
 category: reading_and_thoughts
-title: Collections About Hacknews
+title: Collections About HackNews
 date: 2015-08-29
 ---
 
-There are some collections about Hacknews,which I think very usefullness.
+There are some collections about HackNews,which I think very usefullness.
 
 1. Airbnb open-sources Caravel: data exploration and visualization platform (github.com) https://github.com/airbnb/caravel    Airbnb开源起可视化平台，可以很方便的为平台提供可视化展示。
 	
