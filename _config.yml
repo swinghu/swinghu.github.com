@@ -43,10 +43,10 @@ timezone:      null
 
 
 #Site config
-title: handong1587
-description: handong1587's blog
+title: swinghu
+description: swinghu's blog
 keywords: Deep Learning
-url: http://handong1587.github.io
+url: http://swinghu.github.io
 feed: /atom.xml
 favicon: /images/shortcut.jpg
 
@@ -65,8 +65,8 @@ nav:
 
 #Author config
 author:
-    name: handong1587
-    email: handong1587@gmail.com
+    name: swinghu
+    email: ogrecpp@gmail.com
     imageLink: /images/header.jpg
     simpleIntro: Hi world~
     detailIntro:
@@ -83,11 +83,11 @@ follow:
   - class: icon-facebook
     url: https://www.facebook.com/
   - class: icon-github-alt
-    url: https://github.com/handong1587/
+    url: https://github.com/swinghu/
   - class: icon-twitter
-    url: https://www.twitter.com/
+    url: https://www.twitter.com/ogrecpp
   - class: icon-google-plus
-    url: https://plus.google.com/116595571760191938657/about
+    url: https://plus.google.com/109841455309929117233/about
 
 #Links
 customLinks:
@@ -109,18 +109,18 @@ customLinks:
 #googleAnaly, your id link UA-12345678-X
 googleAnaly:
   config: false
-  id: UA-58146229-1
+  id: UA-76115512-1
 
 #baidu tongji
 baiduTongji:
   config: true
   #id: c12b560f0372d5995701449b9eac606c
-  id:  9144251ce5a4f4019de4bc601b9b490b
+  #id:  9144251ce5a4f4019de4bc601b9b490b
 
 #comment config
 disqus:
   config: true
-  id: handong1587
+  id: swinghu
 
 duoshuo:
   config: false
