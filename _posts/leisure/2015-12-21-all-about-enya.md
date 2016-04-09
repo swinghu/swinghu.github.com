@@ -7,7 +7,7 @@ date: 2015-12-21
 
 ![](/assets/leisure/enya_a_day_withou_rain_cover.jpg)
 
-<embed src="http://www.xiami.com/widget/0_1769247445/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+<embed src="http://www.xiami.com/widget/0_1770856518/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
 
 # Dark Sky Island
 
