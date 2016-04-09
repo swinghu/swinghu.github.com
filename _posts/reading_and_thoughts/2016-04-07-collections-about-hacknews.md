@@ -26,4 +26,8 @@ There are some collections about HackNews,which I think very usefully.
 	
 9. Featured mongoclient written in meteor-js http://www.mongoclient.com  ，跨平台MongoDB可视化操作工具
 
-10. another
+10. YouTube-dl，opensource Youtube downloader YouTube-dl: Open-source YouTube downloader (rg3.github.io)
+	
+11. spacex falcon9 用户手册 http://www.spacex.com/sites/spacex/files/falcon_9_users_guide_rev_2.0.pdf   The SpaceX Falcon 9 User Guide [pdf](spacex.com)
+	
+12. Show HN: Reddit Comments / Threads Dataset (github.com)   https://github.com/linanqiu/reddit-dataset  , reddit 爬虫，爬取后的数据格式为：['text', 'title', 'url', 'id', 'subreddit', 'meta', 'time', 'author', 'ups', 'downs', 'authorlinkkarma', 'authorcommentkarma', 'authorisgold']
