@@ -29,11 +29,11 @@ After all, if there is an illusion of constancy, is she basically making the sam
 
 [http://www.idolator.com/7615659/enya-dark-sky-island-review](http://www.idolator.com/7615659/enya-dark-sky-island-review)
 
-# Website
+# IMO 
 
-[enya.com](enya.com)
+if you’re looking for a bit of musical respite in these distressing times the globe we inhabit is wrapped up in, this just might be it.
 
-[http://enya.sk/](http://enya.sk/)
+
 
 **Enya's So Could I Find My Way**
 
@@ -91,3 +91,9 @@ So I could find my way
 我便能寻到属于我的人生之路  
 So I could find my way   
 我便能寻到属于我的漫漫旅途  
+
+# Website
+
+[enya.com](enya.com)
+
+[http://enya.sk/](http://enya.sk/)
