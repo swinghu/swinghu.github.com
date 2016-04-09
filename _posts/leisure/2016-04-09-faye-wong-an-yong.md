@@ -7,7 +7,7 @@ date: 2016-04-09
 
 music from one of my Favorite singer Faye Wong 《暗涌》  
 
-<embed src="http://www.xiami.com/widget/0_147071/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>  
+<embed src="http://www.xiami.com/widget/0_147071/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">  
 
 《暗涌》  
 就算天空再深看不出裂痕  
