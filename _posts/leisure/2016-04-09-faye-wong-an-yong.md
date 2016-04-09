@@ -5,7 +5,9 @@ title: 《暗涌》Faye Wong
 date: 2016-04-09
 ---
 
-music from one of my Favorite singer Faye Wong 《暗涌》
+music from one of my Favorite singer Faye Wong 《暗涌》  
+
+<embed src="http://www.xiami.com/widget/0_147071/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>  
 
 《暗涌》  
 就算天空再深看不出裂痕  
@@ -50,3 +52,4 @@ yin hou zeng ba ho lang an han men wun guang leng
 yin hou tin hong you zai yong hei mai wun  
 然后天空又再涌起密云  
 yin hou tin hong you zai yong hei mai wun  
+
