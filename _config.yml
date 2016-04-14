@@ -96,11 +96,11 @@ customLinks:
       url: http://ensharing.com/
     - text: JOSHUA's BLOG
       url: http://joshua881228.webfactional.com/
-    - text：Medium
+    - text: Medium
       url: https://medium.com/
-    - text：Hacker News 
+    - text: Hacker News 
       url: https://news.ycombinator.com/news
-    - text：Quora
+    - text: Quora
       url: https://www.quora.com/          
     message: Friends    
   - item:
