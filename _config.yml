@@ -96,6 +96,12 @@ customLinks:
       url: http://ensharing.com/
     - text: JOSHUA's BLOG
       url: http://joshua881228.webfactional.com/
+    - text：Medium
+      url: https://medium.com/
+    - text：Hacker News 
+      url: https://news.ycombinator.com/news
+    - text：Quora
+      url: https://www.quora.com/          
     message: Friends    
   - item:
     - text: Caffe on github
@@ -113,7 +119,7 @@ googleAnaly:
 
 #baidu tongji
 baiduTongji:
-  config: true
+  config: false
   #id: c12b560f0372d5995701449b9eac606c
   #id:  9144251ce5a4f4019de4bc601b9b490b
 

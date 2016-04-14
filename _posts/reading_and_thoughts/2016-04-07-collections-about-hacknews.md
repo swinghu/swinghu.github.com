@@ -31,3 +31,11 @@ There are some collections about HackNews,which I think very usefully.
 11. spacex falcon9 用户手册 http://www.spacex.com/sites/spacex/files/falcon_9_users_guide_rev_2.0.pdf   The SpaceX Falcon 9 User Guide [pdf](spacex.com)
 	
 12. Show HN: Reddit Comments / Threads Dataset (github.com)   https://github.com/linanqiu/reddit-dataset  , reddit 爬虫，爬取后的数据格式为：['text', 'title', 'url', 'id', 'subreddit', 'meta', 'time', 'author', 'ups', 'downs', 'authorlinkkarma', 'authorcommentkarma', 'authorisgold']
+
+13. how-a-car-engine-works  图解汽车引擎的工作方式原理  http://animagraffs.com/how-a-car-engine-works/  ，同时网站还提供其他引擎的工作方式，如gun,jet,flat screen display,马克尔杰克逊的太恐步原理
+
+14. STOMP – The Simple Text Oriented Messaging Protocol (stomp.github.io) 简单面向文本的消息协议，当前很多消息中间件支持并实现了STOMP协议
+
+15. 232601 - Deep Learning for Natural Language Processing    http://webcourse.cs.technion.ac.il/232601/Spring2016/en/ho.html   课程目标：The goal of the course to make you the best Natural Language researcher and practitioner wherever you go next.
+
+
