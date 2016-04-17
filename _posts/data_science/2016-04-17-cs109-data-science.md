@@ -162,4 +162,5 @@ Slides: On Github, Download
 Video: HD    
 
 
-videos: [http://cs109.github.io/2015/pages/videos.html](http://cs109.github.io/2015/pages/videos.html)
+all materials and videos: [http://cs109.github.io/2015/pages/videos.html](http://cs109.github.io/2015/pages/videos.html)    
+github: [https://github.com/cs109](https://github.com/cs109)
