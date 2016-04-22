@@ -22,7 +22,7 @@ There are some collections about HackNews,which I think very usefully.
 7. Django支付插件demo :https://github.com/Gauravwagh/demo-stripe-braintree article https://medium.com/tixdo-labs/accept-payments-in-django-braintree-and-stripe-f6d2ea2d9cd1#.olioeregs  hknewsAccept payments in Django – braintree and stripe (medium.com) 支持paypal 和 stripe
 	
 8. 3D人体建模工具 免费工具，可设置人物动画，可用于游戏，艺术等：
-	First version of Manuel Bastioni Laboratory, a tool to turn your Blender in a powerful laboratory for 3d humanoids creation. [ Visit the site] http://www.makehuman.org/download.php 
+First version of Manuel Bastioni Laboratory, a tool to turn your Blender in a powerful laboratory for 3d humanoids creation. [ Visit the site] http://www.makehuman.org/download.php 
 	
 9. Featured mongoclient written in meteor-js http://www.mongoclient.com  ，跨平台MongoDB可视化操作工具
 
