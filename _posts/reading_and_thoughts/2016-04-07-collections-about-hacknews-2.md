@@ -6,7 +6,8 @@ date: 2016-05-21
 ---
 
 There are some collections about HackNews,which I think very usefully.
-	
+
+
 1. 爱好者自定义的hacker news站点，也很有趣：http://hackernews.demos.monkeylearn.com/，与原站点遥相呼应，关键是，它还对hacknews进行了归类，打tag
 	
 2. http://www.dafont.com/  , www.fontsquirrel.com  各样字体下载 
