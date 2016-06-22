@@ -29,5 +29,5 @@ there many times wo saw that, once people achieve a certain level, they seldomly
 
 I am lucky to that I have beening meet mentor like this , I "copy" this good habit with my life, Thanks for being able to gain invaluable experience over the three year.
 
-Thanks this unforgettable manner stand by me all the way
+Thanks this unforgettable habbit stand by me all the way
 
