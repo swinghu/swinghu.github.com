@@ -2,7 +2,7 @@
 layout: post
 category: reading_and_thoughts
 title: Asking for them, being a student all the way your life
-date: 2015-08-28
+date: 2016-06-22
 ---
 
 {{ page.title }}
